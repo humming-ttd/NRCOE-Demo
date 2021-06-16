@@ -21,7 +21,7 @@ body {
     display: flex;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    padding: 1.25rem .625rem
+    padding: 1.25rem 8.625rem
 }
 
 .content-wrapper {

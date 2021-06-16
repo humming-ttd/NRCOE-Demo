@@ -535,7 +535,7 @@ pre code {
 
 @media (min-width:1200px) {
     .container {
-        max-width: 1400px
+        max-width: 1500px
     }
 }
 
@@ -2299,7 +2299,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #2196f3
+    background-color: #0d32c2
 }
 
 .btn-primary:hover {
@@ -3738,8 +3738,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 
 .navbar-brand {
     display: inline-block;
-    padding-top: 1.00002rem;
-    padding-bottom: 1.00002rem;
+    padding-top: 0.00002rem;
+    padding-bottom: 0.00002rem;
     margin-right: 1.25rem;
     font-size: 0;
     line-height: inherit;

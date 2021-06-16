@@ -1517,7 +1517,7 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 }
 
 .nav-tabs-bottom .nav-link.active:before {
-    background-color: #ec407a
+    background-color: #1842eb
 }
 
 .nav-tabs-bottom .nav-item.show .nav-link, .nav-tabs-bottom .nav-link.active {
@@ -1783,7 +1783,7 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
     padding: .875rem 1rem;
     outline: 0;
     transition: all ease-in-out .15s;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -1830,8 +1830,8 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 }
 
 .navbar-collapse {
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem
 }
@@ -2280,8 +2280,10 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 }
 
 .navbar-light .navbar-nav-link:focus, .navbar-light .navbar-nav-link:hover {
-    color: #333;
-    background-color: rgba(0, 0, 0, .04)
+    /* color: #333;
+    background-color: rgba(0, 0, 0, .04); */
+    border-bottom: 2px solid #1033bf;
+    margin: 0px;
 }
 
 .navbar-light .navbar-nav-link.disabled {
@@ -2290,8 +2292,10 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 }
 
 .navbar-light .active>.navbar-nav-link, .navbar-light .navbar-nav-link.active, .navbar-light .navbar-nav-link.show, .navbar-light .show>.navbar-nav-link {
-    color: #333;
-    background-color: rgba(0, 0, 0, .04)
+    /* color: #333;
+    background-color: rgba(0, 0, 0, .04) */
+    border-bottom: 2px solid #1033bf;
+    margin: 0px;
 }
 
 .navbar-light .navbar-text a {
