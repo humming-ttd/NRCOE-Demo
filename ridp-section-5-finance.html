@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>RIDP | Section 4</title>
+	<title>RIDP | Section 5</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -35,8 +35,31 @@
 	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
 	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
 
+	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="./global_assets/js/plugins/pickers/anytime.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+
 	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
 	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
+	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
+	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
+
+	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+	<script src="./global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switch.min.js"></script>
+
+	<script src="./global_assets/js/plugins/forms/wizards/steps.min.js"></script>
+
+	<script src="./global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 
 
 	<!-- PopOut Form -->
@@ -56,7 +79,7 @@
 	<div class="navbar navbar-expand-md navbar-dark px-0">
 		<div class="container">
 			<div class="navbar-brand navbar-brand-md">
-				<a href="./pir-introduction.html" class="d-inline-block">
+				<a href="./ridp-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:140px; height: 35px;"
 						alt="">
 				</a>
@@ -108,11 +131,11 @@
 							data-toggle="dropdown">
 							<img src="./global_assets/images/placeholders/placeholder_u3.jpg"
 								class="rounded-circle mr-2" height="34" alt="">
-							<span>RIDP</span>
+							<span>RIDP User</span>
 						</a>
 
 						<div class="dropdown-menu dropdown-menu-right">
-							<a href="./pir-index.html" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+							<a href="./ridp-index.html" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
 						</div>
 					</li>
 				</ul>
@@ -137,13 +160,13 @@
 			<ul class="navbar-nav">
 
 				<li class="nav-item">
-					<a href="./pir-section-1-goi.html" class="navbar-nav-link active">
+					<a href="./ridp-section-1-goi.html" class="navbar-nav-link active">
 						<i class="mi-description mr-2 "></i>
-						RIDP Recipient Registration Form
+						Registration Form
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="./pir-result.html" class="navbar-nav-link">
+					<a href="./ridp-result.html" class="navbar-nav-link">
 						<i class="mi-playlist-add-check mr-2"></i>
 						On-Site Audit
 					</a>
@@ -170,7 +193,7 @@
 				<div class="card">
 
 					<div class="card-header bg-nrcoe  text-white header-elements-inline">
-						<h6 class="card-title"><i class="mi-description mr-2"></i> RIDP Recipient Registration Form</h6>
+						<h6 class="card-title"><i class="mi-description mr-2"></i>Registration Form</h6>
 						<div class="list-icons">
 
 							<div class="dropdown">
@@ -197,270 +220,44 @@
 					</div>
 
 					<ul class="nav nav-tabs nav-tabs-bottom ">
-						<li class="nav-item"><a href="./pir-section-1-goi.html" class="nav-link "> <i
+						<li class="nav-item"><a href="./ridp-section-1-goi.html" class="nav-link "> <i
 									class="mi-business-center mr-2"></i>Sec 1 - General Organisation
 								Info</a></li>
-						<li class="nav-item"><a href="./pir-section-2-cpi.html" class="nav-link "> <i
+						<li class="nav-item"><a href="./ridp-section-2-cpi.html" class="nav-link "> <i
 									class="mi-contacts mr-2"></i>Sec 2 - Contact Person Info</a>
 						</li>
 						</li>
-						<li class="nav-item"><a href="./pir-section-3-onm.html" class="nav-link "> <i
+						<li class="nav-item"><a href="./ridp-section-3-onm.html" class="nav-link "> <i
 									class="icon-collaboration mr-2"></i>Sec 3 - Organisation &
 								Management</a></li>
-						<li class="nav-item"><a href="./pir-section-4-oc.html" class="nav-link active"> <i
+						<li class="nav-item"><a href="./ridp-section-4-oc.html" class="nav-link "> <i
 									class="icon-users4 mr-2"></i>Sec 4 - Organisation Capability</a></li>
 						</li>
-						<li class="nav-item"><a href="./pir-section-5-finance.html" class="nav-link "> <i
-									class="mi-attach-money mr-2"></i>Sec 5 - Financial</a></li>
+						<li class="nav-item"><a href="./ridp-section-5-finance.html" class="nav-link active"> <i
+									class="mi-attach-money mr-2"></i></i>Sec 5 -
+								Financial</a></li>
 
+						</a></li>
 					</ul>
+
+
 
 
 
 					<div class="card-body">
 						<div class="row">
 
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="font-weight-semibold">1) Total number of staff:<span
-											class="text-danger">*</span></label>
-									<div class="row">
-										<div class="col-sm-2">
-											<div class="input-group bootstrap-touchspin"><span
-													class="input-group-prepend"><button
-														class="btn btn-light bootstrap-touchspin-down"
-														type="button">–</button></span><span
-													class="input-group-prepend bootstrap-touchspin-prefix d-none"><span
-														class="input-group-text"></span></span><input type="text"
-													value="1" class="form-control touchspin-empty"
-													style="display: block;"><span
-													class="input-group-append bootstrap-touchspin-postfix d-none"><span
-														class="input-group-text"></span></span><span
-													class="input-group-append"><button
-														class="btn btn-light bootstrap-touchspin-up"
-														type="button">+</button></span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="font-weight-semibold">2) What is the Composition of local/Malaysia
-										staff ?<span class="text-danger">*</span></label><br>
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											More than 70%
-										</label>
-									</div>
-
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											Between 50% to 70%
-
-										</label>
-									</div>
-
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											Between 30% to 50%
-
-										</label>
-									</div>
-
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											Less than 30%
-										</label>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-12  mb-2">
-								<div class="form-group">
-									<label class="font-weight-semibold">3) What is the Composition of Bumiputera staff
-										?<span class="text-danger">*</span></label><br>
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											More than 70%
-
-										</label>
-									</div>
-
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											Between 50% to 70%
-
-										</label>
-									</div>
-
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											Between 30% to 50%
-
-										</label>
-									</div>
-
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											Less than 30%
-										</label>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-12  mb-2">
-								<div class="form-group">
-									<label class="font-weight-semibold">4) Which department carries out the business
-										development function in your Organisation ?<span
-											class="text-danger">*</span></label><br>
-
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2" id="r2" value="Nothing">
-											Specific business development dept/unit
-
-										</label>
-									</div>
-
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2" id="r3" value="Nothing">
-											Appointed personnel, but no dedicated dept/unit
-
-										</label>
-									</div>
-
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2" name="radio1" id="r1" value="Show"
-												onClick="getResults()">
-											Other
-										</label>
-									</div>
-
-									<div class="col-md-5 text">
-										<div class="form-group">
-											<label class="font-weight-semibold">Others:<span
-													class="text-danger">*</span></label>
-											<input type="text" name="text1" id="text1" class="form-control"
-												placeholder="Department A">
-										</div>
-									</div>
-
-									<script>
-										$(document).ready(function () {
-											$(".text").hide();
-											$("#r1").click(function () {
-												$(".text").show();
-											});
-											$("#r2").click(function () {
-												$(".text").hide();
-											});
-											$("#r3").click(function () {
-												$(".text").hide();
-											});
-										});
-									</script>
-
-									<!-- <div id=BAForms2 style="display: none;">
-										<div class="form-group">
-											<label>Other Business Area:</label>
-											<input type="text" class="form-control"
-												placeholder="Example. Heavy Construction">
-										</div>
-									</div>
-
-									<script>
-										function check2() {
-											var dropdown = document.getElementById("BAOptions2");
-											var current_value = dropdown.options[dropdown.selectedIndex].value;
-
-											if (current_value == "Others2") {
-												document.getElementById("BAForms2").style.display = "block";
-											}
-											else {
-												document.getElementById("BAForms2").style.display = "none";
-											}
-										}
-									</script> -->
-
-								</div>
-							</div>
-
-							<div class="col-md-12  mb-2">
-								<div class="form-group">
-									<label class="font-weight-semibold">5) Educational level of staff, % of staff
-										obtained
-										higher educational level
-										certificate (e.g Bachelor Degree and above) ?<span
-											class="text-danger">*</span></label><br>
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											More than 70%
-
-										</label>
-									</div>
-
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											Between 50% to 70%
-
-										</label>
-									</div>
-
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											Between 30% to 50%
-
-										</label>
-									</div>
-
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											Less than 30%
-										</label>
-									</div>
-								</div>
-							</div>
-
 							<div class="col-md-12 mb-2">
 								<div class="form-group">
-									<label class="font-weight-semibold">6) Experience of staff, majority of staff have
-										?<span class="text-danger">*</span></label><br>
+									<label class="font-weight-semibold">1) Quarter revenue growth: Please indicate which
+										of the following is the most relevant situation for your Organisation ?<span
+											class="text-danger">*</span></label><br>
 									<div class="form-check form-check-inline form-check-left d-block">
 										<label class="form-check-label">
 											<input type="radio" class="form-check-input"
 												name="radio-unstyled-inline-left2">
-											More than 10 years of working experience
-
+											Continuous quarter revenue growth for 2 financial quarters (over the last 3
+											financial quarters)
 										</label>
 									</div>
 
@@ -468,8 +265,7 @@
 										<label class="form-check-label">
 											<input type="radio" class="form-check-input"
 												name="radio-unstyled-inline-left2">
-											Between 5 to 10 years working experience
-
+											Continuous quarter revenue growth for the last 3 financial quarters
 										</label>
 									</div>
 
@@ -477,7 +273,7 @@
 										<label class="form-check-label">
 											<input type="radio" class="form-check-input"
 												name="radio-unstyled-inline-left2">
-											Less than 5 years working experience
+											No continuous revenue growth for the last 3 financial quarters
 
 										</label>
 									</div>
@@ -487,58 +283,125 @@
 
 							<div class="col-md-12 mb-2">
 								<div class="form-group">
-									<label class="font-weight-semibold">7) Adequancy of training provided to staff as of
-										current ?<span class="text-danger">*</span></label><br>
+									<label class="font-weight-semibold">2) Yearly revenue growth: Please indicate which
+										of the following is the most relevant situation for your Organisation ?<span
+											class="text-danger">*</span></label><br>
 									<div class="form-check form-check-inline form-check-left d-block">
 										<label class="form-check-label">
 											<input type="radio" class="form-check-input"
 												name="radio-unstyled-inline-left2">
-											Very satisfied
+											Continuous quarter profit growth for 2 financial quarters (over the last 3
+											financial quarters)
+
 										</label>
 									</div>
+
 									<div class="form-check form-check-inline form-check-left d-block">
 										<label class="form-check-label">
 											<input type="radio" class="form-check-input"
 												name="radio-unstyled-inline-left2">
-											Satisfied
+											Continuous quarter profit growth for the last 3 financial quarters
+
 										</label>
 									</div>
+
 									<div class="form-check form-check-inline form-check-left d-block">
 										<label class="form-check-label">
 											<input type="radio" class="form-check-input"
 												name="radio-unstyled-inline-left2">
-											Neutral
+											No continuous profit growth for the last 3 financial quarters
+
 										</label>
 									</div>
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											Unsatisfied
-										</label>
-									</div>
-									<div class="form-check form-check-inline form-check-left d-block">
-										<label class="form-check-label">
-											<input type="radio" class="form-check-input"
-												name="radio-unstyled-inline-left2">
-											Very unsatisfied
-										</label>
-									</div>
+
 								</div>
 							</div>
 
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">3) Quarter profit growth: Please indicate which
+										of the following is the most relevant situation for your Organisation ?<span
+											class="text-danger">*</span></label><br>
+									<div class="form-check form-check-inline form-check-left d-block">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left2">
+											Continuous quarter profit growth for 2 financial quarters (over the last 3
+											financial quarters)
+
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline form-check-left d-block">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left2">
+											Continuous quarter profit growth for the last 3 financial quarters
+
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline form-check-left d-block">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left2">
+											No continuous profit growth for the last 3 financial quarters
+
+										</label>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">4) Yearly profit growth: Please indicate which
+										of the following is the most relevant situation for your Organisation ?<span
+											class="text-danger">*</span></label><br>
+									<div class="form-check form-check-inline form-check-left d-block">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left2">
+											Continuous yearly profit growth for 2 financial years (over the last 3
+											financial years)
+
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline form-check-left d-block">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left2">
+											Continuous yearly profit growth for the last 3 financial years
+
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline form-check-left d-block">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left2">
+											No continuous profit growth for the last 3 financial years
+
+										</label>
+									</div>
+
+								</div>
+							</div>
 
 							<div class="col-md-12">
 								<div class="form-group">
-									<label class="font-weight-semibold">8) Besides HQ/main office, is there any other
-										branch
-										offices or site premises
-										available owned by the company ?<span class="text-danger">*</span></label><br>
+									<label class="font-weight-semibold">5) Is the company's income regularly covering
+										the
+										expenses? Please choose the response that is most applicable ?<span
+											class="text-danger">*</span></label><br>
 									<div class="form-check form-check-inline form-check-left d-block">
 										<label class="form-check-label">
 											<input type="radio" class="form-check-input"
 												name="radio-unstyled-inline-left2">
-											Yes
+											Yes, expenses covered by income consistently for the past 3 years
+
 										</label>
 									</div>
 
@@ -546,18 +409,29 @@
 										<label class="form-check-label">
 											<input type="radio" class="form-check-input"
 												name="radio-unstyled-inline-left2">
-											No
+											Partially, there's a year where expenses not covered by income in the past 3
+											years
+
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline form-check-left d-block">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left2">
+											No, expenses not covered by income over the past 3 years
+
 										</label>
 									</div>
 								</div>
 							</div>
 
-							<div class="col-md-12">
+							<div class="col-md-12 mb-3">
 								<div class="d-flex justify-content-between">
-									<label class="font-weight-semibold">9) Complete & Ongoing Project<span
+									<label class="font-weight-semibold">Income Document<span
 											class="text-danger">*</span></label><br>
 									<button type="button" class="btn bg-light btn-icon rounded-round mb-1"
-										data-toggle="modal" data-target="#uploadProject"><i class="icon-plus3"
+										data-toggle="modal" data-target="#uploadFinancialDoc"><i class="icon-plus3"
 											data-popup="tooltip" data-original-title="Add"></i></button>
 								</div>
 								<div>
@@ -565,28 +439,18 @@
 										<thead class="bg-nrcoe ">
 											<tr>
 												<th>No.</th>
-												<th>Project Name</th>
-												<th>Type of Project</th>
-												<th>Duration of Project</th>
-												<th>Contact Person Name</th>
-												<th>Contact Person Phone Number</th>
-												<th>Contact Person Email</th>
-												<th>Value/Cost of Project</th>
-												<th>Project Document</th>
-												<th style="width: 150px;">Action</th>
+												<th>Income Document Year</th>
+												<th>Income Document File Name</th>
+												<th>Income Document File</th>
+												<th>Action</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<td>1</td>
-												<td>Project 1</td>
-												<td>Project Type A</td>
-												<td>1-2 Years</td>
-												<td>Jordan Michael</td>
-												<td>011-111 1111</td>
-												<td>Jordan_Michael@nrcoe.com</td>
-												<td>RM1,000,000</td>
-												<td>Project-Involvement1.pdf</a></td>
+												<td>2021</td>
+												<td>Income_Document1</td>
+												<td>Income_Document1.pdf</a></td>
 												<td>
 													<button type="button"
 														class="btn btn-light btn-icon rounded-circle mr-1"><i
@@ -596,6 +460,7 @@
 														class="btn btn-light btn-icon rounded-circle mr-1"><i
 															class="icon-compose" data-popup="tooltip" title=""
 															data-original-title="Edit"></i></button>
+
 													<button type="button"
 														class="btn btn-light btn-icon rounded-circle"><i
 															class="icon-trash-alt" data-popup="tooltip" title=""
@@ -604,14 +469,9 @@
 											</tr>
 											<tr>
 												<td>2</td>
-												<td>Project 2</td>
-												<td>Project Type A</td>
-												<td>1-2 Years</td>
-												<td>Haziq Abdullah</td>
-												<td>011-111 1111</td>
-												<td>Haziq_Abdullah@nrcoe.com</td>
-												<td>RM1,000,000</td>
-												<td>Project-Involvement2.pdf</a></td>
+												<td>2020</td>
+												<td>Income_Document2</td>
+												<td>Income_Document2.pdf</a></td>
 												<td>
 													<button type="button"
 														class="btn btn-light btn-icon rounded-circle mr-1"><i
@@ -621,6 +481,7 @@
 														class="btn btn-light btn-icon rounded-circle mr-1"><i
 															class="icon-compose" data-popup="tooltip" title=""
 															data-original-title="Edit"></i></button>
+
 													<button type="button"
 														class="btn btn-light btn-icon rounded-circle"><i
 															class="icon-trash-alt" data-popup="tooltip" title=""
@@ -629,14 +490,9 @@
 											</tr>
 											<tr>
 												<td>3</td>
-												<td>Project 3</td>
-												<td>Project Type A</td>
-												<td>1-2 Years</td>
-												<td>Ismail Khalid</td>
-												<td>011-111 1111</td>
-												<td>Ismail_Khalid@nrcoe.com</td>
-												<td>RM1,000,000</td>
-												<td>Project-Involvement3.pdf</a></td>
+												<td>2019</td>
+												<td>Income_Document3</td>
+												<td>Income_Document3.pdf</a></td>
 												<td>
 													<button type="button"
 														class="btn btn-light btn-icon rounded-circle mr-1"><i
@@ -646,19 +502,181 @@
 														class="btn btn-light btn-icon rounded-circle mr-1"><i
 															class="icon-compose" data-popup="tooltip" title=""
 															data-original-title="Edit"></i></button>
+
 													<button type="button"
 														class="btn btn-light btn-icon rounded-circle"><i
 															class="icon-trash-alt" data-popup="tooltip" title=""
 															data-original-title="Remove"></i></button>
 												</td>
 											</tr>
+
 									</table>
 								</div>
 							</div>
 
+							<div class="col-md-6 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">6) What is the financial year end date of the
+										most recent Audited Financial Report of the organisation ?<span
+											class="text-danger">*</span></label><br>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-calendar22"></i></span>
+										</span>
+										<input type="text" class="form-control daterange-single" value="01/01/2021">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">7) Please indicate which of the following is the
+										most relevant situation for your Organisation over the last 3 years ?<span
+											class="text-danger">*</span></label><br>
+									<div class="form-check form-check-inline form-check-left d-block">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left2">
+											Profit
+
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline form-check-left d-block">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left2">
+											Break even
+
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline form-check-left d-block">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left2">
+											Loss
+
+										</label>
+									</div>
+
+								</div>
+							</div>
+
+
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">8) If the Audited Financial Report is NOT
+										the most recent financial year report, please justify the reason below ?<span
+											class="text-danger">*</span></label><br>
+									<div class="form-check form-check-inline form-check-left d-block">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left2">
+											Financial audit is yet to be conducted
+
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline form-check-left d-block">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left2">
+											The financial audit and/or report is in progress
+
+										</label>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="d-flex justify-content-between">
+									<label class="font-weight-semibold">9) Financial Document<span
+											class="text-danger">*</span></label><br>
+									<button type="button" class="btn bg-light btn-icon rounded-round mb-1"
+										data-toggle="modal" data-target="#"><i class="icon-plus3" data-popup="tooltip"
+											data-original-title="Add"></i></button>
+								</div>
+								<div>
+									<table class="table table-bordered datatable-basic">
+										<thead class="bg-nrcoe ">
+											<tr>
+												<th>No.</th>
+												<th>Financial Document File Name</th>
+												<th>Financial Document File</th>
+												<th>Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Financial_Document1</td>
+												<td>Financial_Document1.pdf</a></td>
+												<td>
+													<button type="button"
+														class="btn btn-light btn-icon rounded-circle mr-1"><i
+															class="icon-file-eye" data-popup="tooltip" title=""
+															data-original-title="View Details"></i></button>
+													<button type="button"
+														class="btn btn-light btn-icon rounded-circle mr-1"><i
+															class="icon-compose" data-popup="tooltip" title=""
+															data-original-title="Edit"></i></button>
+
+													<button type="button"
+														class="btn btn-light btn-icon rounded-circle"><i
+															class="icon-trash-alt" data-popup="tooltip" title=""
+															data-original-title="Remove"></i></button>
+												</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Financial_Document2</td>
+												<td>Financial_Document2.pdf</a></td>
+												<td>
+													<button type="button"
+														class="btn btn-light btn-icon rounded-circle mr-1"><i
+															class="icon-file-eye" data-popup="tooltip" title=""
+															data-original-title="View Details"></i></button>
+													<button type="button"
+														class="btn btn-light btn-icon rounded-circle mr-1"><i
+															class="icon-compose" data-popup="tooltip" title=""
+															data-original-title="Edit"></i></button>
+
+													<button type="button"
+														class="btn btn-light btn-icon rounded-circle"><i
+															class="icon-trash-alt" data-popup="tooltip" title=""
+															data-original-title="Remove"></i></button>
+												</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Financial_Document3</td>
+												<td>Financial_Document3.pdf</a></td>
+												<td>
+													<button type="button"
+														class="btn btn-light btn-icon rounded-circle mr-1"><i
+															class="icon-file-eye" data-popup="tooltip" title=""
+															data-original-title="View Details"></i></button>
+													<button type="button"
+														class="btn btn-light btn-icon rounded-circle mr-1"><i
+															class="icon-compose" data-popup="tooltip" title=""
+															data-original-title="Edit"></i></button>
+
+													<button type="button"
+														class="btn btn-light btn-icon rounded-circle"><i
+															class="icon-trash-alt" data-popup="tooltip" title=""
+															data-original-title="Remove"></i></button>
+												</td>
+											</tr>
+
+									</table>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="card-footer   d-sm-flex justify-content-sm-between align-items-sm-center">
+					<div class="card-footer  d-sm-flex justify-content-sm-between align-items-sm-center">
 						<ul
 							class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between">
 
@@ -666,14 +684,13 @@
 
 						<ul class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
 							<button type="button" class="btn btn-light rounded-round mr-1"
-								onclick="location.href = './acd-pir-form-section-2.html'">Save Draft<i
+								onclick="location.href = './acd-ridp-form-section-2.html'">Save Draft<i
 									class="mi-save ml-1"></i></button>
 							<button type="button" class="btn btn-light rounded-round mr-2"
-								onclick="location.href = './pir-section-3-onm.html'"><i
+								onclick="location.href = './ridp-section-4-oc.html'"><i
 									class="mi-keyboard-arrow-left"></i>Previous</button>
-							<button type="button" class="btn btn-light rounded-round"
-								onclick="location.href = './pir-section-5-finance.html'">Save & Next<i
-									class="mi-keyboard-arrow-right"></i></button>
+							<button type="button" class="btn btn-light rounded-round" data-toggle="modal"
+								data-target="#declaration">Submit<i class="mi-keyboard-arrow-right"></i></button>
 						</ul>
 					</div>
 				</div>
@@ -689,7 +706,7 @@
 	<!-- /page content -->
 
 	<!-- Full width modal/ Company Experience -->
-	<div id="uploadProject" class="modal fade" data-backdrop="true" tabindex="-1">
+	<div id="uploadFinancialDoc" class="modal fade" data-backdrop="true" tabindex="-1">
 		<div class="modal-dialog  modal-xl">
 			<div class="modal-content bg-transparent">
 				<div class="modal-body bg-transparent">
@@ -697,7 +714,7 @@
 						<div class="col-md-8 offset-md-2">
 							<div class="card">
 								<div class="card-header bg-white header-elements-inline">
-									<h4 class="card-title font-weight-bold">Add Compelete & Ongoing Project
+									<h4 class="card-title font-weight-bold">Add Financial Document
 									</h4>
 								</div>
 								<div class="card-body">
@@ -705,62 +722,10 @@
 										<div class="row">
 											<div class="col-md-12">
 												<div class="form-group">
-													<label class="font-weight-semibold">Project Name:<span
-															class="text-danger">*</span></label>
-													<input type="text" class="form-control" placeholder="Project 1">
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<label class="font-weight-semibold">Type of Project:<span
+													<label class="font-weight-semibold">Financial Document Name:<span
 															class="text-danger">*</span></label>
 													<input type="text" class="form-control"
-														placeholder="Project Type A">
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<label class="font-weight-semibold">Duration of Project:</label>
-													<select name="location" data-placeholder="Select project duration"
-														class="form-control select-search" data-fouc>
-														<option></option>
-														<option value="#">-- select one --</option>
-														<option value="#">Less than 1 Year</option>
-														<option value="#">1 Year</option>
-														<option value="#">1-2 Years</option>
-														<option value="#">2-3 Years</option>
-														<option value="#">3-4 Years</option>
-														<option value="#">More than 5 Yeasr</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<label class="font-weight-semibold">Contact Person Name:<span
-															class="text-danger">*</span></label>
-													<input type="text" class="form-control" placeholder="Aidan Chong">
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<label class="font-weight-semibold">Contact Person Phone
-														Number:<span class="text-danger">*</span></label>
-													<input type="text" class="form-control" placeholder="011-111 1111">
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<label class="font-weight-semibold">Contact Person Email:<span
-															class="text-danger">*</span></label>
-													<input type="text" class="form-control"
-														placeholder="Aidan_Chong@nrcoe.com">
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<label class="font-weight-semibold">Value/Cost of Project:<span
-															class="text-danger">*</span></label>
-													<input type="text" class="form-control" placeholder="RM1,000,000">
+														placeholder="Financial_Document1">
 												</div>
 											</div>
 											<div class="col-md-12">
@@ -780,6 +745,64 @@
 										<button type="submit" class="btn btn-light" class="remove"
 											data-dismiss="modal">Cancel</button>
 										<button type="submit" class="btn btn-primary">Submit</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /full width modal -->
+
+	<!-- Full width modal/ Company Experience -->
+	<div id="declaration" class="modal fade" data-backdrop="true" tabindex="-1">
+		<div class="modal-dialog  modal-xl">
+			<div class="modal-content bg-transparent">
+				<div class="modal-body bg-transparent">
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+							<div class="card">
+								<div class="card-header bg-white header-elements-inline">
+									<h4 class="card-title font-weight-bold">Information Declaration
+									</h4>
+								</div>
+								<div class="card-body">
+									<form action="#">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<h7>I declare that the replied information is given to the question
+														and all the attachments
+														are to the best of my knowledge true and accurate as of the date
+														of signature. In case
+														of any information provided is found to be false or incorrect,
+														we understand that TDA
+														reserve the right to disqualify my Organisation as an ICP
+														recipient.</h7>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<div class="form-group">
+														<div class="form-check">
+															<label class="form-check-label">
+																<input type="checkbox"
+																	class="form-check-input-styled-success" data-fouc>
+																Yes, I am sure.
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+									<div class="text-right">
+										<button type="submit" class="btn btn-light" class="remove"
+											data-dismiss="modal">Cancel</button>
+										<button type="submit" class="btn btn-success" class="remove"
+											data-dismiss="modal">Accept</button>
 									</div>
 								</div>
 							</div>
