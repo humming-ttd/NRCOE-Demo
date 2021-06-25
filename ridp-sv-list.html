@@ -38,6 +38,11 @@
 	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
 	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
 
+	<script src="./global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switch.min.js"></script>
+
 </head>
 
 <body>
@@ -94,13 +99,13 @@
 					<li class="nav-item dropdown dropdown-user">
 						<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
 							data-toggle="dropdown">
-							<img src="./global_assets/images/placeholders/placeholder_u5.jpg"
+							<img src="./global_assets/images/placeholders/placeholder_u8.jpg"
 								class="rounded-circle mr-2" height="34" alt="">
-							<span>NRCOE Auditor</span>
+							<span>NRCOE Superior</span>
 						</a>
 
 						<div class="dropdown-menu dropdown-menu-right">
-							<a href="./ridp-v-index.html" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+							<a href="./ridp-sv-index.html" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
 						</div>
 					</li>
 				</ul>
@@ -124,11 +129,12 @@
 			<div class="navbar-collapse collapse" id="navbar-navigation">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a href="./ridp-v-list.html" class="navbar-nav-link active">
+						<a href="./ridp-sv-list.html" class="navbar-nav-link active">
 							<i class="icon-users2 mr-2"></i>
 							Registered RIDP Recipient
 						</a>
 					</li>
+
 				</ul>
 			</div>
 		</div>
@@ -146,7 +152,7 @@
 			<div class="content mt-4">
 
 				<!-- forms -->
-				<div class="card" style="height: 800px;">
+				<div class="card" style="height: 900px;">
 
 					<div class="card-header bg-nrcoe text-white header-elements-inline">
 						<h6 class="card-title">Registered RIDP Recipient</h6>
@@ -203,74 +209,120 @@
 									<div class="mt-2">
 										<div class="form-group">
 
-											<h6 class="font-weight-bold">Level</h6>
-											<div class="form-check form-check-inline d-block">
-												<label class="form-check-label">
-													<input type="checkbox" class="form-check-input" checked>
-													<span class="icon-star-full2"></span><span
-														class="icon-star-full2"></span><span
-														class="icon-star-full2"></span><span
-														class="icon-star-full2"></span><span
-														class="icon-star-full2"></span>
-													<span class="ml-2 badge badge-light">8</span>
-												</label>
+											<div class="mt-3">
+												<h6 class="font-weight-bold">Person-In-Charge</h6>
+												<div class="form-check form-check-inline d-block">
+													<label class="form-check-label">
+														<input type="checkbox" class="form-check-input" checked>
+														Assigned Auditor<span class="ml-2 badge badge-light">10</span>
+													</label>
+												</div>
 											</div>
 											<div class="form-check form-check-inline d-block">
 												<label class="form-check-label">
 													<input type="checkbox" class="form-check-input" checked>
-													<span class="icon-star-full2"></span><span
-														class="icon-star-full2"></span><span
-														class="icon-star-full2"></span><span
-														class="icon-star-full2"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="ml-2 badge badge-light">10</span>
+													Unassigned Auditor<span class="ml-2 badge badge-light">6</span>
 												</label>
 											</div>
-											<div class="form-check form-check-inline d-block">
-												<label class="form-check-label">
-													<input type="checkbox" class="form-check-input" checked>
-													<span class="icon-star-full2"></span><span
-														class="icon-star-full2"></span><span
-														class="icon-star-full2"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="ml-2 badge badge-light">12</span>
-												</label>
-											</div>
-											<div class="form-check form-check-inline d-block">
-												<label class="form-check-label">
-													<input type="checkbox" class="form-check-input" checked>
-													<span class="icon-star-full2"></span><span
-														class="icon-star-full2"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="ml-2 badge badge-light">2</span>
-												</label>
-											</div>
-											<div class="form-check form-check-inline d-block">
-												<label class="form-check-label">
-													<input type="checkbox" class="form-check-input" checked>
-													<span class="icon-star-full2"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="ml-2 badge badge-light">10</span>
-												</label>
-											</div>
-											<div class="form-check form-check-inline d-block" style="color: gray;">
-												<label class="form-check-label">
-													<input type="checkbox" class="form-check-input" checked>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="icon-star-full2 icon-star-full2-default"></span>
-													<span class="ml-2 badge badge-light">5</span>
-												</label>
 
+
+											<div class="mt-3">
+												<h6 class="font-weight-bold">Sector</h6>
+												<div class="form-check form-check-inline d-block">
+													<label class="form-check-label">
+														<input type="checkbox" class="form-check-input" checked>
+														Design / Manufacturing <span
+															class="ml-2 badge badge-light">10</span>
+													</label>
+												</div>
 											</div>
+											<div class="form-check form-check-inline d-block">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-check-input" checked>
+													Manufacturer / Assembler<span
+														class="ml-2 badge badge-light">6</span>
+												</label>
+											</div>
+											<div class="form-check form-check-inline d-block">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-check-input" checked>
+													MRO <span class="ml-2 badge badge-light">12</span>
+												</label>
+											</div>
+
+
+											<div class="mt-3">
+												<h6 class="font-weight-bold">Level</h6>
+												<div class="form-check form-check-inline d-block">
+													<label class="form-check-label">
+														<input type="checkbox" class="form-check-input" checked>
+														<span class="icon-star-full2"></span><span
+															class="icon-star-full2"></span><span
+															class="icon-star-full2"></span><span
+															class="icon-star-full2"></span><span
+															class="icon-star-full2"></span>
+														<span class="ml-2 badge badge-light">8</span>
+													</label>
+												</div>
+												<div class="form-check form-check-inline d-block">
+													<label class="form-check-label">
+														<input type="checkbox" class="form-check-input" checked>
+														<span class="icon-star-full2"></span><span
+															class="icon-star-full2"></span><span
+															class="icon-star-full2"></span><span
+															class="icon-star-full2"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="ml-2 badge badge-light">10</span>
+													</label>
+												</div>
+												<div class="form-check form-check-inline d-block">
+													<label class="form-check-label">
+														<input type="checkbox" class="form-check-input" checked>
+														<span class="icon-star-full2"></span><span
+															class="icon-star-full2"></span><span
+															class="icon-star-full2"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="ml-2 badge badge-light">12</span>
+													</label>
+												</div>
+												<div class="form-check form-check-inline d-block">
+													<label class="form-check-label">
+														<input type="checkbox" class="form-check-input" checked>
+														<span class="icon-star-full2"></span><span
+															class="icon-star-full2"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="ml-2 badge badge-light">2</span>
+													</label>
+												</div>
+												<div class="form-check form-check-inline d-block">
+													<label class="form-check-label">
+														<input type="checkbox" class="form-check-input" checked>
+														<span class="icon-star-full2"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="ml-2 badge badge-light">10</span>
+													</label>
+												</div>
+												<div class="form-check form-check-inline d-block" style="color: gray;">
+													<label class="form-check-label">
+														<input type="checkbox" class="form-check-input" checked>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="icon-star-full2 icon-star-full2-default"></span>
+														<span class="ml-2 badge badge-light">5</span>
+													</label>
+
+												</div>
+											</div>
+
+
 
 											<div class="mt-3">
 												<h6 class="font-weight-bold">Audit Status</h6>
@@ -298,29 +350,7 @@
 											</div>
 
 
-											<div class="mt-3">
-												<h6 class="font-weight-bold">Sector</h6>
-												<div class="form-check form-check-inline d-block">
-													<label class="form-check-label">
-														<input type="checkbox" class="form-check-input" checked>
-														Design / Manufacturing <span
-															class="ml-2 badge badge-light">10</span>
-													</label>
-												</div>
-											</div>
-											<div class="form-check form-check-inline d-block">
-												<label class="form-check-label">
-													<input type="checkbox" class="form-check-input" checked>
-													Manufacturer / Assembler<span
-														class="ml-2 badge badge-light">6</span>
-												</label>
-											</div>
-											<div class="form-check form-check-inline d-block">
-												<label class="form-check-label">
-													<input type="checkbox" class="form-check-input" checked>
-													MRO <span class="ml-2 badge badge-light">12</span>
-												</label>
-											</div>
+
 										</div>
 									</div>
 								</div>
@@ -332,16 +362,27 @@
 									<table class="table datatable-basic ">
 										<thead class="bg-nrcoe">
 											<tr>
+												<th>Ticker</th>
 												<th>No.</th>
 												<th>Company Name</th>
 												<th>Sector</th>
 												<th>Level</th>
 												<th>Audit Status</th>
+												<th>Person-In-Charge</th>
+
 												<th>Action</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
+												<td>
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input-styled"
+																data-fouc>
+														</label>
+													</div>
+												</td>
 												<th>1</th>
 												<th>Railway Construction Company 1</th>
 												<td>Design / Manufacturing</td>
@@ -352,7 +393,7 @@
 														class="icon-star-full2 icon-star-full2-default"></span><span
 														class="icon-star-full2 icon-star-full2-default"></span></td>
 												<th><span class="badge badge-yellow">In Progress</th>
-
+												<td><span class="badge badge-light">Unassigned Auditor</span></td>
 												<td>
 													<div class="breadcrumb">
 														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
@@ -362,7 +403,7 @@
 														<div class="dropdown-menu dropdown-menu-right"
 															x-placement="bottom-end"
 															style="position: absolute; transform: translate3d(425px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
-															<a href="./ridp-v-form-section-1.html"
+															<a href="./ridp-sv-form-section-1.html"
 																class="dropdown-item"><i class="icon-file-eye"></i>
 																View</a>
 
@@ -395,6 +436,14 @@
 												</td>
 											</tr>
 											<tr>
+												<td>
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input-styled"
+																data-fouc>
+														</label>
+													</div>
+												</td>
 												<th>2</th>
 												<th>Railway Construction Company 2</th>
 												<td>Manufacturer / Assembler</td>
@@ -404,7 +453,7 @@
 														class="icon-star-full2 icon-star-full2-default"></span><span
 														class="icon-star-full2 icon-star-full2-default"></span></td>
 												<th><span class="badge badge-success">Completed</th>
-
+												<td>Tayyib bin Rushdi</td>
 												<td>
 													<div class="breadcrumb">
 														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
@@ -447,6 +496,14 @@
 												</td>
 											</tr>
 											<tr>
+												<td>
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input-styled"
+																data-fouc>
+														</label>
+													</div>
+												</td>
 												<th>3</th>
 												<th>Railway Construction Company 3</th>
 												<td>MRO</td>
@@ -456,7 +513,7 @@
 														class="icon-star-full2"></span><span
 														class="icon-star-full2"></span></td>
 												<th><span class="badge badge-danger">Pending</th>
-
+												<td>Faatin bin Zameel</td>
 												<td>
 													<div class="breadcrumb">
 														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
@@ -499,6 +556,14 @@
 												</td>
 											</tr>
 											<tr>
+												<td>
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input-styled"
+																data-fouc>
+														</label>
+													</div>
+												</td>
 												<th>4</th>
 												<th>Railway Construction Company 4</th>
 												<td>Manufacturer / Assembler</td>
@@ -508,7 +573,7 @@
 														class="icon-star-full2 icon-star-full2-default"></span><span
 														class="icon-star-full2 icon-star-full2-default"></span></td>
 												<th><span class="badge badge-success">Completed</th>
-
+												<td>Aadil bin Sharaf</td>
 												<td>
 													<div class="breadcrumb">
 														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
@@ -551,6 +616,14 @@
 												</td>
 											</tr>
 											<tr>
+												<td>
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input-styled"
+																data-fouc>
+														</label>
+													</div>
+												</td>
 												<th>5</th>
 												<th>Railway Construction Company 5</th>
 												<td>Manufacturer / Assembler</td>
@@ -560,7 +633,7 @@
 														class="icon-star-full2"></span><span
 														class="icon-star-full2 icon-star-full2-default"></span></td>
 												<th><span class="badge badge-danger">Pending</th>
-
+												<td>Khamis bin Lokman</td>
 												<td>
 													<div class="breadcrumb">
 														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
@@ -602,6 +675,14 @@
 												</td>
 											</tr>
 											<tr>
+												<td>
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input-styled"
+																data-fouc>
+														</label>
+													</div>
+												</td>
 												<th>6</th>
 												<th>Railway Construction Company 6</th>
 												<td>MRO</td>
@@ -611,7 +692,7 @@
 														class="icon-star-full2"></span><span
 														class="icon-star-full2  icon-star-full2-default"></span></td>
 												<th><span class="badge badge-danger">Pending</th>
-
+												<td>Teruna bin Hamengku</td>
 												<td>
 													<div class="breadcrumb">
 														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
@@ -653,6 +734,14 @@
 												</td>
 											</tr>
 											<tr>
+												<td>
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input-styled"
+																data-fouc>
+														</label>
+													</div>
+												</td>
 												<th>7</th>
 												<th>Railway Construction Company 7</th>
 												<td>MRO</td>
@@ -662,7 +751,7 @@
 														class="icon-star-full2 icon-star-full2-default"></span><span
 														class="icon-star-full2 icon-star-full2-default"></span></td>
 												<th><span class="badge badge-success">Completed</th>
-
+												<td>Abdur Rasheed bin Hamdi</td>
 												<td>
 													<div class="breadcrumb">
 														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
@@ -704,6 +793,14 @@
 												</td>
 											</tr>
 											<tr>
+												<td>
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input-styled"
+																data-fouc>
+														</label>
+													</div>
+												</td>
 												<th>8</th>
 												<th>Railway Construction Company 8</th>
 												<td>Design / Manufacturing</td>
@@ -713,7 +810,7 @@
 														class="icon-star-full2 icon-star-full2-default"></span><span
 														class="icon-star-full2 icon-star-full2-default"></span></td>
 												<th><span class="badge badge-warning">In Progress</th>
-
+												<td>Haazim bin Shaamikh</td>
 												<td>
 													<div class="breadcrumb">
 														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
@@ -754,14 +851,202 @@
 													</div>
 												</td>
 											</tr>
+											<tr>
+												<td>
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input-styled"
+																data-fouc>
+														</label>
+													</div>
+												</td>
+												<th>9</th>
+												<th>Railway Construction Company 9</th>
+												<td>Design / Manufacturing</td>
+												<td style="color:#ffea00;"><span class="icon-star-full2"></span><span
+														class="icon-star-full2"></span><span
+														class="icon-star-full2"></span><span
+														class="icon-star-full2 icon-star-full2-default"></span><span
+														class="icon-star-full2 icon-star-full2-default"></span></td>
+												<th><span class="badge badge-warning">In Progress</th>
+												<td>Izzaddeen bin Fawzi</td>
+												<td>
+													<div class="breadcrumb">
+														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+															data-toggle="dropdown" aria-expanded="true">
+															<i class="icon-menu7"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right"
+															x-placement="bottom-end"
+															style="position: absolute; transform: translate3d(425px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+															<a href="#" class="dropdown-item"><i
+																	class="icon-file-eye"></i>
+																View</a>
 
+															<a href="#" class="dropdown-item"><i
+																	class="icon-trash-alt"></i>
+																Remove</a>
+															<!-- <div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-clippy"></i> Alert RIDP Recipient for
+																Audit</a> -->
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-download4"></i>Export
+																As
+																PDF</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-download4"></i>Export
+																As
+																Excel</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-download4"></i>Export
+																AS
+																CSV</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-printer2"></i>Print</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input-styled"
+																data-fouc>
+														</label>
+													</div>
+												</td>
+												<th>10</th>
+												<th>Railway Construction Company 10</th>
+												<td>Design / Manufacturing</td>
+												<td style="color:#ffea00;"><span class="icon-star-full2"></span><span
+														class="icon-star-full2"></span><span
+														class="icon-star-full2"></span><span
+														class="icon-star-full2"></span><span
+														class="icon-star-full2 icon-star-full2-default"></span></td>
+												<th><span class="badge badge-success">Completed</th>
+												<td>Alawi bin Musaddiq</td>
+												<td>
+													<div class="breadcrumb">
+														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+															data-toggle="dropdown" aria-expanded="true">
+															<i class="icon-menu7"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right"
+															x-placement="bottom-end"
+															style="position: absolute; transform: translate3d(425px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+															<a href="#" class="dropdown-item"><i
+																	class="icon-file-eye"></i>
+																View</a>
+
+															<a href="#" class="dropdown-item"><i
+																	class="icon-trash-alt"></i>
+																Remove</a>
+															<!-- <div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-clippy"></i> Alert RIDP Recipient for
+																Audit</a> -->
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-download4"></i>Export
+																As
+																PDF</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-download4"></i>Export
+																As
+																Excel</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-download4"></i>Export
+																AS
+																CSV</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-printer2"></i>Print</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input-styled"
+																data-fouc>
+														</label>
+													</div>
+												</td>
+												<th>11</th>
+												<th>Railway Construction Company 11</th>
+												<td>Design / Manufacturing</td>
+												<td style="color:#ffea00;"><span class="icon-star-full2"></span><span
+														class="icon-star-full2"></span><span
+														class="icon-star-full2"></span><span
+														class="icon-star-full2"></span><span
+														class="icon-star-full2"></span></td>
+												<th><span class="badge badge-danger">Pending</th>
+												<td>Bestari bin Omar</td>
+												<td>
+													<div class="breadcrumb">
+														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+															data-toggle="dropdown" aria-expanded="true">
+															<i class="icon-menu7"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right"
+															x-placement="bottom-end"
+															style="position: absolute; transform: translate3d(425px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+															<a href="#" class="dropdown-item"><i
+																	class="icon-file-eye"></i>
+																View</a>
+
+															<a href="#" class="dropdown-item"><i
+																	class="icon-trash-alt"></i>
+																Remove</a>
+															<!-- <div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-clippy"></i> Alert RIDP Recipient for
+																Audit</a> -->
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-download4"></i>Export
+																As
+																PDF</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-download4"></i>Export
+																As
+																Excel</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-download4"></i>Export
+																AS
+																CSV</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-printer2"></i>Print</a>
+														</div>
+													</div>
+												</td>
+											</tr>
 										</tbody>
 									</table>
 								</div>
 							</div>
 						</div>
-					</div>
 
+					</div>
+					<div class="card-footer  d-sm-flex justify-content-sm-between align-items-sm-center">
+						<ul
+							class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between">
+						</ul>
+						<ul class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
+							<button type="button" class="btn btn-light rounded-round mr-1">Unassign Auditor</button>
+							<button type="button" class="btn btn-light rounded-round mr-1">Re-assign Auditor</button>
+							<button type="button" class="btn btn-primary rounded-round" data-toggle="modal"
+								data-target="#commentbox">Assign Auditor</button>
+
+						</ul>
+					</div>
 				</div>
 				<!-- /forms -->
 
@@ -798,5 +1083,60 @@
 	<!-- /footer -->
 
 </body>
+
+<!-- Full width modal/ Company Experience -->
+<div id="commentbox" class="modal fade" data-backdrop="true" tabindex="-1">
+	<div class="modal-dialog  modal-xl">
+		<div class="modal-content bg-transparent">
+			<div class="modal-body bg-transparent">
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h4 class="card-title font-weight-bold">Audit Assignation Details
+								</h4>
+							</div>
+							<div class="card-body">
+								<form action="#">
+									<div class="row">
+
+										<div class="col-md-12">
+											<div class="form-group">
+												<label>Select Auditor</label>
+												<select class="form-control select-search" data-fouc>
+													<optgroup label="Senior Auditor">
+														<option>Abdus Salam bin Musaaid</option>
+														<option>Yaakop bin Kipli</option>
+														<option>Aadam bin Saleem</option>
+														<option>Haamida binti Anas
+														</option>
+													</optgroup>
+													<optgroup label="Junior Auditor">
+														<option>Raafi bin Naazil</option>
+														<option>Dewi binti Bayu</option>
+														<option>Yaakob bin Hijau</option>
+														<option>Munah binti Jaya</option>
+													</optgroup>
+												</select>
+											</div>
+										</div>
+
+									</div>
+								</form>
+								<div class="text-right">
+									<button type="submit" class="btn btn-light" class="remove"
+										data-dismiss="modal">Cancel</button>
+									<button type="submit" class="btn btn-success" class="remove"
+										data-dismiss="modal">Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /full width modal -->
 
 </html>

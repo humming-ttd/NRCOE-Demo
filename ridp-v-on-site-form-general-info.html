@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>NRCOE-V | Audit On-Site Visit Plan</title>
+	<title>NRCOE-V | Audit On-Site Request Form</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -50,6 +50,27 @@
 
 	<script src="./global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
 	<script src="./global_assets/js/demo_pages/extra_sweetalert.js"></script>
+
+	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="./global_assets/js/plugins/pickers/anytime.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
+	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+	<!-- 
+	<script src="./global_assets/js/plugins/forms/inputs/inputmask.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="/global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/inputs/passy.js"></script>
+	<script src="./global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="./global_assets/js/demo_pages/form_controls_extended.js"></script> -->
 
 </head>
 
@@ -105,14 +126,14 @@
 					</li>
 
 					<li class="nav-item dropdown dropdown-user">
-								<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+						<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
 							data-toggle="dropdown">
 							<img src="./global_assets/images/placeholders/placeholder_u5.jpg"
 								class="rounded-circle mr-2" height="34" alt="">
-							<span>NRCOE Validator</span>
+							<span>NRCOE Auditor</span>
 						</a>
 
-					<div class="dropdown-menu dropdown-menu-right">
+						<div class="dropdown-menu dropdown-menu-right">
 							<a href="./ridp-v-index.html" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
 						</div>
 					</li>
@@ -139,7 +160,7 @@
 					<li class="nav-item">
 						<a href="./ridp-v-list.html" class="navbar-nav-link active">
 							<i class="icon-users2 mr-2"></i>
-							Potential RIDP Recipient
+							Registered RIDP Recipient
 						</a>
 					</li>
 				</ul>
@@ -207,8 +228,19 @@
 									Financial</a>
 							</div>
 						</li>
-						<li class="nav-item"><a href="./ridp-v-on-site-form.html" class="nav-link active"> <i
-									class="icon-profile mr-2"></i> Audit On-Site Visit Plan</a></li>
+						<li class="nav-item dropdown ml-2">
+							<a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown"><i
+									class="icon-profile mr-2"></i> Audit On-Site Visit Plan</a>
+							<div class="dropdown-menu dropdown-menu-left">
+								<a href="./ridp-v-on-site-form-general-info.html" class="dropdown-item active">Audit
+									On-Site
+									Request
+									Form</a>
+								<a href="./ridp-v-on-site-form-audit-activity.html" class="dropdown-item ">Audit
+									Activity
+									List</a>
+							</div>
+						</li>
 						<li class="nav-item"><a href="./ridp-v-summary.html" class="nav-link "> <i
 									class="icon-profile mr-2"></i>Audit Summary </a>
 						</li>
@@ -220,7 +252,7 @@
 
 						<div class="row">
 
-							<div class="col-md-12">
+							<div class="col-md-9">
 								<!-- <tr style="padding: 0px;">
 									<div class="alert bg-success text-white alert-styled-left alert-dismissible">
 										<span class="font-weight-semibold">Congratulations! You have passed TDA Audit
@@ -228,21 +260,21 @@
 									</div>
 								</tr> -->
 								<div class="table-responsive mb-4">
-									<table class="table table-bordered">
+									<table class="table table-bordered" style=" overflow: hidden;">
 										<tbody>
 											<tr>
-												<td>
-													<div class="form-group w-100">
-														<label class="font-weight-semibold">Programme:</label>
+												<td style="width: 50%;">
+													<div class="form-group">
+														<label class=" font-weight-semibold">Programme:</label>
 														<input type="text" class="form-control"
-															placeholder="Railway Development">
+															value="Railway Development" disabled>
 													</div>
 												</td>
-												<td>
+												<td style="width: 50%;">
 													<div class="form-group">
 														<label class="font-weight-semibold">Project:</label>
 														<input type="text" class="form-control"
-															placeholder="Railway Maintenance">
+															value="Railway Maintenance" disabled>
 
 													</div>
 												</td>
@@ -252,17 +284,25 @@
 												<td>
 													<div class="form-group">
 														<label class="font-weight-semibold">Project No.:</label>
-														<input type="text" class="form-control" placeholder="289HG98">
+														<input type="text" class="form-control" value="289HG98"
+															disabled>
 
 													</div>
 												</td>
 												<td>
 													<div class="form-group">
 														<label class="font-weight-semibold">On-Site Visit Date:</label>
-														<input type="text" class="form-control"
-															placeholder="22/04/2021">
+														<div class="input-group">
+															<span class="input-group-prepend">
+																<span class="input-group-text"><i
+																		class="icon-calendar22"></i></span>
+															</span>
+															<input type="text" class="form-control daterange-single"
+																value="01/01/2021">
+														</div>
 
 													</div>
+
 												</td>
 											</tr>
 
@@ -271,7 +311,7 @@
 													<div class="form-group">
 														<label class="font-weight-semibold">Organisation Name:</label>
 														<input type="text" class="form-control"
-															placeholder="Railway Construction Company 1">
+															value="Railway Construction Company 1" disabled>
 
 													</div>
 												</td>
@@ -279,7 +319,8 @@
 													<div class="form-group">
 														<label class="font-weight-semibold">Address:</label>
 														<input type="text" class="form-control"
-															placeholder="Bangunan UOA Damansara, 56700 Semantan, Kuala Lumpur">
+															value="Bangunan UOA Damansara, 56700 Semantan, Kuala Lumpur"
+															disabled>
 													</div>
 												</td>
 											</tr>
@@ -288,8 +329,8 @@
 												<td>
 													<div class="form-group">
 														<label class="font-weight-semibold">Contact Person:</label>
-														<input type="text" class="form-control"
-															placeholder="Farhan Hamir">
+														<input type="text" class="form-control" value="Farhan Hamir"
+															disabled>
 
 													</div>
 												</td>
@@ -297,11 +338,23 @@
 													<div class="form-group">
 														<label class="font-weight-semibold">Contact Person No.:</label>
 														<input type="text" class="form-control"
-															placeholder="011-111 1111">
+															placeholder="011-111 1111" disabled>
 
 													</div>
 												</td>
 											</tr>
+
+											<!-- <tr>
+												<td colspan="2">
+													<div class="form-group">
+														<label class="font-weight-semibold">Comment:</label>
+														<textarea rows="4" cols="4" class="form-control elastic"
+															placeholder="Place state commnent if any.."
+															style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 96px;"></textarea>
+													</div>
+												</td>
+											</tr> -->
+
 
 											<!-- <tr>
 												<td colspan="2">
@@ -319,275 +372,161 @@
 											</tr> -->
 
 											<tr>
-												<td colspan="2">
+												<td>
 													<div class="form-group">
-														<label class="font-weight-semibold">Involvement:</label>
-														<h6 class="font-weight-bold">Lead Auditor:<br><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-														<h6 class="font-weight-bold">Auditor 1:<br><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-														<h6 class="font-weight-bold">Auditor 2:<br><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-														<h6 class="font-weight-bold">Project Team/NRCOE:<br><input
-																type="text" class="form-control" placeholder="">
-														</h6>
-														<h6 class="font-weight-bold">Project Team/NRCOE:<br><input
-																type="text" class="form-control" placeholder="">
-														</h6>
+														<label class="font-weight-semibold">Lead Auditor:</label>
+														<input type="text" class="form-control">
+
+													</div>
+												</td>
+												<td>
+													<div class="form-group">
+														<label class="font-weight-semibold">Lead Auditor
+															Contact:</label>
+														<input type="text" class="form-control">
+
 													</div>
 												</td>
 											</tr>
+
+											<tr>
+												<td>
+													<div class="form-group">
+														<label class="font-weight-semibold">Auditor 1:</label>
+														<input type="text" class="form-control">
+
+													</div>
+												</td>
+												<td>
+													<div class="form-group">
+														<label class="font-weight-semibold">Auditor 1 Contact:</label>
+														<input type="text" class="form-control">
+
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td>
+													<div class="form-group">
+														<label class="font-weight-semibold">Auditor 2:</label>
+														<input type="text" class="form-control">
+
+													</div>
+												</td>
+												<td>
+													<div class="form-group">
+														<label class="font-weight-semibold">Auditor 2 Contact:</label>
+														<input type="text" class="form-control">
+
+													</div>
+												</td>
+											</tr>
+
 
 										</tbody>
 									</table>
 								</div>
 							</div>
+							<div class="col-md-3">
+								<h6 class="font-weight-bold">Comments Section</h6>
 
 
+								<div class="mt-3">
+									<ul class="media-list">
 
-							<div class="col-md-12">
-								<div class="table-responsive mb-4">
-									<table class="table table-bordered">
-										<thead class="bg-nrcoe">
-											<tr>
-												<th colspan="8" class="text-center">Audit Programme</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
+										<li class="media">
+											<div class="mr-3">
+												<img src="./global_assets/images/placeholders/placeholder.jpg"
+													class="rounded-circle" width="36" height="36" alt="">
+											</div>
 
-												<td class="w-50">
-													<div class="form-group">
-														<h6 class="font-weight-bold">Programme</h6>
-													</div>
-												</td>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold">Attachment</h6>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
-												</td>
-												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
-												</td>
-												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
-												</td>
-												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
-												</td>
-												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
-												</td>
-												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
-												</td>
-												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
-												</td>
-												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
-												</td>
-												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
-												</td>
-											</tr>
-											<tr class="bg-nrcoe">
-												<td colspan="2">
-													<div class="form-group">
-														<label class="font-weight-semibold mb-3">Important Note:</label>
-														<h7 class="d-block">During this visit, NRCOE
-															Audit Team Would require to:</h7>
-														<h7 class="d-block pl-4"> 1) Obtain Certifed Copy
-															(or Extracts) or relevant documents from the Recipients;
-														</h7>
-														<h7 class="d-block mb-3 pl-4"> 2) Capture photography / video of
-															relevant
-															footages as a proof of operational activities in Recipient's
-															organization.
-														</h7>
-														<h7 class="d-block"> These will be retained by NRCOE for
-															inspection by the authority (esp. the Ministry of Finance)
-															as necessary.
-														</h7>
-													</div>
-												</td>
-											</tr>
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<span class="font-size-sm font-weight-bold">Railway Construction
+														Company 1</span>
+													<span class="font-size-sm text-muted">Mon 09:48</span>
+												</div>
 
-										</tbody>
-									</table>
+												<div class="text-left
+												"> Lorem ipsum dolor sit amet, consectetur ipsum
+													dolor sit amet,
+													consectetur ipsum...</div>
+											</div>
+
+										</li>
+										<hr>
+
+										<li class="media">
+
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<span class="font-size-sm text-muted">Tue 05:54</span>
+													<span class="font-size-sm font-weight-bold">NRCOE Auditor</span>
+
+												</div>
+												<div class="text-right"> Lorem ipsum dolor sit amet, consectetur ipsum
+													dolor sit amet,
+													consectetur ipsum...</div>
+
+											</div>
+											<div class="ml-3">
+												<img src="./global_assets/images/placeholders/placeholder.jpg"
+													class="rounded-circle" width="36" height="36" alt="">
+											</div>
+										</li>
+										<hr>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="./global_assets/images/placeholders/placeholder.jpg"
+													class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<span class="font-size-sm font-weight-bold">Railway Construction
+														Company 1</span>
+													<span class="font-size-sm text-muted">Wed 01:43</span>
+												</div>
+
+												<div class="text-left
+												"> Lorem ipsum dolor sit amet, consectetur ipsum
+													dolor sit amet,
+													consectetur ipsum...</div>
+											</div>
+										</li>
+										<hr>
+										<li class="media">
+
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<span class="font-size-sm text-muted">Thur 05:54</span>
+													<span class="font-size-sm font-weight-bold">NRCOE Auditor</span>
+
+												</div>
+												<div class="text-right"> Lorem ipsum dolor sit amet, consectetur ipsum
+													dolor sit amet,
+													consectetur ipsum...</div>
+
+											</div>
+											<div class="ml-3">
+												<img src="./global_assets/images/placeholders/placeholder.jpg"
+													class="rounded-circle" width="36" height="36" alt="">
+											</div>
+										</li>
+										<hr>
+									</ul>
 								</div>
+								<textarea type="text" class="form-control" placeholder="Add a comment..."
+									rows="4"></textarea>
+								<a class="btn btn-light float-right mt-2">Post</a>
 							</div>
+
+
+
 						</div>
 					</div>
 					<div class="card-footer bg-nrcoe d-sm-flex justify-content-sm-between align-items-sm-center">

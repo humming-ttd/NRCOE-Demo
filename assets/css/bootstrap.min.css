@@ -9153,3 +9153,11 @@ a.text-dark:focus, a.text-dark:hover {
 .bg-dark-section {
     background-color: #990302!important;
 }
+
+.icon-star-full2 {
+    color: #ffea00;
+}
+
+.icon-star-full2-default {
+    color: #d3d3d3;
+}

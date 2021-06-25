@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>NRCOE-V | Registration Form | Section 2</title>
+	<title>NRCOE-V | Audit On-Site Activity List</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -37,6 +37,19 @@
 
 	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
 	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
+	<!-- PopOut Form -->
+	<script src="./global_assets/js/plugins/notifications/jgrowl.min.js"></script>
+	<script src="./global_assets/js/plugins/notifications/noty.min.js"></script>
+	<script src="./global_assets/js/demo_pages/extra_jgrowl_noty.js"></script>
+
+	<script src="./global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
+	<!-- /PopOut Form -->
+
+	<script src="./global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+	<script src="./global_assets/js/demo_pages/extra_sweetalert.js"></script>
 
 </head>
 
@@ -92,14 +105,14 @@
 					</li>
 
 					<li class="nav-item dropdown dropdown-user">
-								<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+						<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
 							data-toggle="dropdown">
 							<img src="./global_assets/images/placeholders/placeholder_u5.jpg"
 								class="rounded-circle mr-2" height="34" alt="">
 							<span>NRCOE Auditor</span>
 						</a>
 
-					<div class="dropdown-menu dropdown-menu-right">
+						<div class="dropdown-menu dropdown-menu-right">
 							<a href="./ridp-v-index.html" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
 						</div>
 					</li>
@@ -179,13 +192,13 @@
 
 					<ul class="nav nav-tabs nav-tabs-bottom ">
 						<li class="nav-item dropdown ml-2">
-							<a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Registration
+							<a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown">Registration
 								Form</a>
 							<div class="dropdown-menu dropdown-menu-left">
 								<a href="./ridp-v-form-section-1.html" class="dropdown-item ">Section
 									1 - General Organisation
 									Info</a>
-								<a href="./ridp-v-form-section-2.html" class="dropdown-item active">Section 2 -
+								<a href="./ridp-v-form-section-2.html" class="dropdown-item">Section 2 -
 									Contact Person Info</a>
 								<a href="./ridp-v-form-section-3.html" class="dropdown-item">Section 3 -
 									Organisation & Management</a>
@@ -196,140 +209,271 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown ml-2">
-							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i
+							<a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown"><i
 									class="icon-profile mr-2"></i> Audit On-Site Visit Plan</a>
 							<div class="dropdown-menu dropdown-menu-left">
 								<a href="./ridp-v-on-site-form-general-info.html" class="dropdown-item ">Audit On-Site
 									Request
 									Form</a>
-								<a href="./ridp-v-on-site-form-audit-activity.html" class="dropdown-item">Audit
+								<a href="./ridp-v-on-site-form-audit-activity.html" class="dropdown-item active">Audit
 									Activity
 									List</a>
 							</div>
 						</li>
-
 						<li class="nav-item"><a href="./ridp-v-summary.html" class="nav-link "> <i
 									class="icon-profile mr-2"></i>Audit Summary </a>
 						</li>
-
 					</ul>
-					<div class="breadcrumb-line header-elements-md-inline text-blue-800 mt-3">
-						<div class="d-flex">
-							<div class="breadcrumb">
-								<a href="#" class="breadcrumb-item">Registration Form</a>
-								<a href="#" class="breadcrumb-item">Section 2 - Contact Person Info</a>
-							</div>
-							<a href="#" class="header-elements-toggle text-default d-md-none"><i
-									class="icon-more"></i></a>
-						</div>
-					</div>
 
 
 					<div class="card-body">
 
 						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<div class="alert bg-info text-white alert-styled-left alert-dismissible">
-										<span class="font-weight-semibold">This recipient requires on-site audit.</span>
-									</div>
-								</div>
 
-							</div>
-						</div>
 
-						<div class="row">
+
 
 							<div class="col-md-12">
-								<div class="table-responsive">
-									<table class="table  table-bordered datatable-basic  ">
+								<div class="table-responsive mb-4">
+									<table class="table table-bordered">
 										<thead class="bg-nrcoe">
 											<tr>
-												<th>Name</th>
-												<th>Designation</th>
-												<th>Department/Unit</th>
-												<th>Phone Number</th>
-												<th>Email</th>
-
+												<th colspan="8" class="text-center">Audit Activity</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<th>Jordan Michael</th>
-												<td>Manager</td>
-												<th>Management Department</th>
-												<td>011-111 1111</td>
-												<td>Jordan_Michael@rcc.com</td>
 
+												<td class="w-50">
+													<div class="form-group">
+														<h6 class="font-weight-bold">Activity Description</h6>
+													</div>
+												</td>
+												<td>
+													<div class="form-group ">
+														<h6 class="font-weight-bold">Attachment</h6>
+													</div>
 												</td>
 											</tr>
 											<tr>
-												<th>James Blent</th>
-												<td>Manager</td>
-												<th>Management Department</th>
-												<td>011-111 1111</td>
-												<td>JamesBlent@rcc.com</td>
-
+												<td>
+													<div class="form-group ">
+														<h6 class="font-weight-bold"><input type="text"
+																class="form-control" placeholder="">
+														</h6>
+													</div>
+												</td>
+												<td>
+													<div class="form-group">
+														<h6 class="font-weight-bold">
+															<div class="form-group">
+																<div class="custom-file">
+																	<input type="file" class="custom-file-input"
+																		id="customFile">
+																	<label class="custom-file-label"
+																		for="customFile">Choose
+																		file</label>
+																</div>
+															</div>
+														</h6>
+													</div>
 												</td>
 											</tr>
 											<tr>
-												<th>Farhan Hamir</th>
-												<td>Manager</td>
-												<th>Management Department</th>
-												<td>011-111 1111</td>
-												<td>FarhanHamir@rcc.com</td>
-
+												<td>
+													<div class="form-group ">
+														<h6 class="font-weight-bold"><input type="text"
+																class="form-control" placeholder="">
+														</h6>
+													</div>
+												</td>
+												<td>
+													<div class="form-group">
+														<h6 class="font-weight-bold">
+															<div class="form-group">
+																<div class="custom-file">
+																	<input type="file" class="custom-file-input"
+																		id="customFile">
+																	<label class="custom-file-label"
+																		for="customFile">Choose
+																		file</label>
+																</div>
+															</div>
+														</h6>
+													</div>
 												</td>
 											</tr>
+											<tr>
+												<td>
+													<div class="form-group ">
+														<h6 class="font-weight-bold"><input type="text"
+																class="form-control" placeholder="">
+														</h6>
+													</div>
+												</td>
+												<td>
+													<div class="form-group">
+														<h6 class="font-weight-bold">
+															<div class="form-group">
+																<div class="custom-file">
+																	<input type="file" class="custom-file-input"
+																		id="customFile">
+																	<label class="custom-file-label"
+																		for="customFile">Choose
+																		file</label>
+																</div>
+															</div>
+														</h6>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="form-group ">
+														<h6 class="font-weight-bold"><input type="text"
+																class="form-control" placeholder="">
+														</h6>
+													</div>
+												</td>
+												<td>
+													<div class="form-group">
+														<h6 class="font-weight-bold">
+															<div class="form-group">
+																<div class="custom-file">
+																	<input type="file" class="custom-file-input"
+																		id="customFile">
+																	<label class="custom-file-label"
+																		for="customFile">Choose
+																		file</label>
+																</div>
+															</div>
+														</h6>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="form-group ">
+														<h6 class="font-weight-bold"><input type="text"
+																class="form-control" placeholder="">
+														</h6>
+													</div>
+												</td>
+												<td>
+													<div class="form-group">
+														<h6 class="font-weight-bold">
+															<div class="form-group">
+																<div class="custom-file">
+																	<input type="file" class="custom-file-input"
+																		id="customFile">
+																	<label class="custom-file-label"
+																		for="customFile">Choose
+																		file</label>
+																</div>
+															</div>
+														</h6>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="form-group ">
+														<h6 class="font-weight-bold"><input type="text"
+																class="form-control" placeholder="">
+														</h6>
+													</div>
+												</td>
+												<td>
+													<div class="form-group">
+														<h6 class="font-weight-bold">
+															<div class="form-group">
+																<div class="custom-file">
+																	<input type="file" class="custom-file-input"
+																		id="customFile">
+																	<label class="custom-file-label"
+																		for="customFile">Choose
+																		file</label>
+																</div>
+															</div>
+														</h6>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="form-group ">
+														<h6 class="font-weight-bold"><input type="text"
+																class="form-control" placeholder="">
+														</h6>
+													</div>
+												</td>
+												<td>
+													<div class="form-group">
+														<h6 class="font-weight-bold">
+															<div class="form-group">
+																<div class="custom-file">
+																	<input type="file" class="custom-file-input"
+																		id="customFile">
+																	<label class="custom-file-label"
+																		for="customFile">Choose
+																		file</label>
+																</div>
+															</div>
+														</h6>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="form-group ">
+														<h6 class="font-weight-bold"><input type="text"
+																class="form-control" placeholder="">
+														</h6>
+													</div>
+												</td>
+												<td>
+													<div class="form-group">
+														<h6 class="font-weight-bold">
+															<div class="form-group">
+																<div class="custom-file">
+																	<input type="file" class="custom-file-input"
+																		id="customFile">
+																	<label class="custom-file-label"
+																		for="customFile">Choose
+																		file</label>
+																</div>
+															</div>
+														</h6>
+													</div>
+												</td>
+											</tr>
+											<tr class="bg-nrcoe">
+												<td colspan="2">
+													<div class="form-group">
+														<label class="font-weight-semibold mb-3">Important Note:</label>
+														<h7 class="d-block">During this visit, NRCOE
+															Audit Team Would require to:</h7>
+														<h7 class="d-block pl-4"> 1) Obtain Certifed Copy
+															(or Extracts) or relevant documents from the Recipients;
+														</h7>
+														<h7 class="d-block mb-3 pl-4"> 2) Capture photography / video of
+															relevant
+															footages as a proof of operational activities in Recipient's
+															organization.
+														</h7>
+														<h7 class="d-block"> These will be retained by NRCOE for
+															inspection by the authority (esp. the Ministry of Finance)
+															as necessary.
+														</h7>
+													</div>
+												</td>
+											</tr>
+
 										</tbody>
 									</table>
 								</div>
 							</div>
 						</div>
-
-						<div class="table-responsive mb-4">
-							<table class="table table-bordered table-striped">
-								<tbody>
-									<tr>
-										<td colspan="4">
-											<div class="form-group">
-												<label class="font-weight-semibold">Section/Block 2</label>
-												<h6 class="font-weight-bold">Contact Person Info </h6>
-											</div>
-											<div class="form-group mb-3">
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio_block"
-														id="custom_radio_inline_unchecked_block">
-													<label class="custom-control-label"
-														for="custom_radio_inline_unchecked_block">Accept</label>
-												</div>
-
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio_block"
-														id="custom_radio_inline_checked_block">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked_block">Decline</label>
-												</div>
-											</div>
-
-
-											<div class="form-group">
-												<label class="font-weight-semibold">Your Message:</label>
-												<textarea type="text" class="form-control" placeholder="comment here..."
-													rows="4"></textarea>
-											</div>
-
-
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-
-
-
 					</div>
 					<div class="card-footer bg-nrcoe d-sm-flex justify-content-sm-between align-items-sm-center">
 						<ul
@@ -343,13 +487,11 @@
 								onclick="location.href = './ridp-v-form-section-2.html'">Clear<i
 									class="mi-clear-all ml-1"></i></button>
 							<button type="button" class="btn btn-light rounded-round mr-1"
-								onclick="location.href = './ridp-vform-section-2.html'">Save Draft<i
+								onclick="location.href = './ridp-v-form-section-2.html'">Save Draft<i
 									class="mi-save ml-1"></i></button>
-							<button type="button" class="btn btn-light rounded-round mr-1"
-								onclick="location.href = './ridp-vform-section-1.html'"><i
-									class="mi-keyboard-arrow-left"></i>Previous</button>
-							<button type="button" class="btn btn-light rounded-round"
-								onclick="location.href = './ridp-vform-section-3.html'">Save & Next<i
+							<!-- <button type="button" class="btn btn-danger rounded-round mr-1">Reject<i
+									class="ml-1 icon-cross3"></i></button> -->
+							<button type="button" class="btn btn-success rounded-round" id="jgrowl-styled-left">Submit<i
 									class="mi-keyboard-arrow-right"></i></button>
 						</ul>
 					</div>
@@ -365,6 +507,7 @@
 	</div>
 	<!-- /page content -->
 
+
 	<!-- Footer -->
 	<div class="navbar navbar-expand-lg navbar-light px-0">
 		<div class="container">
@@ -378,7 +521,8 @@
 
 			<div class="navbar-collapse collapse" id="navbar-footer">
 				<span class="navbar-text">
-					&copy; 2021. <a href="#">RIDP Registration</a> by <a href="#" target="_blank">National Rail Centre of
+					&copy; 2021. <a href="#">RIDP Registration</a> by <a href="#" target="_blank">National Rail Centre
+						of
 						Excellence</a>
 				</span>
 			</div>
