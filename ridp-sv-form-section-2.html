@@ -37,6 +37,10 @@
 
 	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
 	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="./global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switch.min.js"></script>
 
 </head>
 
@@ -190,19 +194,12 @@
 						<li class="nav-item dropdown ml-2">
 							<a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Registration
 								Form</a>
-							<div class="dropdown-menu dropdown-menu-left">
-								<a href="./ridp-sv-form-section-1.html" class="dropdown-item ">Section
-									1 - General Company
-									Info</a>
-								<a href="./ridp-sv-form-section-2.html" class="dropdown-item active">Section 2 -
-									Contact Person Info</a>
-								<a href="./ridp-sv-form-section-3.html" class="dropdown-item">Section 3 -
-									Company & Management</a>
-								<a href="./ridp-sv-form-section-4.html" class="dropdown-item">Section 4 -
-									Company Capability</a>
-								<a href="./ridp-sv-form-section-5.html" class="dropdown-item">Section 5 -
-									Financial</a>
-							</div>
+								<div class="dropdown-menu dropdown-menu-left">
+									<a href="./ridp-sv-form-section-1.html" class="dropdown-item ">Section 1 - General Company Information</a>
+									<a href="./ridp-sv-form-section-2.html" class="dropdown-item active">Section 2 - Resource Information</a>
+									<a href="./ridp-sv-form-section-3.html" class="dropdown-item">Section 3 - Company Financial</a>
+									<a href="./ridp-sv-form-section-4.html" class="dropdown-item">Section 4 - Company Capability</a>
+								</div>
 						</li>
 						<li class="nav-item dropdown ml-2">
 							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i
@@ -224,141 +221,314 @@
 					</ul>
 					<div class="breadcrumb-line header-elements-md-inline text-blue-800 mt-3">
 						<div class="d-flex">
-							<div class="breadcrumb">
-								<a href="#" class="breadcrumb-item">Registration Form</a>
-								<a href="#" class="breadcrumb-item">Section 2 - Contact Person Info</a>
+							<div class="breadcrumb text-dark">
+								<span class="breadcrumb-item">Registration Form</span>
+								<span class="breadcrumb-item">Section 2 - Resource Information</span>
 							</div>
-							<a href="#" class="header-elements-toggle text-default d-md-none"><i
-									class="icon-more"></i></a>
 						</div>
 					</div>
 
-
 					<div class="card-body">
 
-					<!-- <div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<div class="alert bg-info text-white alert-styled-left alert-dismissible">
-										<span class="font-weight-semibold">This recipient requires on-site audit.</span>
-									</div>
-								</div>
-
-							</div>
-						</div> -->
-
-						<div class="row">
-
-							<div class="col-md-12">
-								<div class="table-responsive">
-									<table class="table  table-bordered datatable-basic  ">
-										<thead class="bg-nrcoe">
-											<tr>
-												<th>Name</th>
-												<th>Designation</th>
-												<th>Department/Unit</th>
-												<th>Phone Number</th>
-												<th>Email</th>
-
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th>Jordan Michael</th>
-												<td>Manager</td>
-												<th>Management Department</th>
-												<td>011-111 1111</td>
-												<td>Jordan_Michael@rsc.com</td>
-
-												</td>
-											</tr>
-											<tr>
-												<th>James Blent</th>
-												<td>Manager</td>
-												<th>Management Department</th>
-												<td>011-111 1111</td>
-												<td>JamesBlent@rsc.com</td>
-
-												</td>
-											</tr>
-											<tr>
-												<th>Farhan Hamir</th>
-												<td>Manager</td>
-												<th>Management Department</th>
-												<td>011-111 1111</td>
-												<td>FarhanHamir@rsc.com</td>
-
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-
 						<div class="table-responsive mb-4">
-							<table class="table table-bordered table-striped">
-								<tbody>
-									<tr>
-										<td colspan="4">
-											<div class="form-group">
-												<label class="font-weight-semibold">Section / Block 2</label>
-												<h6 class="font-weight-bold">Contact Person Info </h6>
-											</div>
-											<div class="form-group mb-3">
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio_block"
-														id="custom_radio_inline_unchecked_block">
-													<label class="custom-control-label"
-														for="custom_radio_inline_unchecked_block">Accept</label>
+
+							<div class="table-responsive mb-4">
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<td colspan="2" class="w-50">
+												<div class="form-group">
+													<label class="font-weight-semibold">1) Company Organization Chart:</label>
+													<div class="mt-2">
+														<a class="btn btn-light" href="#" target="_blank"><i class="icon-file-eye m-1"></i>View Attachment</a>
+													</div>
+												</div>
+											</td>
+
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
+													<div class="custom-control custom-radio custom-control-inline">
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-2"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline">
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-2"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline">
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-2"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+
+										<tr>
+											<td colspan="4" class="w-50">
+												<div class="form-group">
+													<label class="font-weight-semibold">2) Contact Person &
+														Designation:</label>
+													<div class="table-responsive ">
+														<table class="table  table-bordered ">
+															<thead class="bg-nrcoe ">
+																<tr>
+																	<th>Name</th>
+																	<th>IC</th>
+																	<th>Age</th>
+																	<th>Nationality</th>
+																	<th>Position</th>
+																	<th>Qualifications</th>
+																	<th>Years of experience</th>
+																	<th>Competency Certificates</th>
+
+																	<th>Professional (Degree qualification and above)
+																	</th>
+																	<th>Semi-Professional (Diploma)</th>
+																	<th>Others</th>
+
+																	<th>Action</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Jordan Michael</td>
+																	<td>111111-11-1111</td>
+																	<td>24</td>
+																	<td>Malaysian</td>
+																	<td>Project Manager</td>
+																	<td>Bachelor Degree</td>
+																	<td>5</td>
+																	<td><a href="#">Certificate 1</a></td>
+																	<td>Bachelor of Science in Engineering Technology
+																	</td>
+																	<td>Diploma in Engineering Technology</td>
+																	<td>-</td>
+																	<td style="width: 10%;">
+																		<div class="form-group m-3 float-right">
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-1"
+																						class="form-check-input-styled-success"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Accept</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-1"
+																						class="form-check-input-styled-danger"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Decline</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-1"
+																						class="form-check-input-styled-primary"
+																						 data-fouc>
+																				</label>
+																				<span class="ml-2">Edit</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Yow Sui Mak</td>
+																	<td>111111-11-1111</td>
+																	<td>27</td>
+																	<td>Malaysian</td>
+																	<td>Project Manager</td>
+																	<td>Bachelor Degree</td>
+																	<td>8</td>
+																	<td><a href="#">Certificate 2</a></td>
+																	<td>Bachelor of Science in Engineering Technology
+																	</td>
+																	<td>Diploma in Engineering Technology</td>
+																	<td>-</td>
+																	<td style="width: 10%;">
+																		<div class="form-group m-3 float-right">
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-2"
+																						class="form-check-input-styled-success"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Accept</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-2"
+																						class="form-check-input-styled-danger"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Decline</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-2"
+																						class="form-check-input-styled-primary"
+																						 data-fouc>
+																				</label>
+																				<span class="ml-2">Edit</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Nur Khaleeda Hariff</td>
+																	<td>111111-11-1111</td>
+																	<td>30</td>
+																	<td>Malaysian</td>
+																	<td>Project Manager</td>
+																	<td>Bachelor Degree</td>
+																	<td>8</td>
+																	<td><a href="#">Certificate 3</a></td>
+																	<td>Bachelor of Science in Engineering Technology
+																	</td>
+																	<td>Diploma in Engineering Technology</td>
+																	<td>-</td>
+																	<td style="width: 10%;">
+																		<div class="form-group m-3 float-right">
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-3"
+																						class="form-check-input-styled-success"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Accept</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-3"
+																						class="form-check-input-styled-danger"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Decline</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-3"
+																						class="form-check-input-styled-primary"
+																						 data-fouc>
+																				</label>
+																				<span class="ml-2">Edit</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+
+
+
+
+									</tbody>
+								</table>
+							</div>
+
+
+
+							<div class="table-responsive mb-4">
+								<table class="table table-bordered  table-striped">
+									<tbody>
+										<tr>
+											<td colspan="4">
+												<div class="form-group">
+													<label class="font-weight-semibold">Section / Block 2</label>
+													<h6 >Resource Information </h6>
+												</div>
+												<div class="form-group mb-3" >
+													<div
+														class=" custom-radio custom-control-inline" >
+														<label class="form-check-label">
+															<input type="radio"
+																name="radio-styled-color-4"
+																class="form-check-input-styled-success"
+																data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
+													</div>
+													<div
+														class="custom-control custom-radio custom-control-inline">
+														<label class="form-check-label">
+															<input type="radio"
+																name="radio-styled-color-4"
+																class="form-check-input-styled-danger"
+																data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
+													</div>
 												</div>
 
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio_block"
-														id="custom_radio_inline_checked_block">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked_block">Decline</label>
+												
+
+
+												<div class="form-group">
+													<label class="font-weight-semibold">Your Message:</label>
+													<textarea type="text" class="form-control"
+														placeholder="comment here..." rows="4"></textarea>
 												</div>
-											</div>
 
 
-											<div class="form-group">
-												<label class="font-weight-semibold">Your Message:</label>
-												<textarea type="text" class="form-control" placeholder="comment here..."
-													rows="4"></textarea>
-											</div>
-
-
-										</td>
-									</tr>
-								</tbody>
-							</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
-
-
-
 					</div>
 					<div class="card-footer bg-nrcoe d-sm-flex justify-content-sm-between align-items-sm-center">
 						<ul
 							class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between">
+							<button type="button" class="btn btn-light rounded-round mr-1"
+								onclick="location.href = './ridp-sv-form-section-1.html'"><i
+									class="mi-keyboard-arrow-left"></i>Save & Previous</button>
 						</ul>
 						<ul class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
-							<button type="button" class="btn btn-light rounded-round mr-1"
-								onclick="location.href = './ridp-sv-form-section-2.html'">Cancel<i
-									class="mi-cancel ml-1"></i></button>
+							
 							<button type="button" class="btn btn-light rounded-round mr-1"
 								onclick="location.href = './ridp-sv-form-section-2.html'">Clear<i
 									class="mi-clear-all ml-1"></i></button>
 							<button type="button" class="btn btn-light rounded-round mr-1"
 								onclick="location.href = './ridp-vform-section-2.html'">Save Draft<i
 									class="mi-save ml-1"></i></button>
-							<button type="button" class="btn btn-light rounded-round mr-1"
-								onclick="location.href = './ridp-vform-section-1.html'"><i
-									class="mi-keyboard-arrow-left"></i>Previous</button>
+							
 							<button type="button" class="btn btn-light rounded-round"
-								onclick="location.href = './ridp-vform-section-3.html'">Save & Next<i
+								onclick="location.href = './ridp-sv-form-section-3.html'">Save & Next<i
 									class="mi-keyboard-arrow-right"></i></button>
 						</ul>
 					</div>

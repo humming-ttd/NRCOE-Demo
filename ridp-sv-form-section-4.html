@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>NRCOE-SV | Registration Form | Section 4</title>
+	<title>NRCOE-SV | Regisration Form | Section 4</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -41,6 +41,11 @@
 	<script src="./global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 	<script src="./global_assets/js/plugins/forms/styling/switchery.min.js"></script>
 	<script src="./global_assets/js/plugins/forms/styling/switch.min.js"></script>
+
+	<script src="./global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+	<script src="./global_assets/js/demo_pages/extra_sweetalert.js"></script>
+
+	<script src="./global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
 
 
 </head>
@@ -97,14 +102,14 @@
 					</li>
 
 					<li class="nav-item dropdown dropdown-user">
-								<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+						<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
 							data-toggle="dropdown">
 							<img src="./global_assets/images/placeholders/placeholder_u8.jpg"
 								class="rounded-circle mr-2" height="34" alt="">
 							<span>NRCOE Superior</span>
 						</a>
 
-					<div class="dropdown-menu dropdown-menu-right">
+						<div class="dropdown-menu dropdown-menu-right">
 							<a href="./ridp-sv-index.html" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
 						</div>
 					</li>
@@ -195,19 +200,12 @@
 						<li class="nav-item dropdown ml-2">
 							<a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Registration
 								Form</a>
-							<div class="dropdown-menu dropdown-menu-left">
-								<a href="./ridp-sv-form-section-1.html" class="dropdown-item ">Section
-									1 - General Company
-									Info</a>
-								<a href="./ridp-sv-form-section-2.html" class="dropdown-item ">Section 2 -
-									Contact Person Info</a>
-								<a href="./ridp-sv-form-section-3.html" class="dropdown-item">Section 3 -
-									Company & Management</a>
-								<a href="./ridp-sv-form-section-4.html" class="dropdown-item active">Section 4 -
-									Company Capability</a>
-								<a href="./ridp-sv-form-section-5.html" class="dropdown-item">Section 5 -
-									Financial</a>
-							</div>
+								<div class="dropdown-menu dropdown-menu-left">
+									<a href="./ridp-sv-form-section-1.html" class="dropdown-item ">Section 1 - General Company Information</a>
+									<a href="./ridp-sv-form-section-2.html" class="dropdown-item ">Section 2 - Resource Information</a>
+									<a href="./ridp-sv-form-section-3.html" class="dropdown-item">Section 3 - Company Financial</a>
+									<a href="./ridp-sv-form-section-4.html" class="dropdown-item active">Section 4 - Company Capability</a>
+								</div>
 						</li>
 						<li class="nav-item dropdown ml-2">
 							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i
@@ -229,539 +227,1355 @@
 					</ul>
 					<div class="breadcrumb-line header-elements-md-inline text-blue-800 mt-3">
 						<div class="d-flex">
-							<div class="breadcrumb">
-								<a href="#" class="breadcrumb-item">Registration Form</a>
-								<a href="#" class="breadcrumb-item">Section 4 - Company Capability</a>
+							<div class="breadcrumb text-dark">
+								<span class="breadcrumb-item">Registration Form</span>
+								<span class="breadcrumb-item">Section 4 - Company Capability</span>
 							</div>
-							<a href="#" class="header-elements-toggle text-default d-md-none"><i
-									class="icon-more"></i></a>
 						</div>
 					</div>
 
-
-
 					<div class="card-body">
-					<!-- <div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<div class="alert bg-info text-white alert-styled-left alert-dismissible">
-										<span class="font-weight-semibold">This recipient requires on-site audit.</span>
-									</div>
-								</div>
-
-							</div>
-						</div> -->
-
 
 						<div class="table-responsive mb-4">
 							<table class="table table-bordered">
 								<tbody>
+
 									<tr>
-										<th colspan="2" class="w-50">
+										<td colspan="4" class="w-50">
 											<div class="form-group">
-												<label class="font-weight-semibold">1) Total number of staff:<span
-														class="text-danger">*</span></label>
-												<h6 class="font-weight-bold">50</h6>
+												<label class="font-weight-semibold">1) Number of <span
+														class="text-danger">local</span> contract(s) /
+													Projects awarded for the past 5 years :</label>
 											</div>
-										</th>
-
-										<th colspan="2">
-											<div class="form-group mb-1 mt-1 mr-4 float-right">
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_unchecked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_unchecked6">Accept</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Decline</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Edit Answer</label>
-												</div>
-												<div class="form-group pt-3">
-													<span class="font-weight-semibold">Score: <input type="text"
-															class="form-control" placeholder="10"></span>
-
-												</div>
+											<div class="table-responsive mb-4">
+												<table class="table  table-bordered">
+													<thead class="bg-nrcoe ">
+														<tr>
+															<th>Project / Contract Received</th>
+															<th>Client / Customer</th>
+															<th>Duration Completed</th>
+															<th>Value (RM)</th>
+															<th>Action</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Local Project ABC 1</td>
+															<td>Client 1</td>
+															<td>2 years</td>
+															<td>1,000,000</td>
+															<td>
+																<div class="form-group m-3 float-right">
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-1"
+																				class="form-check-input-styled-success"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Accept</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-1"
+																				class="form-check-input-styled-danger"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Decline</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-1"
+																				class="form-check-input-styled-primary"
+																				 data-fouc>
+																		</label>
+																		<span class="ml-2">Edit</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Local Project ABC 2</td>
+															<td>Client 2</td>
+															<td>2 years</td>
+															<td>921,231</td>
+															<td>
+																<div class="form-group m-3 float-right">
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-2"
+																				class="form-check-input-styled-success"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Accept</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-2"
+																				class="form-check-input-styled-danger"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Decline</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-2"
+																				class="form-check-input-styled-primary"
+																				 data-fouc>
+																		</label>
+																		<span class="ml-2">Edit</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="3" class="bg-light">Total Value</td>
+															<td colspan="2" class="bg-light">1,921,231</td>
+														</tr>
+													</tbody>
+												</table>
 											</div>
-										</th>
+										</td>
 									</tr>
+
 									<tr>
-										<th colspan="2" class="w-50">
+										<td colspan="4" class="w-50">
 											<div class="form-group">
-												<label class="font-weight-semibold">2) What is the Composition of
-													local/Malaysia
-													staff ?<span class="text-danger">*</span></label><br>
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left3" checked="">
-														More than 70%
-													</label>
-												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Between 50% to 70%
-
-													</label>
-												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Between 30% to 50%
-
-													</label>
-												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Less than 30%
-													</label>
-												</div>
+												<label class="font-weight-semibold">2) Number of <span
+														class="text-danger">oversea</span> contract(s) /
+													Projects awarded for the past 5 years :</label>
 											</div>
-										</th>
-
-										<th colspan="2">
-											<div class="form-group mb-1 mt-1 mr-4 float-right">
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_unchecked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_unchecked6">Accept</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Decline</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Edit Answer</label>
-												</div>
-												<div class="form-group pt-3">
-													<span class="font-weight-semibold">Score: <input type="text"
-															class="form-control" placeholder="10"></span>
-
-												</div>
+											<div class="table-responsive mb-4">
+												<table class="table  table-bordered">
+													<thead class="bg-nrcoe ">
+														<tr>
+															<th>Project / Contract Received</th>
+															<th>Client / Customer</th>
+															<th>Duration Completed</th>
+															<th>Value (RM)</th>
+															<th>Action</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Oversea Project ABC 1</td>
+															<td>Client 1</td>
+															<td>2 years</td>
+															<td>1,000,000</td>
+															<td>
+																<div class="form-group m-3 float-right">
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-3"
+																				class="form-check-input-styled-success"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Accept</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-3"
+																				class="form-check-input-styled-danger"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Decline</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-3"
+																				class="form-check-input-styled-primary"
+																				 data-fouc>
+																		</label>
+																		<span class="ml-2">Edit</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Oversea Project ABC 2</td>
+															<td>Client 2</td>
+															<td>2 years</td>
+															<td>921,231</td>
+															<td>
+																<div class="form-group m-3 float-right">
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-4"
+																				class="form-check-input-styled-success"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Accept</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-4"
+																				class="form-check-input-styled-danger"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Decline</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-4"
+																				class="form-check-input-styled-primary"
+																				 data-fouc>
+																		</label>
+																		<span class="ml-2">Edit</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="3" class="bg-light">Total Value</td>
+															<td colspan="2" class="bg-light">1,921,231</td>
+														</tr>
+													</tbody>
+												</table>
 											</div>
-										</th>
+										</td>
 									</tr>
+
+
 									<tr>
-										<th colspan="2" class="w-50">
+										<td colspan="2" class="w-50">
 											<div class="form-group">
-												<label class="font-weight-semibold">3) What is the Composition of
-													Bumiputera staff
-													?<span class="text-danger">*</span></label><br>
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left4" checked="">
-														More than 70%
+												<label class="font-weight-semibold">3) Company's estimated market shares
+													in Malaysia for the last 3 financial years (If applicable):</label>
+												<h6>45%</h6>
+											</div>
+										</td>
 
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-5"
+															class="form-check-input-styled-success" data-fouc>
 													</label>
+													<span class="ml-2">Accept</span>
 												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
+												<div class="custom-control custom-radio custom-control-inline">
 													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Between 50% to 70%
-
+														<input type="radio" name="radio-styled-color-5"
+															class="form-check-input-styled-danger" data-fouc>
 													</label>
+													<span class="ml-2">Decline</span>
 												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
+												<div class="custom-control custom-radio custom-control-inline">
 													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Between 30% to 50%
-
+														<input type="radio" name="radio-styled-color-5"
+															class="form-check-input-styled-primary"  data-fouc>
 													</label>
-												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Less than 30%
-													</label>
+													<span class="ml-2">Edit</span>
 												</div>
 											</div>
-										</th>
-
-										<th colspan="2">
-											<div class="form-group mb-1 mt-1 mr-4 float-right">
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_unchecked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_unchecked6">Accept</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Decline</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Edit Answer</label>
-												</div>
-												<div class="form-group pt-3">
-													<span class="font-weight-semibold">Score: <input type="text"
-															class="form-control" placeholder="10"></span>
-
-												</div>
-											</div>
-										</th>
+										</td>
 									</tr>
+
 									<tr>
-										<th colspan="2" class="w-50">
+										<td colspan="2" class="w-50">
 											<div class="form-group">
-												<label class="font-weight-semibold">4) Which department carries out
-													the business
-													development function in your Company ?<span
-														class="text-danger">*</span></label><br>
+												<label class="font-weight-semibold">4) What is company's mission
+													statement:</label>
+												<h6>Mission 1</h6>
+											</div>
+										</td>
 
-												<div class="form-check form-check-inline form-check-left d-block">
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
 													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left5" checked="">
-														Specific business development dept/unit
-
+														<input type="radio" name="radio-styled-color-6"
+															class="form-check-input-styled-success" data-fouc>
 													</label>
+													<span class="ml-2">Accept</span>
 												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
+												<div class="custom-control custom-radio custom-control-inline">
 													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Appointed personnel, but no dedicated dept/unit
-
+														<input type="radio" name="radio-styled-color-6"
+															class="form-check-input-styled-danger" data-fouc>
 													</label>
+													<span class="ml-2">Decline</span>
 												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
+												<div class="custom-control custom-radio custom-control-inline">
 													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Other
+														<input type="radio" name="radio-styled-color-6"
+															class="form-check-input-styled-primary"  data-fouc>
 													</label>
+													<span class="ml-2">Edit</span>
 												</div>
 											</div>
-										</th>
-
-										<th colspan="2">
-											<div class="form-group mb-1 mt-1 mr-4 float-right">
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_unchecked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_unchecked6">Accept</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Decline</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Edit Answer</label>
-												</div>
-												<div class="form-group pt-3">
-													<span class="font-weight-semibold">Score: <input type="text"
-															class="form-control" placeholder="10"></span>
-
-												</div>
-											</div>
-										</th>
+										</td>
 									</tr>
+
 									<tr>
-										<th colspan="2" class="w-50">
+										<td colspan="2" class="w-50">
 											<div class="form-group">
-												<label class="font-weight-semibold">5) Educational level of staff, %
-													of staff
-													obtained
-													higher educational level
-													certificate (e.g Bachelor Degree and above) ?<span
-														class="text-danger">*</span></label><br>
-												<div class="form-check form-check-inline form-check-left d-block">
+												<label class="d-block font-weight-semibold">5) Does company have a
+													Quality Assurance Department ?</label>
+
+												<div class="form-check form-check-inline">
 													<label class="form-check-label">
 														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left6" checked="">
-														More than 70%
-
-													</label>
-												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Between 50% to 70%
-
-													</label>
-												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Between 30% to 50%
-
-													</label>
-												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Less than 30%
-													</label>
-												</div>
-											</div>
-										</th>
-
-										<th colspan="2">
-											<div class="form-group mb-1 mt-1 mr-4 float-right">
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_unchecked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_unchecked6">Accept</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Decline</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Edit Answer</label>
-												</div>
-												<div class="form-group pt-3">
-													<span class="font-weight-semibold">Score: <input type="text"
-															class="form-control" placeholder="10"></span>
-
-												</div>
-											</div>
-										</th>
-									</tr>
-									<tr>
-										<th colspan="2" class="w-50">
-											<div class="form-group">
-												<label class="font-weight-semibold">6) Experience of staff, majority
-													of staff have
-													?<span class="text-danger">*</span></label><br>
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left7" checked="">
-														More than 10 years of working experience
-
-													</label>
-												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Between 5 to 10 years working experience
-
-													</label>
-												</div>
-
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Less than 5 years working experience
-
-													</label>
-												</div>
-
-											</div>
-										</th>
-
-										<th colspan="2">
-											<div class="form-group mb-1 mt-1 mr-4 float-right">
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_unchecked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_unchecked6">Accept</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Decline</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Edit Answer</label>
-												</div>
-												<div class="form-group pt-3">
-													<span class="font-weight-semibold">Score: <input type="text"
-															class="form-control" placeholder="10"></span>
-
-												</div>
-											</div>
-										</th>
-									</tr>
-									<tr>
-										<th colspan="2" class="w-50">
-											<div class="form-group">
-												<label class="font-weight-semibold">7) Adequancy of training
-													provided to staff as of
-													current ?<span class="text-danger">*</span></label><br>
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left8" checked="">
-														Very satisfied
-													</label>
-												</div>
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Satisfied
-													</label>
-												</div>
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Neutral
-													</label>
-												</div>
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Unsatisfied
-													</label>
-												</div>
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
-														Very unsatisfied
-													</label>
-												</div>
-											</div>
-										</th>
-
-										<th colspan="2">
-											<div class="form-group mb-1 mt-1 mr-4 float-right">
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_unchecked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_unchecked6">Accept</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Decline</label>
-												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Edit Answer</label>
-												</div>
-												<div class="form-group pt-3">
-													<span class="font-weight-semibold">Score: <input type="text"
-															class="form-control" placeholder="10"></span>
-
-												</div>
-											</div>
-										</th>
-									</tr>
-									<tr>
-										<th colspan="2" class="w-50">
-											<div class="form-group">
-												<label class="font-weight-semibold">8) Besides HQ/main office, is
-													there any other
-													branch
-													offices or site premises
-													available owned by the company ?<span
-														class="text-danger">*</span></label><br>
-												<div class="form-check form-check-inline form-check-left d-block">
-													<label class="form-check-label">
-														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" checked="">
+															name="radio-unstyled-inline-left-1"  checked>
 														Yes
 													</label>
 												</div>
 
-												<div class="form-check form-check-inline form-check-left d-block">
+												<div class="form-check form-check-inline">
 													<label class="form-check-label">
 														<input type="radio" class="form-check-input"
-															name="radio-unstyled-inline-left2" disabled>
+															name="radio-unstyled-inline-left-1">
+														No
+													</label>
+												</div>
+
+												<div class="mt-2">
+													<label class="d-block font-weight-semibold">Remark:</label>
+													<h6>-</h6>
+												</div>
+											</div>
+										</td>
+
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-7"
+															class="form-check-input-styled-success" data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-7"
+															class="form-check-input-styled-danger" data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-7"
+															class="form-check-input-styled-primary"  data-fouc>
+													</label>
+													<span class="ml-2">Edit</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td colspan="2" class="w-50">
+											<div class="form-group">
+												<label class="d-block font-weight-semibold">6) Does company have or
+													conduct quality improvement programs?</label>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-2" checked>
+														Yes
+													</label>
+												</div>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-2">
+														No
+													</label>
+												</div>
+
+												<div class="mt-2">
+													<label class="d-block font-weight-semibold">Specific Programs Name:</label>
+													<h6>Program ABC</h6>
+												</div>
+											</div>
+										</td>
+
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-8"
+															class="form-check-input-styled-success" data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-8"
+															class="form-check-input-styled-danger" data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-8"
+															class="form-check-input-styled-primary"  data-fouc>
+													</label>
+													<span class="ml-2">Edit</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2" class="w-50">
+											<div class="form-group">
+												<label class="d-block font-weight-semibold">7) Does company have
+													experience working with us ?</label>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-3" checked>
+														Yes
+													</label>
+												</div>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-3">
+														No
+													</label>
+												</div>
+
+												<div class="mt-2">
+													<label class="d-block font-weight-semibold">Specific NRCOE Project:</label>
+													<h6>Project ABC</h6>
+													<label class="d-block font-weight-semibold">Nature of Business:</label>
+													<h6>Railway Engineering</h6>
+												</div>
+											</div>
+										</td>
+
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-9"
+															class="form-check-input-styled-success" data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-9"
+															class="form-check-input-styled-danger" data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-9"
+															class="form-check-input-styled-primary"  data-fouc>
+													</label>
+													<span class="ml-2">Edit</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2" class="w-50">
+											<div class="form-group">
+												<label class="font-weight-semibold">8) Which Management System Standard
+													does your company comply with ? Eg. QMS, EMS, OHSAS, IRIS
+													etc</label>
+												<h6>QMS</h6>
+											</div>
+										</td>
+
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-10"
+															class="form-check-input-styled-success" data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-10"
+															class="form-check-input-styled-danger" data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-10"
+															class="form-check-input-styled-primary"  data-fouc>
+													</label>
+													<span class="ml-2">Edit</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2" class="w-50">
+											<div class="form-group">
+												<label class="d-block font-weight-semibold">9) Business Licenses from
+													Gonvermnetal / Accredited Bodies (Provide valid licenses /
+													certificates. Eg CIDB / PKK)</label>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-4" checked>
+														Yes
+													</label>
+												</div>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-4">
+														No
+													</label>
+												</div>
+
+												<div class="mt-2">
+													<label class="d-block font-weight-semibold">Licenses/Certificate:</label>
+													<a class="btn btn-light" href="#" target="_blank"><i class="icon-file-eye m-1"></i>View Attachment</a>
+												</div>
+											</div>
+										</td>
+
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-11"
+															class="form-check-input-styled-success" data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-11"
+															class="form-check-input-styled-danger" data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-11"
+															class="form-check-input-styled-primary"  data-fouc>
+													</label>
+													<span class="ml-2">Edit</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2" class="w-50">
+											<div class="form-group">
+												<label class="d-block font-weight-semibold">10) Does company has an
+													in-house Research & Development ("R&D")</label>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-5" checked>
+														Yes
+													</label>
+												</div>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-5">
+														No
+													</label>
+												</div>
+
+												<div class="mt-2">
+													<label class="d-block font-weight-semibold">Remark:</label>
+													<h6>-</h6>
+												</div>
+											</div>
+										</td>
+
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-12"
+															class="form-check-input-styled-success" data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-12"
+															class="form-check-input-styled-danger" data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-12"
+															class="form-check-input-styled-primary"  data-fouc>
+													</label>
+													<span class="ml-2">Edit</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td colspan="4" class="w-50">
+											<div class="form-group">
+												<label class="font-weight-semibold">11) How much does the company invest
+													in R&D annually in the last 3 financial years ?</label>
+											</div>
+											<div class="table-responsive mb-4">
+												<table class="table  table-bordered">
+													<tbody>
+														<tr>
+															<th style="width: 30%;" class="bg-nrcoe">1st Year</th>
+															<th style="width: 30%;" class="bg-nrcoe">Action</th>
+														</tr>
+														<tr>
+															<td>
+																<h6>RM320,000</h6>
+															</td>
+															<td>
+																<div class="form-group m-3 float-right">
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-13"
+																				class="form-check-input-styled-success"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Accept</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-13"
+																				class="form-check-input-styled-danger"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Decline</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-13"
+																				class="form-check-input-styled-primary"
+																				 data-fouc>
+																		</label>
+																		<span class="ml-2">Edit</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th style="width: 30%;" class="bg-nrcoe">2nd Year</th>
+															<th style="width: 30%;" class="bg-nrcoe">Action</th>
+														</tr>
+														<tr>
+															<td>
+																<h6>RM280,000</h6>
+															</td>
+															<td>
+																<div class="form-group m-3 float-right">
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-14"
+																				class="form-check-input-styled-success"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Accept</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-14"
+																				class="form-check-input-styled-danger"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Decline</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-14"
+																				class="form-check-input-styled-primary"
+																				 data-fouc>
+																		</label>
+																		<span class="ml-2">Edit</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th style="width: 30%;" class="bg-nrcoe">3rd Year</th>
+															<th style="width: 30%;" class="bg-nrcoe">Action</th>
+														</tr>
+														<tr>
+															<td>
+																<h6>RM300,000</h6>
+															</td>
+															<td>
+																<div class="form-group m-3 float-right">
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-15"
+																				class="form-check-input-styled-success"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Accept</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-15"
+																				class="form-check-input-styled-danger"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Decline</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-15"
+																				class="form-check-input-styled-primary"
+																				 data-fouc>
+																		</label>
+																		<span class="ml-2">Edit</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+
+													</tbody>
+												</table>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td colspan="4" class="w-50">
+											<div class="form-group">
+												<label class="font-weight-semibold">12) How many manufacturing
+													facilities does company own ?</label>
+											</div>
+											<div class="table-responsive mb-4">
+												<table class="table  table-bordered">
+													<thead class="bg-nrcoe ">
+														<tr>
+															<th style="width: 15%;">Location</th>
+															<th style="width: 15%;">In Malaysia</th>
+															<th style="width: 15%;">Outside Malaysia</th>
+															<th style="width: 15%;">Total</th>
+															<th style="width: 30%;">Action</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="bg-light">
+																<h6>Factory</h6>
+															</td>
+															<td>
+																<div class="input-group">
+																	<h6>10</h6>
+																</div>
+															</td>
+															<td>
+																<h6>2</h6>
+															</td>
+															<td>
+																<h6>12</h6>
+															</td>
+															<td>
+																<div class="form-group m-3 float-right">
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-16"
+																				class="form-check-input-styled-success"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Accept</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-16"
+																				class="form-check-input-styled-danger"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Decline</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-16"
+																				class="form-check-input-styled-primary"
+																				 data-fouc>
+																		</label>
+																		<span class="ml-2">Edit</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td class="bg-light">
+																<h6>Cost of Investment (RM)</h6>
+															</td>
+															<td>
+																<h6>RM750,000</h6>
+															</td>
+															<td>
+																<h6>RM120,000</h6>
+															</td>
+															<td>
+																<h6>870,000</h6>
+															</td>
+															<td>
+																<div class="form-group m-3 float-right">
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-17"
+																				class="form-check-input-styled-success"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Accept</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-17"
+																				class="form-check-input-styled-danger"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Decline</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-18"
+																				class="form-check-input-styled-primary"
+																				 data-fouc>
+																		</label>
+																		<span class="ml-2">Edit</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td colspan="2" class="w-50">
+											<div class="form-group">
+												<label class="font-weight-semibold">13) What is the current company's
+													production capacity ? (value / year):</label>
+												<h6>RM700,000</h6>
+											</div>
+										</td>
+
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-19"
+															class="form-check-input-styled-success" data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-19"
+															class="form-check-input-styled-danger" data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-19"
+															class="form-check-input-styled-primary"  data-fouc>
+													</label>
+													<span class="ml-2">Edit</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td colspan="2" class="w-50">
+											<div class="form-group">
+												<label class="font-weight-semibold">14) What is the company's current
+													factory's ultilisation rate against the production capacity (If any)
+													:</label>
+												<h6>23%</h6>
+											</div>
+										</td>
+
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-20"
+															class="form-check-input-styled-success" data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-20"
+															class="form-check-input-styled-danger" data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-20"
+															class="form-check-input-styled-primary"  data-fouc>
+													</label>
+													<span class="ml-2">Edit</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td colspan="4" class="w-50">
+											<div class="form-group">
+												<label class="font-weight-semibold">15) List the main customer for your
+													services / products and their percentage to your company's
+													revenue:</label>
+											</div>
+											<div class="table-responsive mb-4">
+												<table class="table  table-bordered">
+													<thead class="bg-nrcoe ">
+														<tr>
+															<th>Company Name</th>
+															<th>% Revenue Percentage</th>
+															<th>Action</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Company ABC 1</td>
+															<td>30</td>
+															<td>
+																<div class="form-group m-3 float-right">
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-21"
+																				class="form-check-input-styled-success"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Accept</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-21"
+																				class="form-check-input-styled-danger"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Decline</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-21"
+																				class="form-check-input-styled-primary"
+																				 data-fouc>
+																		</label>
+																		<span class="ml-2">Edit</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Company ABC 2</td>
+															<td>30</td>
+															<td>
+																<div class="form-group m-3 float-right">
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-23"
+																				class="form-check-input-styled-success"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Accept</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-23"
+																				class="form-check-input-styled-danger"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Decline</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-23"
+																				class="form-check-input-styled-primary"
+																				 data-fouc>
+																		</label>
+																		<span class="ml-2">Edit</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Emmanual Peter</td>
+															<td>23</td>
+															<td>
+																<div class="form-group m-3 float-right">
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-24"
+																				class="form-check-input-styled-success"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Accept</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-24"
+																				class="form-check-input-styled-danger"
+																				data-fouc>
+																		</label>
+																		<span class="ml-2">Decline</span>
+																	</div>
+																	<div
+																		class="custom-control custom-radio custom-control-inline">
+																		<label class="form-check-label">
+																			<input type="radio"
+																				name="radio-styled-color-24"
+																				class="form-check-input-styled-primary"
+																				 data-fouc>
+																		</label>
+																		<span class="ml-2">Edit</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+
+													</tbody>
+												</table>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td colspan="2" class="w-50">
+											<div class="form-group">
+												<label class="d-block font-weight-semibold">16) Does company use the
+													services of subcontractors for the manufacturing ? if yes please
+													list companies and services provided</label>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-7" checked>
+														Yes
+													</label>
+												</div>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-7">
+														No
+													</label>
+												</div>
+
+												<div class="mt-2">
+													<div class="table-responsive mb-4">
+														<table class="table  table-bordered">
+															<tbody>
+																<tr>
+																	<th style="width: 30%;" class="bg-nrcoe">Company Name</th>
+																	<th style="width: 30%;" class="bg-nrcoe">Service Provided</th>
+																</tr>
+																<tr>
+																	<td>
+																		<h6>Company ABC</h6>
+																	</td>
+																	<td>
+																		<h6>Service ABC</h6>
+																	</td>
+																</tr>
+																
+																
+																
+		
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</td>
+
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-25"
+															class="form-check-input-styled-success" data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-25"
+															class="form-check-input-styled-danger" data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-25"
+															class="form-check-input-styled-primary"  data-fouc>
+													</label>
+													<span class="ml-2">Edit</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td colspan="2" class="w-50">
+											<div class="form-group">
+												<label class="d-block font-weight-semibold">17) Does company embark on
+													any GREEN initiatives ?</label>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-8" >
+														Yes
+													</label>
+												</div>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-8" checked>
+														No
+													</label>
+												</div>
+
+												
+											</div>
+										</td>
+
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-26"
+															class="form-check-input-styled-success" data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-26"
+															class="form-check-input-styled-danger" data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-26"
+															class="form-check-input-styled-primary"  data-fouc>
+													</label>
+													<span class="ml-2">Edit</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2" class="w-50">
+											<div class="form-group">
+												<label class="d-block font-weight-semibold">18) Are company aware of any
+													relatives or business associate of the Management Team that are
+													currently under the employement of rail operators or relevant
+													ministries ?</label>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-9" checked>
+														Yes
+													</label>
+												</div>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-9">
+														No
+													</label>
+												</div>
+
+												<div class="mt-2">
+													<div class="table-responsive mb-4">
+														<table class="table  table-bordered">
+															<tbody>
+																<tr>
+																	<th style="width: 30%;" class="bg-nrcoe">Business Associate Name</th>
+																	<th style="width: 30%;" class="bg-nrcoe">Designation</th>
+																</tr>
+																<tr>
+																	<td>
+																		<h6>Azeen Haleem</h6>
+																	</td>
+																	<td>
+																		<h6>Project Manager</h6>
+																	</td>
+																</tr>
+																
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</td>
+
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-27"
+															class="form-check-input-styled-success" data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-27"
+															class="form-check-input-styled-danger" data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-27"
+															class="form-check-input-styled-primary"  data-fouc>
+													</label>
+													<span class="ml-2">Edit</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2" class="w-50">
+											<div class="form-group">
+												<label class="d-block font-weight-semibold">19) Are there any pending litigations against the company (e.g. patent rights' infringement winding up petition) ?</label>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-10" >
+														Yes
+													</label>
+												</div>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" class="form-check-input"
+															name="radio-unstyled-inline-left-10" checked>
 														No
 													</label>
 												</div>
 											</div>
-										</th>
+										</td>
 
-										<th colspan="2">
-											<div class="form-group mb-1 mt-1 mr-4 float-right">
+										<td colspan="2">
+											<div class="form-group m-3 float-right">
 												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_unchecked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_unchecked6">Accept</label>
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-28"
+															class="form-check-input-styled-success" data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
 												</div>
 												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Decline</label>
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-28"
+															class="form-check-input-styled-danger" data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
 												</div>
 												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio6" id="custom_radio_inline_checked6">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked6">Edit Answer</label>
-												</div>
-												<div class="form-group pt-3">
-													<span class="font-weight-semibold">Score: <input type="text"
-															class="form-control" placeholder="10"></span>
-
+													<label class="form-check-label">
+														<input type="radio" name="radio-styled-color-28"
+															class="form-check-input-styled-primary"  data-fouc>
+													</label>
+													<span class="ml-2">Edit</span>
 												</div>
 											</div>
-										</th>
+										</td>
 									</tr>
 								</tbody>
 							</table>
@@ -769,95 +1583,7 @@
 
 
 
-						<div class="col-md-12">
-							<div class="d-flex justify-content-between">
-								<label class="font-weight-semibold">9) Complete & Ongoing Project<span
-										class="text-danger">*</span></label><br>
 
-							</div>
-							<div>
-								<table class="table table-bordered datatable-basic ">
-									<thead class="bg-nrcoe">
-										<tr>
-											<th>No.</th>
-											<th>Project Name</th>
-											<th>Type of Project</th>
-											<th>Duration of Project</th>
-											<th>Contact Person Name</th>
-											<th>Contact Person Phone Number</th>
-											<th>Contact Person Email</th>
-											<th>Value/Cost of Project</th>
-											<th>Project Document</th>
-											<th style="width: 150px;">Action</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>1</td>
-											<td>Project 1</td>
-											<td>Project Type A</td>
-											<td>1-2 Years</td>
-											<td>Jordan Michael</td>
-											<td>011-111 1111</td>
-											<td>Jordan_Michael@rsc.com</td>
-											<td>RM1,000,000</td>
-											<td>Project-Involvement1.pdf</a></td>
-											<td>
-
-												<button type="button"
-													class="btn btn-light btn-icon rounded-circle mb-1"><i
-														class="icon-file-eye" data-popup="tooltip" title=""
-														data-original-title="View Details"></i></button>
-												<button type="button" class="btn btn-light btn-icon rounded-circle"><i
-														class="icon-download4" data-popup="tooltip" title=""
-														data-original-title="Download"></i></button>
-
-
-											</td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>Project 2</td>
-											<td>Project Type A</td>
-											<td>1-2 Years</td>
-											<td>Haziq Abdullah</td>
-											<td>011-111 1111</td>
-											<td>Haziq_Abdullah@rsc.com</td>
-											<td>RM1,000,000</td>
-											<td>Project-Involvement2.pdf</a></td>
-											<td>
-												<button type="button"
-													class="btn btn-light btn-icon rounded-circle mb-1"><i
-														class="icon-file-eye" data-popup="tooltip" title=""
-														data-original-title="View Details"></i></button>
-												<button type="button" class="btn btn-light btn-icon rounded-circle"><i
-														class="icon-download4" data-popup="tooltip" title=""
-														data-original-title="Download"></i></button>
-											</td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>Project 3</td>
-											<td>Project Type A</td>
-											<td>1-2 Years</td>
-											<td>Ismail Khalid</td>
-											<td>011-111 1111</td>
-											<td>Ismail_Khalid@rsc.com</td>
-											<td>RM1,000,000</td>
-											<td>Project-Involvement3.pdf</a></td>
-											<td>
-												<button type="button"
-													class="btn btn-light btn-icon rounded-circle mb-1"><i
-														class="icon-file-eye" data-popup="tooltip" title=""
-														data-original-title="View Details"></i></button>
-												<button type="button" class="btn btn-light btn-icon rounded-circle"><i
-														class="icon-download4" data-popup="tooltip" title=""
-														data-original-title="Download"></i></button>
-											</td>
-										</tr>
-								</table>
-							</div>
-						</div>
 
 						<div class="table-responsive mb-4">
 							<table class="table table-bordered table-striped">
@@ -866,29 +1592,38 @@
 										<td colspan="4">
 											<div class="form-group">
 												<label class="font-weight-semibold">Section / Block 4</label>
-												<h6 class="font-weight-bold">Company Capability </h6>
+												<h6 >Company Capability</h6>
 											</div>
-											<div class="form-group mb-3">
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio5" id="custom_radio_inline_unchecked5">
-													<label class="custom-control-label"
-														for="custom_radio_inline_unchecked5">Accept</label>
+											<div class="form-group mb-3" >
+												<div
+													class=" custom-radio custom-control-inline" >
+													<label class="form-check-label">
+														<input type="radio"
+															name="radio-styled-color-10"
+															class="form-check-input-styled-success"
+															data-fouc>
+													</label>
+													<span class="ml-2">Accept</span>
 												</div>
-												<div class="custom-control custom-radio custom-control-inline">
-													<input type="radio" class="custom-control-input"
-														name="custom-inline-radio5" id="custom_radio_inline_checked5">
-													<label class="custom-control-label"
-														for="custom_radio_inline_checked5">Decline</label>
+												<div
+													class="custom-control custom-radio custom-control-inline">
+													<label class="form-check-label">
+														<input type="radio"
+															name="radio-styled-color-10"
+															class="form-check-input-styled-danger"
+															data-fouc>
+													</label>
+													<span class="ml-2">Decline</span>
 												</div>
+											</div>
 
-											</div>
+											
 
 
 											<div class="form-group">
 												<label class="font-weight-semibold">Your Message:</label>
-												<textarea type="text" class="form-control" placeholder="comment here..."
-													rows="4"></textarea>
+												<textarea type="text" class="form-control"
+													placeholder="comment here..." rows="4"></textarea>
 											</div>
 
 
@@ -899,27 +1634,24 @@
 						</div>
 					</div>
 
-
 					<div class="card-footer bg-nrcoe d-sm-flex justify-content-sm-between align-items-sm-center">
 						<ul
 							class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between">
-						</ul>
-						<ul class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
-							<button type="button" class="btn btn-light rounded-round mr-1"
-								onclick="location.href = './ridp-sv-form-section-2.html'">Cancel<i
-									class="mi-cancel ml-1"></i></button>
-							<button type="button" class="btn btn-light rounded-round mr-1"
-								onclick="location.href = './ridp-sv-form-section-2.html'">Clear<i
-									class="mi-clear-all ml-1"></i></button>
-							<button type="button" class="btn btn-light rounded-round mr-1"
-								onclick="location.href = './ridp-sv-form-section-2.html'">Save Draft<i
-									class="mi-save ml-1"></i></button>
 							<button type="button" class="btn btn-light rounded-round mr-1"
 								onclick="location.href = './ridp-sv-form-section-3.html'"><i
-									class="mi-keyboard-arrow-left"></i>Previous</button>
-							<button type="button" class="btn btn-light rounded-round"
-								onclick="location.href = './ridp-sv-form-section-5.html'">Save & Next<i
-									class="mi-keyboard-arrow-right"></i></button>
+									class="mi-keyboard-arrow-left"></i>Save & Previous</button>
+						</ul>
+						<ul class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
+							
+							<button type="button" class="btn btn-light rounded-round mr-1"
+								onclick="location.href = './imu-pir-form-section-2.html'">Clear<i
+									class="mi-clear-all ml-1"></i></button>
+							<button type="button" class="btn btn-light rounded-round mr-1"
+								onclick="location.href = './imu-pir-form-section-2.html'">Save Draft<i
+									class="mi-save ml-1"></i></button>
+							
+							<button type="button" class="btn btn-success rounded-round mr-1" id="sweet_combine">Submit<i
+									class="ml-1 icon-checkmark2"></i></button>
 						</ul>
 					</div>
 				</div>
@@ -933,6 +1665,63 @@
 
 	</div>
 	<!-- /page content -->
+
+	<!-- Full width modal/ Company Experience -->
+	<div id="on-site-audit" class="modal fade" data-backdrop="true" tabindex="-1">
+		<div class="modal-dialog  modal-xl">
+			<div class="modal-content bg-transparent">
+				<div class="modal-body bg-transparent">
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+							<div class="card">
+								<div class="card-header bg-white header-elements-inline">
+									<h4 class="card-title font-weight-bold">Information Declaration
+									</h4>
+								</div>
+								<div class="card-body">
+									<form action="#">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<h7>I declare that the replied information is given to the question
+														and all the attachments
+														are to the best of my knowledge true and accurate as of the date
+														of signature. In case
+														of any information provided is found to be false or incorrect,
+														we understand that TDA
+														reserve the right to disqualify my Company as an RIDP
+														recipient.</h7>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<div class="form-group">
+														<div class="form-check">
+															<label class="form-check-label">
+																<input type="checkbox"
+																	class="form-check-input-styled-success" data-fouc>
+																Yes, I am sure with this information declaration.
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+									<div class="text-right">
+										<button type="submit" class="btn btn-light" class="remove"
+											data-dismiss="modal">Cancel</button>
+										<button type="submit" class="btn btn-success">Accept</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /full width modal -->
 
 
 	<!-- Footer -->
@@ -948,7 +1737,8 @@
 
 			<div class="navbar-collapse collapse" id="navbar-footer">
 				<span class="navbar-text">
-					&copy; 2021. <a href="#">RIDP Registration</a> by <a href="#" target="_blank">National Rail Centre of
+					&copy; 2021. <a href="#">RIDP Registration</a> by <a href="#" target="_blank">National Rail Centre
+						of
 						Excellence</a>
 				</span>
 			</div>

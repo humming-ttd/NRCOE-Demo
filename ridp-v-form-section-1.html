@@ -38,6 +38,12 @@
 	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
 	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
 
+
+	<script src="./global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switch.min.js"></script>
+	<script src="./global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+
 </head>
 
 <body>
@@ -182,17 +188,14 @@
 							<a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Registration
 								Form</a>
 							<div class="dropdown-menu dropdown-menu-left">
-								<a href="./ridp-v-form-section-1.html" class="dropdown-item active">Section
-									1 - General Company
-									Info</a>
-								<a href="./ridp-v-form-section-2.html" class="dropdown-item ">Section 2 -
-									Contact Person Info</a>
-								<a href="./ridp-v-form-section-3.html" class="dropdown-item">Section 3 -
-									Company & Management</a>
-								<a href="./ridp-v-form-section-4.html" class="dropdown-item">Section 4 -
-									Company Capability</a>
-								<a href="./ridp-v-form-section-5.html" class="dropdown-item">Section 5 -
+								<a href="./ridp-v-form-section-1.html" class="dropdown-item active">Section 1 - General
+									Company Information</a>
+								<a href="./ridp-v-form-section-2.html" class="dropdown-item ">Section 2 - Resource
+									Information</a>
+								<a href="./ridp-v-form-section-3.html" class="dropdown-item">Section 3 - Company
 									Financial</a>
+								<a href="./ridp-v-form-section-4.html" class="dropdown-item">Section 4 - Company
+									Capability</a>
 							</div>
 						</li>
 
@@ -215,670 +218,1000 @@
 					</ul>
 					<div class="breadcrumb-line header-elements-md-inline text-blue-800 mt-3">
 						<div class="d-flex">
-							<div class="breadcrumb">
-								<a href="#" class="breadcrumb-item">Registration Form</a>
-								<a href="#" class="breadcrumb-item">Section 1 - General Company Info</a>
+							<div class="breadcrumb text-dark">
+								<span class="breadcrumb-item">Registration Form</span>
+								<span class="breadcrumb-item">Section 1 - General Company Info</span>
 							</div>
-							<a href="#" class="header-elements-toggle text-default d-md-none"><i
-									class="icon-more"></i></a>
 						</div>
 					</div>
 
 					<div class="card-body">
-						<!-- <div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<div class="alert bg-info text-white alert-styled-left alert-dismissible">
-										<span class="font-weight-semibold">This recipient requires on-site audit.</span>
-									</div>
-								</div>
-
-							</div>
-						</div> -->
-
-
+			
 						<div class="table-responsive mb-4">
 
 							<div class="table-responsive mb-4">
 								<table class="table table-bordered">
 									<tbody>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Company
-														Name:<span class="text-danger">*</span></label>
-													<h6 class="font-weight-bold">Rolling Stock Consultants Sdn Bhd</h6>
+													<label class="font-weight-semibold">1) Company
+														Name:</label>
+													<h6 >Railway Construction Company</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio1"
-															id="custom_radio_inline_unchecked1">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked1">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-1"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio1"
-															id="custom_radio_inline_checked1">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked1">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-1"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio1"
-															id="custom_radio_inline_checked1c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked1c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-1"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Company Registration
-														No.:<span class="text-danger">*</span></label>
-													<h6 class="font-weight-bold">1032613-U</h6>
+													<label class="font-weight-semibold">2) Company SSM / Registration
+														No.:</label>
+													<h6 >1032613-U</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio2"
-															id="custom_radio_inline_unchecked2">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked2">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-2"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio2"
-															id="custom_radio_inline_checked2">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked2">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-2"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio2"
-															id="custom_radio_inline_checked2c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked2c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-2"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
+										</tr>
+
+										<tr>
+											<td colspan="2" class="w-50">
+												<div class="form-group">
+													<label class="font-weight-semibold">3) Company SSM / Registration Certification:</label>
+													<div class="mt-2">
+														<a class="btn btn-light" href="./document/ssm-cert.png" target="_blank"><i class="icon-file-eye m-1"></i>View Attachment</a>
+													</div>
+												</div>
+											</td>
+
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
+													<div class="custom-control custom-radio custom-control-inline">
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-2"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline">
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-2"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline">
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-2"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
+													</div>
+												</div>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Type of
-														Company:<span class="text-danger">*</span></label>
-													<h6 class="font-weight-bold">Agency</h6>
+													<label class="font-weight-semibold" >4) Date of Incorporation:</label>
+													<h6>01/01/2021</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio3"
-															id="custom_radio_inline_unchecked3">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked3">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-3"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio3"
-															id="custom_radio_inline_checked3">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked3">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-3"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio3"
-															id="custom_radio_inline_checked3c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked3c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-3"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Director / CEO Name:<span
-															class="text-danger">*</span></label>
-													<h6 class="font-weight-bold">Long Weng Kit</h6>
+													<label class="font-weight-semibold">5) Principal Activities /
+														Nature of Business:</label>
+													<h6 >Railway
+														Engineering</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio4"
-															id="custom_radio_inline_unchecked4">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked4">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-4"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio4"
-															id="custom_radio_inline_checked4">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked4">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-4"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio4"
-															id="custom_radio_inline_checked4c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked4c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-4"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Company
-														Registration:<span class="text-danger">*</span></label>
-													<h6 class="font-weight-bold"><a
-															href="#">RSC-Company-Registration.pdf</a>
-													</h6>
-												</div>
-											</th>
+													<label  class="font-weight-semibold">6) Constitution of Business /
+														Business Entity:</label>
+													<h6 >Sole
+														Proprietorship</h6>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+														<div class="mt-2">
+															<label class="d-block font-weight-semibold">Constitution of Business / Business Entity Certification:</label>
+															<a class="btn btn-light" href="./document/form-13-cert.pdf" target="_blank"><i class="icon-file-eye m-1"></i>View Attachment</a>
+														</div>
+												</div>
+											</td>
+
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio5"
-															id="custom_radio_inline_unchecked5">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked5">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-5"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio5"
-															id="custom_radio_inline_checked5">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked5">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-5"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio5"
-															id="custom_radio_inline_checked5c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked5c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-5"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Nature of Business:<span
-															class="text-danger">*</span></label>
-													<h6 class="font-weight-bold">Rolling Stock System & Component
-														Manufacturing & Assembly - Door System <br> Rolling Stock System
-														&
-														Component Manufacturing & Assembly - Gangway</h6>
+													<label class="font-weight-semibold">7) Telephone Number:</label>
+													<h6 >+603 7491 8288</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio17"
-															id="custom_radio_inline_unchecked17">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked17">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-6"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio17"
-															id="custom_radio_inline_checked17">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked17">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-6"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio17"
-															id="custom_radio_inline_checked17c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked17c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-6"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Sector:<span
-															class="text-danger">*</span></label>
-													<h6 class="font-weight-bold">Design / Manufacturing</h6>
+													<label class="font-weight-semibold">8) Fax Number:</label>
+													<h6 >+603 7728 9811</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio18"
-															id="custom_radio_inline_unchecked18">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked18">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-7"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio18"
-															id="custom_radio_inline_checked18">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked18">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-7"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio18"
-															id="custom_radio_inline_checked18c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked18c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-7"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Sub-Sector:<span
-															class="text-danger">*</span></label>
-													<h6 class="font-weight-bold">Rolling Stock</h6>
+													<label class="font-weight-semibold">9) Email Address:</label>
+													<h6 >info@rcc.com.my</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio6"
-															id="custom_radio_inline_unchecked6">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked6">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-8"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio6"
-															id="custom_radio_inline_checked6">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked6">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-8"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio6"
-															id="custom_radio_inline_checked6c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked6c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-8"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Category:<span
-															class="text-danger">*</span></label>
-													<h6 class="font-weight-bold">Manufacturer</h6>
+													<label class="font-weight-semibold">10) Website:</label>
+													<h6 >www.rcc.com</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio7"
-															id="custom_radio_inline_unchecked7">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked7">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-9"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio7"
-															id="custom_radio_inline_checked7">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked7">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-9"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio7"
-															id="custom_radio_inline_checked7c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked7c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-9"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Website
-														Address:<span class="text-danger">*</span></label>
-													<h6 class="font-weight-bold">www.rsc.com.my
-													</h6>
+													<label class="font-weight-semibold">11) Registered Address:</label>
+													<h6 >50-7-13A, Level 7 Bangunan UOA
+														Damansara, 56700 Semantan, Kuala Lumpur</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio8"
-															id="custom_radio_inline_unchecked8">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked8">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-10"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio8"
-															id="custom_radio_inline_checked8">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked8">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-10"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio8"
-															id="custom_radio_inline_checked8c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked8c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-10"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Tel No.:<span
-															class="text-danger">*</span></label>
-													<h6 class="font-weight-bold">+603-56358040
-													</h6>
+													<label class="font-weight-semibold">12) Correspondence Address:</label>
+													<h6 >-</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio9"
-															id="custom_radio_inline_unchecked9">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked9">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-11"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio9"
-															id="custom_radio_inline_checked9">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked9">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-11"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio9"
-															id="custom_radio_inline_checked9c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked9c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-11"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="4" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Fax No.:<span
-															class="text-danger">*</span></label>
-													<h6 class="font-weight-bold">+603-56358050
-													</h6>
+													<label class="font-weight-semibold">13) Company Materials</label>
+													<div class="table-responsive">
+														<table class="table  table-bordered">
+															<thead class="bg-nrcoe ">
+																<tr>
+																	<th style="width: 50%;">Material Name</th>
+																	<th>Action</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Company Profile ABC
+																		<div class="mt-2">
+																			<a class="btn btn-light" href="#" target="_blank"><i class="icon-file-eye m-1"></i>View Attachment</a>
+																		</div>
+																	</td>
+																	<td>
+																		<div class="form-group m-3 float-right">
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-15"
+																						class="form-check-input-styled-success"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Accept</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-15"
+																						class="form-check-input-styled-danger"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Decline</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-15"
+																						class="form-check-input-styled-primary"
+																						 data-fouc>
+																				</label>
+																				<span class="ml-2">Edit</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Service Brochures ABC
+																		<div class="mt-2">
+																			<a class="btn btn-light" href="#" target="_blank"><i class="icon-file-eye m-1"></i>View Attachment</a>
+																		</div>
+																	</td>
+																	<td>
+																		<div class="form-group m-3 float-right">
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-16"
+																						class="form-check-input-styled-success"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Accept</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-16"
+																						class="form-check-input-styled-danger"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Decline</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-16"
+																						class="form-check-input-styled-primary"
+																						 data-fouc>
+																				</label>
+																				<span class="ml-2">Edit</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																 
+															</tbody>
+														</table>
+													</div>
 												</div>
-											</th>
-
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio10"
-															id="custom_radio_inline_unchecked10">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked10">Accept</label>
-													</div>
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio10"
-															id="custom_radio_inline_checked10">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked10">Decline</label>
-													</div>
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio10"
-															id="custom_radio_inline_checked10c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked10c">Edit Answer</label>
-													</div>
-												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="4" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Company Address
-														1:</label>
-													<h6 class="font-weight-bold">Level 7 Bangunan UOA Damansara, Kuala
-														Lumpur</h6>
+													<label class="font-weight-semibold">14) Contact Person &
+														Designation:</label>
+													<div class="table-responsive">
+														<table class="table  table-bordered ">
+															<thead class="bg-nrcoe ">
+																<tr>
+																	<th>Name</th>
+																	<th>Designation</th>
+																	<th>Phone Number</th>
+																	<th>Email</th>
+																	<th>Action</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Jordan Michael</td>
+																	<td>Manager</td>
+																	<td>011-111 1111</td>
+																	<td>Jordan_Michael@rsc.com</td>
+																	<td>
+																		<div class="form-group m-3 float-right">
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-12"
+																						class="form-check-input-styled-success"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Accept</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-12"
+																						class="form-check-input-styled-danger"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Decline</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-12"
+																						class="form-check-input-styled-primary"
+																						 data-fouc>
+																				</label>
+																				<span class="ml-2">Edit</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>James Blent</td>
+																	<td>Manager</td>
+																	<td>011-111 1111</td>
+																	<td>JamesBlent@rsc.com</td>
+																	<td>
+																		<div class="form-group m-3 float-right">
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-13"
+																						class="form-check-input-styled-success"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Accept</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-13"
+																						class="form-check-input-styled-danger"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Decline</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-13"
+																						class="form-check-input-styled-primary"
+																						 data-fouc>
+																				</label>
+																				<span class="ml-2">Edit</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Farhan Hamir</td>
+																	<td>Manager</td>
+																	<td>011-111 1111</td>
+																	<td>FarhanHamir@rsc.com</td>
+																	<td>
+																		<div class="form-group m-3 float-right">
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-14"
+																						class="form-check-input-styled-success"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Accept</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-14"
+																						class="form-check-input-styled-danger"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Decline</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-14"
+																						class="form-check-input-styled-primary"
+																						 data-fouc>
+																				</label>
+																				<span class="ml-2">Edit</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
 												</div>
-											</th>
-
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio11"
-															id="custom_radio_inline_unchecked11">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked11">Accept</label>
-													</div>
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio11"
-															id="custom_radio_inline_checked11">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked11">Decline</label>
-													</div>
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio11"
-															id="custom_radio_inline_checked11c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked11c">Edit Answer</label>
-													</div>
-												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="4" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Company Address
-														2:</label>
-													<h6 class="font-weight-bold">-</h6>
-												</div>
-											</th>
+													<label class="font-weight-semibold">15) Owner / Board of Directors:</label>
+													<div class="table-responsive">
+														<table class="table  table-bordered">
+															<thead class="bg-nrcoe ">
+																<tr>
+																	<th>Name</th>
+																	<th>% Shareholding</th>
+																	<th>Action</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Jordan Michael</td>
+																	<td>30</td>
+																	<td>
+																		<div class="form-group m-3 float-right">
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-15"
+																						class="form-check-input-styled-success"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Accept</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-15"
+																						class="form-check-input-styled-danger"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Decline</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-15"
+																						class="form-check-input-styled-primary"
+																						 data-fouc>
+																				</label>
+																				<span class="ml-2">Edit</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Muhammad Juhan Ibrahinm</td>
+																	<td>30</td>
+																	<td>
+																		<div class="form-group m-3 float-right">
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-16"
+																						class="form-check-input-styled-success"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Accept</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-16"
+																						class="form-check-input-styled-danger"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Decline</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-16"
+																						class="form-check-input-styled-primary"
+																						 data-fouc>
+																				</label>
+																				<span class="ml-2">Edit</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Emmanual Peter</td>
+																	<td>23</td>
+																	<td>
+																		<div class="form-group m-3 float-right">
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-17"
+																						class="form-check-input-styled-success"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Accept</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-17"
+																						class="form-check-input-styled-danger"
+																						data-fouc>
+																				</label>
+																				<span class="ml-2">Decline</span>
+																			</div>
+																			<div
+																				class="custom-control custom-radio custom-control-inline">
+																				<label class="form-check-label">
+																					<input type="radio"
+																						name="radio-styled-color-17"
+																						class="form-check-input-styled-primary"
+																						 data-fouc>
+																				</label>
+																				<span class="ml-2">Edit</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio12"
-															id="custom_radio_inline_unchecked12">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked12">Accept</label>
-													</div>
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio12"
-															id="custom_radio_inline_checked12">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked12">Decline</label>
-													</div>
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio12"
-															id="custom_radio_inline_checked12c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked12c">Edit Answer</label>
+															</tbody>
+														</table>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Country:</label>
-													<h6 class="font-weight-bold">Malaysia</h6>
+													<label class="font-weight-semibold">16) % Bumiputera Shareholding Equity
+														Participation:</label>
+													<h6 >80%</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio13"
-															id="custom_radio_inline_unchecked13">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked13">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-18"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio13"
-															id="custom_radio_inline_checked13">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked13">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-18"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio13"
-															id="custom_radio_inline_checked13c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked13c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-18"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">State / Province:</label>
-													<h6 class="font-weight-bold">Selangor</h6>
+													<label class="font-weight-semibold">17) % Non-Bumiputera Shareholding Equity
+														Participation:</label>
+													<h6 >15%</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio14"
-															id="custom_radio_inline_unchecked14">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked14">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-19"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio14"
-															id="custom_radio_inline_checked14">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked14">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-19"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio14"
-															id="custom_radio_inline_checked14c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked14c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-19"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">City:</label>
-													<h6 class="font-weight-bold">Kuala Lumpur</h6>
+													<label class="font-weight-semibold">18) % Foreign Shareholding Equity
+														Participation:</label>
+													<h6 >5% , Singapore</h6>
 												</div>
-											</th>
+											</td>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio15"
-															id="custom_radio_inline_unchecked15">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked15">Accept</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-20"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio15"
-															id="custom_radio_inline_checked15">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked15">Decline</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-20"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio15"
-															id="custom_radio_inline_checked15c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked15c">Edit Answer</label>
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-20"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
 													</div>
 												</div>
-											</th>
+											</td>
 										</tr>
 										<tr>
-											<th colspan="2" class="w-50">
+											<td colspan="2" class="w-50">
 												<div class="form-group">
-													<label class="font-weight-semibold">Postal / Zip
-														Code:</label>
-													<h6 class="font-weight-bold">50088</h6>
-												</div>
-											</th>
+													<label class="d-block font-weight-semibold">19) Has the business been operating under a different name before ? If yes, please indicate and attach Form 13 ?</label>
 
-											<th colspan="2">
-												<div class="form-group mb-3 mr-4 float-right">
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio16"
-															id="custom_radio_inline_unchecked16">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked16">Accept</label>
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="radio" class="form-check-input"
+																name="radio-unstyled-inline-left" checked>
+															Yes
+														</label>
 													</div>
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio16"
-															id="custom_radio_inline_checked16">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked16">Decline</label>
+
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="radio" class="form-check-input"
+																name="radio-unstyled-inline-left">
+															No
+														</label>
 													</div>
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio16"
-															id="custom_radio_inline_checked16c">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked16c">Edit Answer</label>
+
+													<div class="mt-2">
+														<label class="d-block font-weight-semibold">Form 13 Form:</label>
+														<a class="btn btn-light" href="./document/form-13-cert.pdf" target="_blank"><i class="icon-file-eye m-1"></i>View Attachment</a>
 													</div>
 												</div>
-											</th>
+											</td>
+
+											<td colspan="2">
+												<div class="form-group m-3 float-right">
+													<div class="custom-control custom-radio custom-control-inline">
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-21"
+																class="form-check-input-styled-success" data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline">
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-21"
+																class="form-check-input-styled-danger" data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline">
+														<label class="form-check-label">
+															<input type="radio" name="radio-styled-color-21"
+																class="form-check-input-styled-primary" 
+																data-fouc>
+														</label>
+														<span class="ml-2">Edit</span>
+													</div>
+												</div>
+											</td>
 										</tr>
+
+
 
 									</tbody>
 								</table>
@@ -892,25 +1225,32 @@
 											<td colspan="4">
 												<div class="form-group">
 													<label class="font-weight-semibold">Section / Block 1</label>
-													<h6 class="font-weight-bold">General Company Info </h6>
+													<h6 >General Company Info </h6>
 												</div>
-												<div class="form-group mb-3">
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio_block"
-															id="custom_radio_inline_unchecked_block">
-														<label class="custom-control-label"
-															for="custom_radio_inline_unchecked_block">Accept</label>
+												<div class="form-group mb-3" >
+													<div
+														class=" custom-radio custom-control-inline" >
+														<label class="form-check-label">
+															<input type="radio"
+																name="radio-styled-color-22"
+																class="form-check-input-styled-success"
+																data-fouc>
+														</label>
+														<span class="ml-2">Accept</span>
 													</div>
+													<div
+														class="custom-control custom-radio custom-control-inline">
+														<label class="form-check-label">
+															<input type="radio"
+																name="radio-styled-color-22"
+																class="form-check-input-styled-danger"
+																data-fouc>
+														</label>
+														<span class="ml-2">Decline</span>
+													</div>
+												</div>
 
-													<div class="custom-control custom-radio custom-control-inline">
-														<input type="radio" class="custom-control-input"
-															name="custom-inline-radio_block"
-															id="custom_radio_inline_checked_block">
-														<label class="custom-control-label"
-															for="custom_radio_inline_checked_block">Decline</label>
-													</div>
-												</div>
+												
 
 
 												<div class="form-group">
@@ -926,18 +1266,14 @@
 								</table>
 							</div>
 						</div>
-
-
 					</div>
+
 					<div class="card-footer bg-nrcoe d-sm-flex justify-content-sm-between align-items-sm-center">
 						<ul
 							class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between">
 						</ul>
 
 						<ul class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
-							<button type="button" class="btn btn-light rounded-round mr-1"
-								onclick="location.href = './ridp-v-form-section-2.html'">Cancel<i
-									class="mi-cancel ml-1"></i></button>
 							<button type="button" class="btn btn-light rounded-round mr-1"
 								onclick="location.href = './ridp-v-form-section-2.html'">Clear<i
 									class="mi-clear-all ml-1"></i></button>

@@ -3170,7 +3170,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 .custom-control-inline {
     display: -ms-inline-flexbox;
     display: inline-flex;
-    margin-right: 1rem
+    /* margin-right: 1rem */
 }
 
 .custom-control-input {

@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>RIDP-R | Section 4</title>
+	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+		type="text/css">
+	<link href="./global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="./global_assets/css/icons/material/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="./global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="./global_assets/js/main/jquery.min.js"></script>
+	<script src="./global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="./global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<script src="./global_assets/js/plugins/ui/slinky.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/app.js"></script>
+	<!-- /theme JS files -->
+
+	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
+
+	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="./global_assets/js/plugins/pickers/anytime.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+
+	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
+	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
+	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
+	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
+
+	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+	<script src="./global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switch.min.js"></script>
+
+	<script src="./global_assets/js/plugins/forms/wizards/steps.min.js"></script>
+
+	<script src="./global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+
+
+	<!-- PopOut Form -->
+	<!-- <script src="./global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="./global_assets/js/demo_pages/extra_sweetalert.js"></script> -->
+	<!-- /PopOut Form -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-dark px-0">
+		<div class="container">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="./ridp-r-introduction.html" class="d-inline-block">
+					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:140px; height: 35px;"
+						alt="">
+				</a>
+			</div>
+
+
+			<div class="d-md-none">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+					<i class="icon-tree5"></i>
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-mobile">
+
+
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
+							<i class="mi-notifications"></i>
+							<span class="d-md-none ml-2">Users</span>
+							<span class="badge badge-pill bg-warning-400 ml-auto ml-md-0 mt-1">2</span>
+						</a>
+
+						<div class="dropdown-menu dropdown-content wmin-md-300">
+							<div class="dropdown-content-header">
+								<span class="font-weight-semibold">Notifications</span>
+							</div>
+
+							<div class="dropdown-content-body dropdown-scrollable">
+								<ul class="media-list">
+									<li class="media">
+										<div class="media-body">
+											<span class="d-block text-muted font-size-sm">Lead web developer</span>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-body">
+											<span class="d-block text-muted font-size-sm">Marketing manager</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown dropdown-user">
+						<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+							data-toggle="dropdown">
+							<img src="./global_assets/images/placeholders/placeholder_u3.jpg"
+								class="rounded-circle mr-2" height="34" alt="">
+							<span>Rolling Stock Consultants Sdn Bhd</span>
+						</a>
+
+						<div class="dropdown-menu dropdown-menu-right">
+							<a href="./ridp-r-index.html" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+
+	<!-- Secondary navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="text-center d-md-none w-100">
+			<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+				data-target="#navbar-navigation">
+				<i class="icon-unfold mr-2"></i>
+				Navigation
+			</button>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-navigation">
+			<ul class="navbar-nav">
+
+				<li class="nav-item">
+					<a href="./ridp-r-section-1-general-company-information.html" class="navbar-nav-link active">
+						<i class="mi-description mr-2 "></i>
+						E-Form Vendor's Profile
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="./ridp-r-result.html" class="navbar-nav-link">
+						<i class="mi-playlist-add-check mr-2"></i>
+						On-Site Audit
+					</a>
+
+				</li>
+
+
+			</ul>
+
+		</div>
+	</div>
+	<!-- /secondary navbar -->
+
+	<!-- Page content -->
+	<div class="page-content container pt-0">
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Content area -->
+			<div class="content mt-4">
+
+				<!-- forms -->
+				<div class="card">
+
+					<div class="card-header bg-nrcoe  text-white header-elements-inline">
+						<h6 class="card-title"><i class="mi-description mr-2"></i>E-Form Vendor's Profile</h6>
+						<div class="list-icons">
+
+							<!-- <div class="dropdown">
+								<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"
+									aria-expanded="true"><i class="icon-menu7" data-popup="tooltip"
+										data-original-title="Action"></i></a>
+								<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end"
+									style="position: absolute; transform: translate3d(-147px, 19px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<a href="#" class="dropdown-item"><i class="icon-download4"></i>Export
+										As
+										PDF</a>
+									<a href="#" class="dropdown-item"><i class="icon-download4"></i>Export
+										As
+										Excel</a>
+									<a href="#" class="dropdown-item"><i class="icon-download4"></i>Export
+										AS
+										CSV</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item"><i class="icon-printer2"></i>Print</a>
+
+								</div>
+							</div> -->
+						</div>
+					</div>
+
+					<ul class="nav nav-tabs nav-tabs-bottom ">
+						<li class="nav-item"><a href="./ridp-r-section-1-general-company-information.html"
+								class="nav-link "> <i class="mi-business-center mr-2"></i>Sec 1 - General Company
+								Information</a></li>
+						<li class="nav-item"><a href="./ridp-r-section-2-resource-information.html" class="nav-link ">
+								<i class="mi-contacts mr-2"></i>Sec 2 - Resource Information</a>
+						</li>
+						</li>
+						<li class="nav-item"><a href="./ridp-r-section-3-company-financial.html" class="nav-link "> <i
+									class="icon-cash mr-2"></i>Sec 3 - Company Financial </a></li>
+						<li class="nav-item"><a href="./ridp-r-section-4-company-capability.html"
+								class="nav-link active"> <i class="icon-hammer-wrench mr-2"></i>Sec 4 - Company
+								Capability</a></li>
+						</li>
+					</ul>
+
+					<div class="card-body">
+						<div class="row">
+
+							<div class="col-md-12">
+								<div class="d-flex justify-content-between align-items-center mb-2">
+									<span class="font-weight-semibold">1) Number of <span
+											class="text-danger">local</span> contract(s) / Projects awarded for the past
+										5 years:<span class="text-danger">*</span></span>
+									<button type="submit" class="btn bg-primary ml-3">Add More <i
+											class="icon-plus-circle2 ml-1"></i></button>
+								</div>
+								<div class="table-responsive mb-4">
+									<table class="table  table-bordered">
+										<thead class="bg-nrcoe ">
+											<tr>
+												<th>Project / Contract Received</th>
+												<th>Client / Customer</th>
+												<th>Duration Completed</th>
+												<th>Value (RM)</th>
+												<th>Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Local Project ABC 1</td>
+												<td>Client 1</td>
+												<td>2 years</td>
+												<td>1,000,000</td>
+												<td>
+													<div class="breadcrumb m-2">
+														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+															data-toggle="dropdown" aria-expanded="false">
+															<i class="icon-menu7"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right"
+															x-placement="bottom-end"
+															style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1152px, 144px, 0px);">
+
+
+															<a href="#" class="dropdown-item"><i
+																	class="icon-compose"></i> Edit</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-trash-alt"></i>
+																Remove</a>
+
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Local Project ABC 2</td>
+												<td>Client 2</td>
+												<td>2 years</td>
+												<td>921,231</td>
+												<td>
+													<div class="breadcrumb m-2">
+														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+															data-toggle="dropdown" aria-expanded="false">
+															<i class="icon-menu7"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right"
+															x-placement="bottom-end"
+															style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1152px, 144px, 0px);">
+
+															<a href="#" class="dropdown-item"><i
+																	class="icon-compose"></i> Edit</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-trash-alt"></i>
+																Remove</a>
+
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="3" class="bg-light">Total Value</td>
+												<td colspan="2" class="bg-light">1,921,231</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="d-flex justify-content-between align-items-center mb-2">
+									<span class="font-weight-semibold">2) Number of <span
+											class="text-danger">oversea</span> contract(s) / Projects awarded for the
+										past 5 years:<span class="text-danger">*</span></span>
+									<button type="submit" class="btn bg-primary ml-3">Add More <i
+											class="icon-plus-circle2 ml-1"></i></button>
+								</div>
+								<div class="table-responsive mb-4">
+									<table class="table  table-bordered">
+										<thead class="bg-nrcoe ">
+											<tr>
+												<th>Project / Contract Received</th>
+												<th>Client / Customer</th>
+												<th>Duration Completed</th>
+												<th>Value (RM)</th>
+												<th>Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Oversea Project ABC 1</td>
+												<td>Client 1</td>
+												<td>2 years</td>
+												<td>1,000,000</td>
+												<td>
+													<div class="breadcrumb m-2">
+														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+															data-toggle="dropdown" aria-expanded="false">
+															<i class="icon-menu7"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right"
+															x-placement="bottom-end"
+															style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1152px, 144px, 0px);">
+
+
+															<a href="#" class="dropdown-item"><i
+																	class="icon-compose"></i> Edit</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-trash-alt"></i>
+																Remove</a>
+
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Oversea Project ABC 2</td>
+												<td>Client 2</td>
+												<td>2 years</td>
+												<td>921,231</td>
+												<td>
+													<div class="breadcrumb m-2">
+														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+															data-toggle="dropdown" aria-expanded="false">
+															<i class="icon-menu7"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right"
+															x-placement="bottom-end"
+															style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1152px, 144px, 0px);">
+
+															<a href="#" class="dropdown-item"><i
+																	class="icon-compose"></i> Edit</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-trash-alt"></i>
+																Remove</a>
+
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="3" class="bg-light">Total Value</td>
+												<td colspan="2" class="bg-light">1,921,231</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="font-weight-semibold">3) Company's estimated market shares in Malaysia
+										for the last 3 financial years (If applicable):<span
+											class="text-danger">*</span></label>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="45">
+										<span class="input-group-append">
+											<span class="input-group-text">%</span>
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="font-weight-semibold">4) What is company's mission statement:<span
+											class="text-danger">*</span></label>
+									<input type="text" class="form-control" placeholder="Mission 1">
+								</div>
+							</div>
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">5) Does company have a Quality Assurance
+										Department ?<span class="text-danger">*</span></label><br>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-1" onclick="javascript:yesnoCheck1();"
+												id="yesCheck-1">
+											Yes
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-1" onclick="javascript:yesnoCheck1();"
+												id="noCheck-1">
+											No
+										</label>
+									</div>
+
+									<div id="div-yes-1" style="display:none">
+										<div class="mt-2">
+											<div class="border p-2">
+												<div class="d-flex justify-content-between align-items-center mb-2">
+													<span class="font-weight-semibold">Quality Assurance Department Information:<span
+															class="text-danger">*</span></span>
+													<button type="submit" class="btn bg-primary ml-3">Add More <i
+															class="icon-plus-circle2 ml-1"></i></button>
+												</div>
+												<div class="table-responsive mb-4">
+													<table class="table  table-bordered">
+														<thead class="bg-nrcoe ">
+															<tr>
+																<th>Person-In-Charge Name</th>
+																<th>Designation</th>
+																<th>Action</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>Ezzan Izati</td>
+																<td>Project Manager</td>
+																<td>
+																	<div class="breadcrumb m-2">
+																		<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+																			data-toggle="dropdown" aria-expanded="false">
+																			<i class="icon-menu7"></i>
+																		</a>
+																		<div class="dropdown-menu dropdown-menu-right"
+																			x-placement="bottom-end"
+																			style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1152px, 144px, 0px);">
+				
+				
+																			<a href="#" class="dropdown-item"><i
+																					class="icon-compose"></i> Edit</a>
+																			<a href="#" class="dropdown-item"><i
+																					class="icon-trash-alt"></i>
+																				Remove</a>
+				
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">6) Does company have or conduct quality
+										improvement programs?<span class="text-danger">*</span></label><br>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-2" onclick="javascript:yesnoCheck2();"
+												id="yesCheck-2">
+											Yes
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-2" onclick="javascript:yesnoCheck2();"
+												id="noCheck-2">
+											No
+										</label>
+									</div>
+
+									<div id="div-yes-2" style="display:none">
+										<div class="mt-2">
+											<div class="border p-2">
+												<div class="form-group">
+													<label class="font-weight-semibold">Specific Program Name:<span
+															class="text-danger">*</span></label>
+													<div class="input-group">
+														<input type="text" class="form-control"
+															placeholder="Program ABC">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">7) Does company have experience working with us
+										?<span class="text-danger">*</span></label><br>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-3" onclick="javascript:yesnoCheck3();"
+												id="yesCheck-3">
+											Yes
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-3" onclick="javascript:yesnoCheck3();"
+												id="noCheck-3">
+											No
+										</label>
+									</div>
+
+									<div id="div-yes-3" style="display:none">
+										<div class="mt-2">
+											<div class="border p-2">
+												<div class="form-group">
+													<label class="font-weight-semibold">Specific NRCOE Project:<span
+															class="text-danger">*</span></label>
+													<div class="input-group">
+														<input type="text" class="form-control"
+															placeholder="Program ABC">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="font-weight-semibold">Principal Activities / Nature of
+														Business:<span class="text-danger">*</span></label>
+													<select class="form-control select-multiple-tags"
+														multiple="multiple" data-fouc>
+														<option value="RE" selected>Railway Engineering</option>
+														<option value="RE&SI">Railway Engineering & System Integration
+														</option>
+														<option value="Coupler">Coupler</option>
+														<option value="Supplier">Supplier</option>
+														<option value="IC">Installation Commissioning</option>
+														<option value="WS&MRRS">Warranty Support & MRO of Railway
+															Rolling Stock
+														</option>
+														<option value="DE&TC">Deport Equipment & Trackwork Components
+														</option>
+														<option value="RSM-TM">Rolling Stock MRO Services - Traction
+															Motor</option>
+														<option value="RSM-B">Rolling Stock MRO Services - Bogie
+														</option>
+														<option value="RSM-C">Rolling Stock MRO Services - Compressor
+														</option>
+														<option value="RSM-MA">Rolling Stock MRO Services - Main
+															Alternator</option>
+														<option value="RSCA">Rolling Stock Interior Components Assembly
+														</option>
+														<option value="RSSCMA-DS">Rolling Stock System & Component
+															Manufacturing &
+															Assembly - Door System</option>
+														<option value="RSSCMA-G">Rolling Stock System & Component
+															Manufacturing &
+															Assembly - Gangway</option>
+														<option value="ASTVS&M">Airconditioning System of Transportation
+															Vehicles
+															Service & Maintenance (HVAC)</option>
+													</select>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">8) Which Management System Standard does your
+										company comply with ? Eg. QMS, EMS, OHSAS, IRIS etc<span
+											class="text-danger">*</span></label><br>
+									<select class="form-control select-search" data-fouc>
+										<option value="QMS">QMS</option>
+										<option value="EMS">EMS</option>
+										<option value="OHSAS">OHSAS</option>
+										<option value="IRIS">IRIS</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">9) Business Licenses from Gonvermnetal /
+										Accredited Bodies (Provide valid licenses / certificates. Eg CIDB / PKK)<span
+											class="text-danger">*</span></label><br>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-4" onclick="javascript:yesnoCheck4();"
+												id="yesCheck-4">
+											Yes
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-4" onclick="javascript:yesnoCheck4();"
+												id="noCheck-4">
+											No
+										</label>
+									</div>
+
+									<div id="div-yes-4" style="display:none">
+										<div class="mt-2 border p-2">
+											<div class="form-group">
+												<label class="font-weight-semibold mt-2">Upload
+													License/Certificate:<span class="text-danger">*</span></label>
+												<div class="custom-file">
+													<input type="file" class="custom-file-input" id="customFile">
+													<label class="custom-file-label" for="customFile">Choose
+														file</label>
+												</div>
+												<span class="form-text text-muted">Accepted formats: pdf. docx. Max
+													file
+													size
+													15Mb</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">10) Does company has an in-house Research &
+										Development ("R&D")<span class="text-danger">*</span></label><br>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-5" onclick="javascript:yesnoCheck5();"
+												id="yesCheck-5">
+											Yes
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-5" onclick="javascript:yesnoCheck5();"
+												id="noCheck-5">
+											No
+										</label>
+									</div>
+
+									<div id="div-yes-5" style="display:none">
+										<div class="mt-2">
+											<div class="border p-2">
+												<div class="form-group">
+													<label class="font-weight-semibold">Remark:<span
+															class="text-danger">*</span></label>
+													<textarea type="text" class="form-control"
+														placeholder="State remark here." rows="4"></textarea>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="d-flex justify-content-between align-items-center mb-2">
+									<span class="font-weight-semibold">11) How much does the company invest in R&D
+										annually in the last 3 financial years ?<span
+											class="text-danger">*</span></span>
+								</div>
+								<div class="table-responsive mb-4">
+									<table class="table  table-bordered">
+										<thead class="bg-nrcoe ">
+											<tr>
+												<th style="width: 30%;">1st Year</th>
+												<th style="width: 30%;">2nd Year</th>
+												<th style="width: 30%;">3rd Year</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="input-group">
+														<span class="input-group-append">
+															<span class="input-group-text">RM</span>
+														</span>
+														<input type="text" class="form-control" placeholder="320,000">
+													</div>
+												</td>
+												<td>
+													<div class="input-group">
+														<span class="input-group-append">
+															<span class="input-group-text">RM</span>
+														</span>
+														<input type="text" class="form-control" placeholder="280,000">
+													</div>
+												</td>
+												<td>
+													<div class="input-group">
+														<span class="input-group-append">
+															<span class="input-group-text">RM</span>
+														</span>
+														<input type="text" class="form-control" placeholder="300,000">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="d-flex justify-content-between align-items-center mb-2">
+									<span class="font-weight-semibold">12) How many manufacturing facilities does
+										company own ?<span class="text-danger">*</span></span>
+								</div>
+								<div class="table-responsive mb-4">
+									<table class="table  table-bordered">
+										<thead class="bg-nrcoe ">
+											<tr>
+												<th style="width: 20%;">Location</th>
+												<th style="width: 20%;">In Malaysia</th>
+												<th style="width: 20%;">Outside Malaysia</th>
+												<th style="width: 20%;">Total</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="bg-light">
+													<h6>Factory</h6>
+												</td>
+												<td>
+													<div class="input-group">
+
+														<input type="text" class="form-control" placeholder="10">
+													</div>
+												</td>
+												<td>
+													<div class="input-group">
+														<input type="text" class="form-control" placeholder="2">
+													</div>
+												</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td class="bg-light">
+													<h6>Cost of Investment (RM)</h6>
+												</td>
+												<td>
+													<div class="input-group">
+														<span class="input-group-append">
+															<span class="input-group-text">RM</span>
+														</span>
+														<input type="text" class="form-control" placeholder="750,000">
+													</div>
+												</td>
+												<td>
+													<div class="input-group">
+														<span class="input-group-append">
+															<span class="input-group-text">RM</span>
+														</span>
+														<input type="text" class="form-control" placeholder="120,000">
+													</div>
+												</td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="font-weight-semibold">13) What is the current company's production
+										capacity ? (value / year):<span class="text-danger">*</span></label>
+									<div class="input-group">
+										<span class="input-group-append">
+											<span class="input-group-text">RM</span>
+										</span>
+										<input type="text" class="form-control" placeholder="700,000">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="font-weight-semibold">14) What is the company's current factory's
+										ultilisation rate against the production capacity (If any) :<span
+											class="text-danger">*</span></label>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="23">
+										<span class="input-group-append">
+											<span class="input-group-text">%</span>
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="d-flex justify-content-between align-items-center mb-2">
+									<span class="font-weight-semibold">15) List the main customer for your services /
+										products and their percentage to your company's revenue:<span
+											class="text-danger">*</span></span>
+									<button type="submit" class="btn bg-primary ml-3">Add More <i
+											class="icon-plus-circle2 ml-1"></i></button>
+								</div>
+								<div class="table-responsive mb-4">
+									<table class="table  table-bordered">
+										<thead class="bg-nrcoe ">
+											<tr>
+												<th>Company Name</th>
+												<th>% Revenue Percentage</th>
+												<th>Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Company ABC 1</td>
+												<td>30</td>
+												<td>
+													<div class="breadcrumb m-2">
+														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+															data-toggle="dropdown" aria-expanded="false">
+															<i class="icon-menu7"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right"
+															x-placement="bottom-end"
+															style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1152px, 144px, 0px);">
+
+
+															<a href="#" class="dropdown-item"><i
+																	class="icon-compose"></i> Edit</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-trash-alt"></i>
+																Remove</a>
+
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Company ABC 2</td>
+												<td>30</td>
+												<td>
+													<div class="breadcrumb m-2">
+														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+															data-toggle="dropdown" aria-expanded="false">
+															<i class="icon-menu7"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right"
+															x-placement="bottom-end"
+															style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1152px, 144px, 0px);">
+
+															<a href="#" class="dropdown-item"><i
+																	class="icon-compose"></i> Edit</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-trash-alt"></i>
+																Remove</a>
+
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Emmanual Peter</td>
+												<td>23</td>
+												<td>
+													<div class="breadcrumb m-2">
+														<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+															data-toggle="dropdown" aria-expanded="false">
+															<i class="icon-menu7"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right"
+															x-placement="bottom-end"
+															style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1152px, 144px, 0px);">
+
+															<a href="#" class="dropdown-item"><i
+																	class="icon-compose"></i> Edit</a>
+															<a href="#" class="dropdown-item"><i
+																	class="icon-trash-alt"></i>
+																Remove</a>
+
+														</div>
+													</div>
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">16) Does company use the services of
+										subcontractors for the manufacturing ? if yes please list companies and services
+										provided.<span class="text-danger">*</span></label><br>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-6" onclick="javascript:yesnoCheck6();"
+												id="yesCheck-6">
+											Yes
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-6" onclick="javascript:yesnoCheck6();"
+												id="noCheck-6">
+											No
+										</label>
+									</div>
+
+									<div id="div-yes-6" style="display:none">
+										<div class="mt-2">
+											<div class="border p-2">
+												<div class="d-flex justify-content-between align-items-center mb-2">
+													<span class="font-weight-semibold">Sub-Contractor Company Info<span
+															class="text-danger">*</span></span>
+													<button type="submit" class="btn bg-primary ml-3">Add More <i
+															class="icon-plus-circle2 ml-1"></i></button>
+												</div>
+												<div class="table-responsive mb-4">
+													<table class="table  table-bordered">
+														<thead class="bg-nrcoe ">
+															<tr>
+																<th>Company Name</th>
+																<th>Service</th>
+																<th>Action</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>Company ABC1</td>
+																<td>Service 1</td>
+																<td>
+																	<div class="breadcrumb m-2">
+																		<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+																			data-toggle="dropdown" aria-expanded="false">
+																			<i class="icon-menu7"></i>
+																		</a>
+																		<div class="dropdown-menu dropdown-menu-right"
+																			x-placement="bottom-end"
+																			style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1152px, 144px, 0px);">
+				
+				
+																			<a href="#" class="dropdown-item"><i
+																					class="icon-compose"></i> Edit</a>
+																			<a href="#" class="dropdown-item"><i
+																					class="icon-trash-alt"></i>
+																				Remove</a>
+				
+																		</div>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>Company ABC2</td>
+																<td>Service 2</td>
+																<td>
+																	<div class="breadcrumb m-2">
+																		<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+																			data-toggle="dropdown" aria-expanded="false">
+																			<i class="icon-menu7"></i>
+																		</a>
+																		<div class="dropdown-menu dropdown-menu-right"
+																			x-placement="bottom-end"
+																			style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1152px, 144px, 0px);">
+				
+																			<a href="#" class="dropdown-item"><i
+																					class="icon-compose"></i> Edit</a>
+																			<a href="#" class="dropdown-item"><i
+																					class="icon-trash-alt"></i>
+																				Remove</a>
+				
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">17) Does company embark on any GREEN initiatives
+										?<span class="text-danger">*</span></label><br>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-7" onclick="javascript:yesnoCheck7();"
+												id="yesCheck-7">
+											Yes
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-7" onclick="javascript:yesnoCheck7();"
+												id="noCheck-7">
+											No
+										</label>
+									</div>
+
+									<div id="div-yes-7" style="display:none">
+										<div class="mt-2">
+											<div class="border p-2">
+												<div class="form-group">
+													<label class="font-weight-semibold">Remark:<span
+															class="text-danger">*</span></label>
+													<textarea type="text" class="form-control"
+														placeholder="State remark here." rows="4"></textarea>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">18) Are company aware of any relatives or
+										business associate of the Management Team that are currently under the
+										employement of rail operators or relevant ministries ?<span
+											class="text-danger">*</span></label><br>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-8" onclick="javascript:yesnoCheck8();"
+												id="yesCheck-8">
+											Yes
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-8" onclick="javascript:yesnoCheck8();"
+												id="noCheck-8">
+											No
+										</label>
+									</div>
+
+									<div id="div-yes-8" style="display:none">
+										<div class="mt-2">
+											<div class="border p-2">
+												<div class="d-flex justify-content-between align-items-center mb-2">
+													<span class="font-weight-semibold">Relative & Business Associate Information<span
+															class="text-danger">*</span></span>
+													<button type="submit" class="btn bg-primary ml-3">Add More <i
+															class="icon-plus-circle2 ml-1"></i></button>
+												</div>
+												<div class="table-responsive mb-4">
+													<table class="table  table-bordered">
+														<thead class="bg-nrcoe ">
+															<tr>
+																<th>Relative & Business Associate Name</th>
+																<th>Designation</th>
+																<th>Action</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>Faizal Juhairi</td>
+																<td>Project Manager</td>
+																<td>
+																	<div class="breadcrumb m-2">
+																		<a href="#" class="breadcrumb-elements-item dropdown-toggle"
+																			data-toggle="dropdown" aria-expanded="false">
+																			<i class="icon-menu7"></i>
+																		</a>
+																		<div class="dropdown-menu dropdown-menu-right"
+																			x-placement="bottom-end"
+																			style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1152px, 144px, 0px);">
+				
+				
+																			<a href="#" class="dropdown-item"><i
+																					class="icon-compose"></i> Edit</a>
+																			<a href="#" class="dropdown-item"><i
+																					class="icon-trash-alt"></i>
+																				Remove</a>
+				
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12 mb-2">
+								<div class="form-group">
+									<label class="font-weight-semibold">19) Are there any pending litigations against
+										the company (e.g. patent rights' infringement winding up petition) ?<span
+											class="text-danger">*</span></label><br>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-9" onclick="javascript:yesnoCheck9();"
+												id="yesCheck-9">
+											Yes
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input"
+												name="radio-unstyled-inline-left-9" onclick="javascript:yesnoCheck9();"
+												id="noCheck-9">
+											No
+										</label>
+									</div>
+
+									<div id="div-yes-9" style="display:none">
+										<div class="mt-2">
+											<div class="border p-2">
+												<div class="form-group">
+													<label class="font-weight-semibold">Remark:<span
+															class="text-danger">*</span></label>
+													<textarea type="text" class="form-control"
+														placeholder="State remark here." rows="4"></textarea>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<script type="text/javascript">
+
+								function yesnoCheck1() {
+									if (document.getElementById('yesCheck-1').checked) {
+										document.getElementById('div-yes-1').style.display = 'block';
+									}
+									else document.getElementById('div-yes-1').style.display = 'none';
+
+								}
+
+								function yesnoCheck2() {
+									if (document.getElementById('yesCheck-2').checked) {
+										document.getElementById('div-yes-2').style.display = 'block';
+									}
+									else document.getElementById('div-yes-2').style.display = 'none';
+
+								}
+
+								function yesnoCheck3() {
+									if (document.getElementById('yesCheck-3').checked) {
+										document.getElementById('div-yes-3').style.display = 'block';
+									}
+									else document.getElementById('div-yes-3').style.display = 'none';
+
+								}
+
+								function yesnoCheck4() {
+									if (document.getElementById('yesCheck-4').checked) {
+										document.getElementById('div-yes-4').style.display = 'block';
+									}
+									else document.getElementById('div-yes-4').style.display = 'none';
+
+								}
+
+								function yesnoCheck5() {
+									if (document.getElementById('yesCheck-5').checked) {
+										document.getElementById('div-yes-5').style.display = 'block';
+									}
+									else document.getElementById('div-yes-5').style.display = 'none';
+
+								}
+
+								function yesnoCheck6() {
+									if (document.getElementById('yesCheck-6').checked) {
+										document.getElementById('div-yes-6').style.display = 'block';
+									}
+									else document.getElementById('div-yes-6').style.display = 'none';
+
+								}
+
+								function yesnoCheck7() {
+									if (document.getElementById('yesCheck-7').checked) {
+										document.getElementById('div-yes-7').style.display = 'block';
+									}
+									else document.getElementById('div-yes-7').style.display = 'none';
+
+								}
+
+								function yesnoCheck8() {
+									if (document.getElementById('yesCheck-8').checked) {
+										document.getElementById('div-yes-8').style.display = 'block';
+									}
+									else document.getElementById('div-yes-8').style.display = 'none';
+
+								}
+
+								function yesnoCheck9() {
+									if (document.getElementById('yesCheck-9').checked) {
+										document.getElementById('div-yes-9').style.display = 'block';
+									}
+									else document.getElementById('div-yes-9').style.display = 'none';
+
+								}
+
+							</script>
+
+						</div>
+					</div>
+					<div class="card-footer  d-sm-flex justify-content-sm-between align-items-sm-center">
+						<ul
+							class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between">
+							<button type="button" class="btn btn-light rounded-round mr-1"
+								onclick="location.href = './ridp-r-section-3-company-financial.html'"><i
+									class="mi-keyboard-arrow-left"></i>Save & Previous</button>
+						</ul>
+
+						<ul class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
+							<button type="button" class="btn btn-light rounded-round mr-1">Save Draft<i
+									class="mi-save ml-1"></i></button>
+
+							<button type="button" class="btn btn-success rounded-round" data-toggle="modal"
+								data-target="#declaration">Submit<i class="mi-keyboard-arrow-right"></i></button>
+						</ul>
+					</div>
+				</div>
+				<!-- /forms -->
+
+			</div>
+			<!-- /content area -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+	<!-- Full width modal/ Company Experience -->
+	<div id="uploadFinancialDoc" class="modal fade" data-backdrop="true" tabindex="-1">
+		<div class="modal-dialog  modal-xl">
+			<div class="modal-content bg-transparent">
+				<div class="modal-body bg-transparent">
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+							<div class="card">
+								<div class="card-header bg-white header-elements-inline">
+									<h4 class="card-title font-weight-bold">Add Financial Document
+									</h4>
+								</div>
+								<div class="card-body">
+									<form action="#">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="font-weight-semibold">Financial Document Name:<span
+															class="text-danger">*</span></label>
+													<input type="text" class="form-control"
+														placeholder="Financial_Document1">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="font-weight-semibold">Select File:<span
+															class="text-danger">*</span></label>
+													<div class="custom-file">
+														<input type="file" class="custom-file-input" id="customFile">
+														<label class="custom-file-label" for="customFile">Choose
+															file</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+									<div class="text-right">
+										<button type="submit" class="btn btn-light" class="remove"
+											data-dismiss="modal">Cancel</button>
+										<button type="submit" class="btn btn-primary">Submit</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /full width modal -->
+
+	<!-- Full width modal/ Company Experience -->
+	<div id="declaration" class="modal fade" data-backdrop="true" tabindex="-1">
+		<div class="modal-dialog  modal-xl">
+			<div class="modal-content bg-transparent">
+				<div class="modal-body bg-transparent">
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+							<div class="card">
+								<div class="card-header bg-white header-elements-inline">
+									<h4 class="card-title font-weight-bold">Information Declaration
+									</h4>
+								</div>
+								<div class="card-body">
+									<form action="#">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<span class="d-block mb-2">
+														By executing this document, the company indicate and acknowledge
+														that have read and understood the <a
+															href="./ridp-r-review-privacy.html">Privacy Notice</a> and
+														company hereby consent to NRCOE processing the
+														personal data in the manner and for the purposes described in
+														the aforesaid Privacy Notice.
+													</span>
+
+													<span class="d-block">
+														If the company do not agree to or otherwise have any objections
+														to the processing of the personal data or to the terms of the
+														Privacy Notice, please do not proceed with the execution of this
+														document.
+													</span>
+
+
+
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<div class="form-group">
+														<div class="form-check">
+															<label class="form-check-label">
+																<input type="checkbox"
+																	class="form-check-input-styled-success" data-fouc>
+																Yes, I have acknowledge that I have read and understand
+																the Privacy Noitce.
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+									<div class="text-right">
+										<button type="submit" class="btn btn-light" class="remove"
+											data-dismiss="modal">Cancel</button>
+										<button type="submit" class="btn btn-success" class="remove"
+											data-dismiss="modal">Accept</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /full width modal -->
+
+	<!-- Footer -->
+	<div class="navbar navbar-expand-lg navbar-light px-0">
+		<div class="container">
+			<div class="text-center d-lg-none w-100">
+				<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+					data-target="#navbar-footer">
+					<i class="icon-unfold mr-2"></i>
+					Footer
+				</button>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navbar-footer">
+				<span class="navbar-text">
+					&copy; 2021. <a href="#">RIDP Registration</a> by <a href="#" target="_blank">National Rail Centre
+						of
+						Excellence</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<!-- /footer -->
+
+</body>
+
+</html>
