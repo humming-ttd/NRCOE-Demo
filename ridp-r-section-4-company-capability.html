@@ -243,14 +243,15 @@
 									<span class="font-weight-semibold">1) Number of <span
 											class="text-danger">local</span> contract(s) / Projects awarded for the past
 										5 years:<span class="text-danger">*</span></span>
-									<button type="submit" class="btn bg-primary ml-3">Add More <i
+									<button type="submit" class="btn bg-primary ml-3"  data-toggle="modal"
+									data-target="#addLocalContract">Add More <i
 											class="icon-plus-circle2 ml-1"></i></button>
 								</div>
 								<div class="table-responsive mb-4">
 									<table class="table  table-bordered">
 										<thead class="bg-nrcoe ">
 											<tr>
-												<th>Project / Contract Received</th>
+												<th>Project / Contract Name</th>
 												<th>Client / Customer</th>
 												<th>Duration Completed</th>
 												<th>Value (RM)</th>
@@ -323,14 +324,15 @@
 									<span class="font-weight-semibold">2) Number of <span
 											class="text-danger">oversea</span> contract(s) / Projects awarded for the
 										past 5 years:<span class="text-danger">*</span></span>
-									<button type="submit" class="btn bg-primary ml-3">Add More <i
+									<button type="submit" class="btn bg-primary ml-3"  data-toggle="modal"
+									data-target="#addOverseaContract">Add More <i
 											class="icon-plus-circle2 ml-1"></i></button>
 								</div>
 								<div class="table-responsive mb-4">
 									<table class="table  table-bordered">
 										<thead class="bg-nrcoe ">
 											<tr>
-												<th>Project / Contract Received</th>
+												<th>Project / Contract Name</th>
 												<th>Client / Customer</th>
 												<th>Duration Completed</th>
 												<th>Value (RM)</th>
@@ -851,7 +853,8 @@
 									<span class="font-weight-semibold">15) List the main customer for your services /
 										products and their percentage to your company's revenue:<span
 											class="text-danger">*</span></span>
-									<button type="submit" class="btn bg-primary ml-3">Add More <i
+									<button type="submit" class="btn bg-primary ml-3"  data-toggle="modal"
+									data-target="#addMainCust">Add More <i
 											class="icon-plus-circle2 ml-1"></i></button>
 								</div>
 								<div class="table-responsive mb-4">
@@ -1299,8 +1302,8 @@
 	</div>
 	<!-- /page content -->
 
-	<!-- Full width modal/ Company Experience -->
-	<div id="uploadFinancialDoc" class="modal fade" data-backdrop="true" tabindex="-1">
+	<!-- Full width modal/ Banker/s -->
+	<div id="addLocalContract" class="modal fade" data-backdrop="true" tabindex="-1">
 		<div class="modal-dialog  modal-xl">
 			<div class="modal-content bg-transparent">
 				<div class="modal-body bg-transparent">
@@ -1308,7 +1311,7 @@
 						<div class="col-md-8 offset-md-2">
 							<div class="card">
 								<div class="card-header bg-white header-elements-inline">
-									<h4 class="card-title font-weight-bold">Add Financial Document
+									<h4 class="card-title font-weight-bold">Add Local Contract(s)
 									</h4>
 								</div>
 								<div class="card-body">
@@ -1316,20 +1319,38 @@
 										<div class="row">
 											<div class="col-md-12">
 												<div class="form-group">
-													<label class="font-weight-semibold">Financial Document Name:<span
-															class="text-danger">*</span></label>
+													<label class="font-weight-semibold">Project / Contract Name:<span class="text-danger">*</span></label>
 													<input type="text" class="form-control"
-														placeholder="Financial_Document1">
+														placeholder="Local Project ABC 1">
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<label class="font-weight-semibold">Select File:<span
-															class="text-danger">*</span></label>
-													<div class="custom-file">
-														<input type="file" class="custom-file-input" id="customFile">
-														<label class="custom-file-label" for="customFile">Choose
-															file</label>
+													<label class="font-weight-semibold">Client / Customer:<span class="text-danger">*</span></label>
+													<input type="text" class="form-control"
+														placeholder="Client 1">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="font-weight-semibold">Duration Completed:<span class="text-danger">*</span></label>
+													<select class="form-control select" data-fouc>
+														<option value="1 Year" selected>1 Year</option>
+														<option value="2 Years">2 Years</option>
+														<option value="3 Years">3 Years</option>
+														<option value="4 Years">4 Years</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="font-weight-semibold">Value (RM):<span class="text-danger">*</span></label>
+													<div class="input-group">
+														<span class="input-group-append">
+															<span class="input-group-text">RM</span>
+														</span>
+														<input type="text" class="form-control" placeholder="1,000,000">
+														
 													</div>
 												</div>
 											</div>
@@ -1350,8 +1371,8 @@
 	</div>
 	<!-- /full width modal -->
 
-	<!-- Full width modal/ Company Experience -->
-	<div id="declaration" class="modal fade" data-backdrop="true" tabindex="-1">
+	<!-- Full width modal/ Banker/s -->
+	<div id="addOverseaContract" class="modal fade" data-backdrop="true" tabindex="-1">
 		<div class="modal-dialog  modal-xl">
 			<div class="modal-content bg-transparent">
 				<div class="modal-body bg-transparent">
@@ -1359,7 +1380,7 @@
 						<div class="col-md-8 offset-md-2">
 							<div class="card">
 								<div class="card-header bg-white header-elements-inline">
-									<h4 class="card-title font-weight-bold">Information Declaration
+									<h4 class="card-title font-weight-bold">Add Oversea Contract(s)
 									</h4>
 								</div>
 								<div class="card-body">
@@ -1367,37 +1388,38 @@
 										<div class="row">
 											<div class="col-md-12">
 												<div class="form-group">
-													<span class="d-block mb-2">
-														By executing this document, the company indicate and acknowledge
-														that have read and understood the <a
-															href="./ridp-r-review-privacy.html">Privacy Notice</a> and
-														company hereby consent to NRCOE processing the
-														personal data in the manner and for the purposes described in
-														the aforesaid Privacy Notice.
-													</span>
-
-													<span class="d-block">
-														If the company do not agree to or otherwise have any objections
-														to the processing of the personal data or to the terms of the
-														Privacy Notice, please do not proceed with the execution of this
-														document.
-													</span>
-
-
-
+													<label class="font-weight-semibold">Project / Contract Name:<span class="text-danger">*</span></label>
+													<input type="text" class="form-control"
+														placeholder="Local Project ABC 1">
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<div class="form-group">
-														<div class="form-check">
-															<label class="form-check-label">
-																<input type="checkbox"
-																	class="form-check-input-styled-success" data-fouc>
-																Yes, I have acknowledge that I have read and understand
-																the Privacy Noitce.
-															</label>
-														</div>
+													<label class="font-weight-semibold">Client / Customer:<span class="text-danger">*</span></label>
+													<input type="text" class="form-control"
+														placeholder="Client 1">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="font-weight-semibold">Duration Completed:<span class="text-danger">*</span></label>
+													<select class="form-control select" data-fouc>
+														<option value="1 Year" selected>1 Year</option>
+														<option value="2 Years">2 Years</option>
+														<option value="3 Years">3 Years</option>
+														<option value="4 Years">4 Years</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="font-weight-semibold">Value (RM):<span class="text-danger">*</span></label>
+													<div class="input-group">
+														<span class="input-group-append">
+															<span class="input-group-text">RM</span>
+														</span>
+														<input type="text" class="form-control" placeholder="1,000,000">
+														
 													</div>
 												</div>
 											</div>
@@ -1406,8 +1428,58 @@
 									<div class="text-right">
 										<button type="submit" class="btn btn-light" class="remove"
 											data-dismiss="modal">Cancel</button>
-										<button type="submit" class="btn btn-success" class="remove"
-											data-dismiss="modal">Accept</button>
+										<button type="submit" class="btn btn-primary">Submit</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /full width modal -->
+
+	<!-- Full width modal/ Banker/s -->
+	<div id="addMainCust" class="modal fade" data-backdrop="true" tabindex="-1">
+		<div class="modal-dialog  modal-xl">
+			<div class="modal-content bg-transparent">
+				<div class="modal-body bg-transparent">
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+							<div class="card">
+								<div class="card-header bg-white header-elements-inline">
+									<h4 class="card-title font-weight-bold">Add Main Customer
+									</h4>
+								</div>
+								<div class="card-body">
+									<form action="#">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="font-weight-semibold">Company Name:<span class="text-danger">*</span></label>
+													<input type="text" class="form-control"
+														placeholder="Company ABC">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="font-weight-semibold">% Revenue Percentage:<span class="text-danger">*</span></label>
+													<div class="input-group">
+														<input type="text" class="form-control" placeholder="25">
+														<span class="input-group-append">
+															<span class="input-group-text">%</span>
+														</span>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</form>
+									<div class="text-right">
+										<button type="submit" class="btn btn-light" class="remove"
+											data-dismiss="modal">Cancel</button>
+										<button type="submit" class="btn btn-primary">Submit</button>
 									</div>
 								</div>
 							</div>

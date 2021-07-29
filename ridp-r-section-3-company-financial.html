@@ -451,7 +451,8 @@
 								<div class="d-flex justify-content-between align-items-center mb-2">
 									<span class="font-weight-semibold">9) Banker/s:<span
 											class="text-danger">*</span></span>
-									<button type="submit" class="btn bg-primary ml-3">Add More <i
+									<button type="submit" class="btn bg-primary ml-3" data-toggle="modal"
+									data-target="#addBank">Add More <i
 											class="icon-plus-circle2 ml-1"></i></button>
 								</div>
 								<div class="table-responsive mb-4">
@@ -550,8 +551,8 @@
 	</div>
 	<!-- /page content -->
 
-	<!-- Full width modal/ Company Experience -->
-	<div id="uploadSharehinfoFile" class="modal fade" data-backdrop="true" tabindex="-1">
+	<!-- Full width modal/ Banker/s -->
+	<div id="addBank" class="modal fade" data-backdrop="true" tabindex="-1">
 		<div class="modal-dialog  modal-xl">
 			<div class="modal-content bg-transparent">
 				<div class="modal-body bg-transparent">
@@ -559,7 +560,7 @@
 						<div class="col-md-8 offset-md-2">
 							<div class="card">
 								<div class="card-header bg-white header-elements-inline">
-									<h4 class="card-title font-weight-bold">Add Shareholder Information
+									<h4 class="card-title font-weight-bold">Add Banker/s
 									</h4>
 								</div>
 								<div class="card-body">
@@ -567,20 +568,23 @@
 										<div class="row">
 											<div class="col-md-12">
 												<div class="form-group">
-													<label class="font-weight-semibold">Shareholder File Name:<span
-															class="text-danger">*</span></label>
-													<input type="text" class="form-control" placeholder="Shareholder1">
+													<label class="font-weight-semibold">Bank Account Name:<span class="text-danger">*</span></label>
+													<input type="text" class="form-control"
+														placeholder="Company ABC Sdn Bhd">
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<label class="font-weight-semibold">Select File:<span
-															class="text-danger">*</span></label>
-													<div class="custom-file">
-														<input type="file" class="custom-file-input" id="customFile">
-														<label class="custom-file-label" for="customFile">Choose
-															file</label>
-													</div>
+													<label class="font-weight-semibold">Bank Name:<span class="text-danger">*</span></label>
+													<input type="text" class="form-control"
+														placeholder="Maybank Malaysia">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="font-weight-semibold">Bank Account Number:<span class="text-danger">*</span></label>
+													<input type="text" class="form-control"
+														placeholder="0123456789012">
 												</div>
 											</div>
 										</div>
