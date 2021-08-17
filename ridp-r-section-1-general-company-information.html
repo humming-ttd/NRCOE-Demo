@@ -236,21 +236,10 @@
 								</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="form-group">
-									<label class="font-weight-semibold">3) Upload Company SSM / Registration Certification:<span
-											class="text-danger">*</span></label>
-											<div class="custom-file">
-												<input type="file" class="custom-file-input" id="customFile">
-												<label class="custom-file-label" for="customFile">Choose
-													file</label>
-											</div>
-
-								</div>
-							</div>
+							
 
 							<div class="col-md-4">
-								<label class="font-weight-semibold">4) Date of Incorporation:<span
+								<label class="font-weight-semibold">3) Date of Incorporation:<span
 									class="text-danger">*</span></label>
 								<div class="row">
 									<div class="col-md-12">
@@ -265,6 +254,19 @@
 											</div>
 										</div>
 									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="font-weight-semibold">4) Upload Company SSM / Registration Certification:<span
+											class="text-danger">*</span></label>
+											<div class="custom-file">
+												<input type="file" class="custom-file-input" id="customFile">
+												<label class="custom-file-label" for="customFile">Choose
+													file</label>
+											</div>
+
 								</div>
 							</div>
 
@@ -389,7 +391,7 @@
 
 							<div class="col-md-12">
 								<div class="d-flex justify-content-between align-items-center mb-2">
-									<span class="font-weight-semibold">13) Company Materials<span
+									<span class="font-weight-semibold">13) Company Profile Attachments<span
 											class="text-danger">*</span></span>
 									<button type="submit" class="btn bg-primary ml-3" data-toggle="modal" data-target="#addCompanyMaterials">Add More <i
 											class="icon-plus-circle2 ml-1"></i></button>
@@ -451,7 +453,7 @@
 									</table>
 									<div class="mt-2">
 										<span class="text-danger font-weight-semibold">Notes:</span>
-										<span class="d-block">Company materials could be Company Profile from SSM(Latest), Corporate Profile, Product, Service Brochures, Catelogue etc.</span>
+										<span class="d-block">It could be Company Profile from SSM(Latest), Corporate Profile, Product, Service Brochures, Catelogue etc.</span>
 									</div>
 								</div>
 							</div>
@@ -1059,9 +1061,12 @@
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<label class="font-weight-semibold">Designation:<span class="text-danger">*</span></label>
-													<input type="text" class="form-control"
-														placeholder="Project Manager">
+													<label>Designation:</label>
+													<select data-placeholder="Select Designation"
+														class="form-control select" data-fouc>
+														<option></option>
+														<option value="Manager">Manager</option>
+													</select>
 												</div>
 											</div>
 											<div class="col-md-12">
