@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>NRCOE-SV | Audit On-Site Activity List</title>
+	<title>NRCOE-SV | Assessment Form | Assessment Result</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -37,19 +37,21 @@
 
 	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
 	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="./global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switch.min.js"></script>
 
-	<!-- PopOut Form -->
-	<script src="./global_assets/js/plugins/notifications/jgrowl.min.js"></script>
-	<script src="./global_assets/js/plugins/notifications/noty.min.js"></script>
-	<script src="./global_assets/js/demo_pages/extra_jgrowl_noty.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
 
-	<script src="./global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
-	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
-	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
-	<!-- /PopOut Form -->
+	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="./global_assets/js/plugins/pickers/anytime.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
 
-	<script src="./global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
-	<script src="./global_assets/js/demo_pages/extra_sweetalert.js"></script>
+
 
 </head>
 
@@ -204,28 +206,25 @@
 							<a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown">Registration
 								Form</a>
 							<div class="dropdown-menu dropdown-menu-left">
-								<a href="./ridp-sv-form-section-1.html" class="dropdown-item ">Section
-									1 - General Company
-									Info</a>
-								<a href="./ridp-sv-form-section-2.html" class="dropdown-item">Section 2 -
-									Contact Person Info</a>
-								<a href="./ridp-sv-form-section-3.html" class="dropdown-item">Section 3 -
-									Company & Management</a>
-								<a href="./ridp-sv-form-section-4.html" class="dropdown-item">Section 4 -
-									Company Capability</a>
-								<a href="./ridp-sv-form-section-5.html" class="dropdown-item">Section 5 -
+								<a href="./ridp-sv-form-section-1.html" class="dropdown-item ">Section 1 - General
+									Company Information</a>
+								<a href="./ridp-sv-form-section-2.html" class="dropdown-item ">Section 2 - Resource
+									Information</a>
+								<a href="./ridp-sv-form-section-3.html" class="dropdown-item">Section 3 - Company
 									Financial</a>
+								<a href="./ridp-sv-form-section-4.html" class="dropdown-item">Section 4 - Company
+									Capability</a>
 							</div>
 						</li>
+
 						<li class="nav-item dropdown ml-2">
-							<a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown"><i
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i
 									class="icon-profile mr-2"></i> Appointment</a>
 							<div class="dropdown-menu dropdown-menu-left">
 								<a href="./ridp-sv-on-site-form-general-info.html" class="dropdown-item ">Appointment
 									Schedule
 									Form</a>
-								<a href="./ridp-sv-on-site-form-audit-activity.html"
-									class="dropdown-item active">Appointment
+								<a href="./ridp-sv-on-site-form-audit-activity.html" class="dropdown-item">Appointment
 									Activity
 									List</a>
 							</div>
@@ -248,19 +247,29 @@
 									Method</a>
 								<a href="./ridp-sv-assessment-5.html" class="dropdown-item ">Assessment Item 5 -
 									Management / Monetory</a>
-								
+
 							</div>
 						</li>
 
-						
-						<li class="nav-item"><a href="./ridp-sv-assessment-result-1.html" class="nav-link "> <i
-							class="icon-clipboard2 mr-2"></i>Assessment Result</a>
-				</li>
+
+						<li class="nav-item"><a href="./ridp-sv-assessment-result-1.html" class="nav-link active"> <i
+									class="icon-clipboard2 mr-2"></i>Assessment Result</a>
+						</li>
+
+
 						<!-- <li class="nav-item"><a href="./ridp-sv-summary.html" class="nav-link "> <i
 									class="icon-profile mr-2"></i>Audit Summary </a>
 						</li> -->
 					</ul>
+					<div class="breadcrumb-line header-elements-md-inline text-blue-800 mt-3">
+						<div class="d-flex">
+							<div class="breadcrumb text-dark">
+								<span class="breadcrumb-item">Assessment Form</span>
+								<span class="breadcrumb-item">Assessment Result</span>
+							</div>
+						</div>
 
+					</div>
 
 					<div class="card-body">
 
@@ -274,235 +283,248 @@
 									<table class="table table-bordered">
 										<thead class="bg-nrcoe">
 											<tr>
-												<th colspan="8" class="text-center">Audit Activity</th>
+												<th colspan="8" class="text-left">ATTENDANCE</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
+												<td style="width: 20%;">
 
-												<td class="w-50">
-													<div class="form-group">
-														<h6 class="font-weight-bold">Activity Description</h6>
-													</div>
+													<h6 class="font-weight-bold">Assessment Team</h6>
+
 												</td>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold">Attachment</h6>
-													</div>
+												<td style="width: 20%;">
+
+													<h6 class="font-weight-bold">Assessment Company</h6>
+
 												</td>
+												<td style="width: 20%;">
+
+													<h6 class="font-weight-bold">Supplier Team</h6>
+
+												</td>
+												<td style="width: 20%;">
+
+													<h6 class="font-weight-bold">Supplier Company</h6>
+
+												</td>
+
 											</tr>
+
 											<tr>
 												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
+													<h7 class="font-weight-semibold">Hasry Harun</h7>
 												</td>
 												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
+													<h7 class="font-weight-semibold">NARCOE</h7>
+												</td>
+												<td>
+													<h7 class="font-weight-semibold">Lim Le Ken</h7>
+												</td>
+												<td>
+													<h7 class="font-weight-semibold">Innoglass </h7>
 												</td>
 											</tr>
+
 											<tr>
 												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
+													<h7 class="font-weight-semibold">Nik Zamzuki Nik Lah</h7>
 												</td>
 												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
+													<h7 class="font-weight-semibold">NARCOE</h7>
+												</td>
+												<td>
+													<h7 class="font-weight-semibold">Francis</h7>
+												</td>
+												<td>
+													<h7 class="font-weight-semibold">-</h7>
 												</td>
 											</tr>
+
+
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="table-responsive mb-4">
+									<table class="table table-bordered">
+										<thead class="bg-nrcoe">
 											<tr>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
-												</td>
-												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
-												</td>
+												<th colspan="8" class="text-left">ISSUE / CONCERN / COMMENTS</th>
 											</tr>
+										</thead>
+										<tbody>
 											<tr>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
+												<td style="width: 10%;">
+
+													<h6 class="font-weight-bold">No</h6>
+
 												</td>
-												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
+												<td style="width: 90%;">
+
+													<h6 class="font-weight-bold">Description</h6>
+
 												</td>
+
 											</tr>
+
 											<tr>
+
 												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
+													<h7>1</h7>
 												</td>
 												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
+													<h7>Sufficient tools and machineries for glass works and IS0
+														9001:2015
+														certified.</h7>
 												</td>
+
 											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="table-responsive mb-4">
+									<table class="table table-bordered">
+										<thead class="bg-nrcoe">
 											<tr>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
-												</td>
-												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
-												</td>
+												<th colspan="8" class="text-left">ACTION/ IMPLEMENTATION</th>
 											</tr>
+										</thead>
+										<tbody>
 											<tr>
-												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
+												<td style="width: 10%;">
+
+													<h6 class="font-weight-bold">No</h6>
+
 												</td>
-												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
+												<td style="width: 90%;">
+
+													<h6 class="font-weight-bold">Description</h6>
+
 												</td>
+
 											</tr>
+
 											<tr>
+
 												<td>
-													<div class="form-group ">
-														<h6 class="font-weight-bold"><input type="text"
-																class="form-control" placeholder="">
-														</h6>
-													</div>
+													<h7>1</h7>
 												</td>
 												<td>
-													<div class="form-group">
-														<h6 class="font-weight-bold">
-															<div class="form-group">
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input"
-																		id="customFile">
-																	<label class="custom-file-label"
-																		for="customFile">Choose
-																		file</label>
-																</div>
-															</div>
-														</h6>
-													</div>
+													<h7>Machine - PPE to comply with DOSH requirement.</h7>
+												</td>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="table-responsive mb-4">
+									<table class="table table-bordered">
+										<thead class="bg-nrcoe">
+											<tr>
+												<th colspan="8" class="text-left">CONCLUSION / REMARKS</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td style="width: 10%;">
+
+													<h6 class="font-weight-bold">No</h6>
+
+												</td>
+												<td style="width: 90%;">
+
+													<h6 class="font-weight-bold">Description</h6>
+
+												</td>
+
+											</tr>
+
+											<tr>
+
+												<td>
+													<h7>1</h7>
+												</td>
+												<td>
+													<h7>In summary, INNOGLASS SB score is 108/120, 90% with GOOD rating,
+														and entitled as BUMIPUTERA business company. INNOGLASS SB is
+														qualified based on 5M Assessment and suggested for the grantt.
+													</h7>
+												</td>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="table-responsive mb-4">
+									<table class="table table-bordered">
+										<thead class="bg-nrcoe">
+											<tr>
+												<th colspan="8" class="text-left">Photo</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td style="width: 10%;">
+
+													<h6 class="font-weight-bold">No</h6>
+
+												</td>
+												<td style="width: 80%;">
+
+													<h6 class="font-weight-bold">Description</h6>
+
+												</td>
+												<td style="width: 10%;">
+
+													<h6 class="font-weight-bold">Action</h6>
+
 												</td>
 											</tr>
-											<tr class="bg-nrcoe">
-												<td colspan="2">
-													<div class="form-group">
-														<label class="font-weight-semibold mb-3">Important Note:</label>
-														<h7 class="d-block">During this visit, RIDP Team Would require
-															to:</h7>
-														<h7 class="d-block pl-4"> 1) Obtain Certifed Copy
-															(or Extracts) or relevant documents from the Recipients;
-														</h7>
-														<h7 class="d-block mb-3 pl-4"> 2) Capture photography / video of
-															relevant
-															footages as a proof of operational activities in Recipient's
-															organization.
-														</h7>
-														<!-- <h7 class="d-block"> These will be retained by NRCOE for
-															inspection by the authority (esp. the Ministry of Finance)
-															as necessary.
-														</h7> -->
-													</div>
+
+											<tr>
+
+												<td>
+													<h7>1</h7>
 												</td>
+												<td>
+													<h7>Slide Presentation</h7>
+												</td>
+												<td>
+													<button type="submit" class="btn bg-nrcoe" data-toggle="modal"
+														data-target="#">View</button>
+												</td>
+
+											</tr>
+
+											<tr>
+
+												<td>
+													<h7>2</h7>
+												</td>
+												<td>
+													<h7>Product Briefing</h7>
+												</td>
+												<td>
+													<button type="submit" class="btn bg-nrcoe" data-toggle="modal"
+														data-target="#">View</button>
+												</td>
+
 											</tr>
 
 										</tbody>
@@ -510,26 +532,51 @@
 								</div>
 							</div>
 						</div>
+
+
+
+
+
 					</div>
+
+					<div class="card card-body text-center" style="border: 0px; box-shadow: 0 1px 2px rgb(0 0 0 / 0%);">
+						<ul class="pagination pagination-flat align-self-center">
+							<li class="page-item"><a href="./ridp-sv-assessment-result-1.html" class="page-link"><i
+										class="icon-arrow-left12"></i></a>
+							</li>
+							<li class="page-item "><a href="./ridp-sv-assessment-result-1.html" class="page-link">1</a>
+							</li>
+							<li class="page-item active"><a href="./ridp-sv-assessment-result-2.html"
+									class="page-link">2</a>
+							</li>
+
+							<li class="page-item"><a href="./ridp-sv-assessment-result-2.html" class="page-link"><i
+										class="icon-arrow-right13"></i></a>
+							</li>
+						</ul>
+					</div>
+
+
+
+
 					<div class="card-footer bg-nrcoe d-sm-flex justify-content-sm-between align-items-sm-center">
 						<ul
 							class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between">
 						</ul>
-						<ul class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
-							<button type="button" class="btn btn-light rounded-round mr-1"
-								onclick="location.href = './ridp-sv-form-section-2.html'">Cancel<i
-									class="mi-cancel ml-1"></i></button>
+
+						<!-- <ul class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
 							<button type="button" class="btn btn-light rounded-round mr-1"
 								onclick="location.href = './ridp-sv-form-section-2.html'">Clear<i
 									class="mi-clear-all ml-1"></i></button>
+									<button type="button" class="btn btn-light rounded-round mr-1">Update<i
+										class="icon-rotate-cw3 ml-1"></i></button>
 							<button type="button" class="btn btn-light rounded-round mr-1"
 								onclick="location.href = './ridp-sv-form-section-2.html'">Save Draft<i
 									class="mi-save ml-1"></i></button>
-							<!-- <button type="button" class="btn btn-danger rounded-round mr-1">Reject<i
-									class="ml-1 icon-cross3"></i></button> -->
-							<button type="button" class="btn btn-success rounded-round" id="jgrowl-styled-left">Submit<i
+							<button type="button" class="btn btn-light rounded-round"
+								onclick="location.href = './ridp-sv-form-section-2.html'">Save & Next<i
 									class="mi-keyboard-arrow-right"></i></button>
-						</ul>
+						</ul> -->
 					</div>
 				</div>
 				<!-- /forms -->
@@ -542,6 +589,7 @@
 
 	</div>
 	<!-- /page content -->
+
 
 
 	<!-- Footer -->
